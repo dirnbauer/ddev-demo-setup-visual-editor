@@ -14,7 +14,7 @@
         "sort-packages": true
     },
     "require": {
-        "friendsoftypo3/visual-editor": "@dev",
+        "friendsoftypo3/visual-editor": "^1.0.6",
         "typo3/cms-backend": "14.2.x-dev",
         "typo3/cms-belog": "14.2.x-dev",
         "typo3/cms-beuser": "14.2.x-dev",
@@ -39,11 +39,5 @@
         "typo3/cms-viewpage": "14.2.x-dev",
         "typo3/cms-webhooks": "14.2.x-dev",
         "typo3/theme-camino": "14.2.x-dev"
-    },
-    "repositories": {
-        "andersundsehr": {
-            "type": "vcs",
-            "url": "ssh://git@github.com/andersundsehr/visual_editor"
-        }
     }
 }
