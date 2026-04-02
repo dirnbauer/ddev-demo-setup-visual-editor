@@ -35,6 +35,17 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
+        'blog' => [
+            'disablePageLayoutHeader' => '0',
+            'enableGravatarProxy' => '0',
+        ],
+        'extensionmanager' => [
+            'automaticInstallation' => '1',
+            'offlineMode' => '0',
+        ],
+        'scheduler' => [
+            'maxLifetime' => '1440',
+        ],
     ],
     'FE' => [
         'cacheHash' => [

@@ -1,4 +1,5 @@
 .DS_Store
+.ddev/config.local.yaml
 .idea
 nbproject
 /var/*
