@@ -43,6 +43,12 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'mcp_server' => [
+            'allowMcpTokenInQueryString' => '0',
+            'enableMcpAuthHeaderDiagnostic' => '1',
+            'fileSandboxRoot' => '1:/mcp/',
+            'workspaceUploadSubfolders' => '1',
+        ],
         'scheduler' => [
             'maxLifetime' => '1440',
         ],

@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "Bash(ddev composer:*)",
-      "Bash(export PATH=\"$HOME/.local/bin:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH\")"
+      "Bash(export PATH=\"$HOME/.local/bin:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(/usr/local/bin/ddev version:*)",
+      "Bash(/opt/homebrew/bin/ddev version:*)",
+      "Bash(~/.ddev/bin/ddev version:*)",
+      "Bash(/opt/homebrew/bin/ddev composer:*)"
     ]
   }
 }
