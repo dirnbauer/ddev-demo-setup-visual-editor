@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9d46f1ab03ff97c2069720c22d5cd77",
+    "content-hash": "0e4e026f4256c9ab6a82047a61dce830",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -8207,6 +8207,63 @@
             "time": "2026-03-11T11:10:11+00:00"
         },
         {
+            "name": "webconsulting/records-list-types",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
+                "reference": "294693f4f68c4ab0d0d5fec7e50fb0ea33b9269e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/294693f4f68c4ab0d0d5fec7e50fb0ea33b9269e",
+                "reference": "294693f4f68c4ab0d0d5fec7e50fb0ea33b9269e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.3",
+                "typo3/cms-backend": "^14.0",
+                "typo3/cms-core": "^14.0",
+                "typo3/cms-fluid": "^14.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpat/phpat": "^0.12.2",
+                "phpstan/phpstan": "^2.0",
+                "phpstan/phpstan-strict-rules": "^2.0",
+                "phpunit/phpunit": "^11.0",
+                "typo3/testing-framework": "^9.0"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "records_list_types"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webconsulting\\RecordsListTypes\\": "Classes/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Webconsulting\\RecordsListTypes\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Webconsulting",
+                    "email": "office@webconsulting.at"
+                }
+            ],
+            "description": "Multiple list view types for TYPO3 v14 Records module - grid, compact, teaser layouts with thumbnails",
+            "time": "2026-04-02T05:49:34+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "2.1.6",
             "source": {
@@ -8302,14 +8359,15 @@
         "typo3/cms-viewpage": 20,
         "typo3/cms-webhooks": 20,
         "typo3/cms-workspaces": 20,
-        "typo3/theme-camino": 20
+        "typo3/theme-camino": 20,
+        "webconsulting/records-list-types": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
     "platform-overrides": {
-        "php": "8.2.0"
+        "php": "8.3.0"
     },
     "plugin-api-version": "2.9.0"
 }
