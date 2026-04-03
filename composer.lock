@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3453cd2fe0e03eefd3d6e3c75385b9b",
+    "content-hash": "c9d46f1ab03ff97c2069720c22d5cd77",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -930,6 +930,111 @@
             "time": "2026-04-02T13:57:09+00:00"
         },
         {
+            "name": "georgringer/news",
+            "version": "14.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "adfd084494ee663f9d83ec99a0cf575a66dba673"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/adfd084494ee663f9d83ec99a0cf575a66dba673",
+                "reference": "adfd084494ee663f9d83ec99a0cf575a66dba673",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 8.2 < 8.6",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "typo3/cms-backend": "^13.4.20 || ^14.0",
+                "typo3/cms-core": "^13.4.20 || ^14.0",
+                "typo3/cms-extbase": "^13.4.20 || ^14.0",
+                "typo3/cms-fluid": "^13.4.20 || ^14.0",
+                "typo3/cms-frontend": "^13.4.20 || ^14.0",
+                "typo3/cms-install": "^13.4.20 || ^14.0"
+            },
+            "conflict": {
+                "sebastian/recursion-context": "6.0.0 || 6.0.1 || 6.0.2"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "a9f/typo3-fractor": "@dev",
+                "friendsofphp/php-cs-fixer": "^3.89.2",
+                "phpstan/phpdoc-parser": "^1.33.0",
+                "phpunit/phpunit": "^10.5.58",
+                "ssch/typo3-rector": "^3.7",
+                "typo3/cms-seo": "^13.4.20 || ^14.0",
+                "typo3/coding-standards": "^0.8.0",
+                "typo3/testing-framework": "^8.3.1",
+                "webmozart/assert": "^1.12.1"
+            },
+            "suggest": {
+                "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
+                "georgringer/numbered-pagination": "Improved pagination API",
+                "reelworx/rx-shariff": "GDPR compliant social sharing",
+                "typo3/cms-scheduler": "XML and ICS import",
+                "typo3/cms-seo": "Sitemaps"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "news"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "News system - Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+            "homepage": "https://extensions.typo3.org/extension/news",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/",
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2025-12-10T09:15:23+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "7.10.0",
             "source": {
@@ -1257,18 +1362,41 @@
         },
         {
             "name": "hn/typo3-mcp-server",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
                 "reference": "917010c0632aea15dbd9b3869393a5f8fab71668"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/917010c0632aea15dbd9b3869393a5f8fab71668",
+                "reference": "917010c0632aea15dbd9b3869393a5f8fab71668",
+                "shasum": ""
+            },
             "require": {
                 "logiscape/mcp-sdk-php": "^1.2",
                 "php": ">=8.2.0",
+                "typo3/cms-backend": "^14.0",
                 "typo3/cms-core": "^14.0",
                 "typo3/cms-workspaces": "^14.0"
             },
+            "require-dev": {
+                "a9f/typo3-fractor": "^0.4",
+                "brianium/paratest": "^7.8.5",
+                "friendsofphp/php-cs-fixer": "^3.94",
+                "georgringer/news": "^14.0",
+                "phpat/phpat": "^0.12.3",
+                "phpstan/phpstan": "^2.1",
+                "ssch/typo3-rector": "^3.0",
+                "typo3/cms-extbase": "^14.0",
+                "typo3/cms-fluid": "^14.0",
+                "typo3/cms-frontend": "^14.0",
+                "typo3/cms-install": "^14.0",
+                "typo3/coding-standards": "dev-main",
+                "typo3/testing-framework": "^9.4"
+            },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
@@ -1279,7 +1407,72 @@
                 "psr-4": {
                     "Hn\\McpServer\\": "Classes/"
                 }
-            }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Hn\\McpServer\\Tests\\": "Tests/"
+                }
+            },
+            "scripts": {
+                "setup": [
+                    "bash Build/setup-typo3.sh"
+                ],
+                "post-install-cmd": [
+                    "@setup"
+                ],
+                "post-update-cmd": [
+                    "@setup"
+                ],
+                "test": [
+                    "@test:unit",
+                    "@test:functional"
+                ],
+                "test:unit": [
+                    "phpunit -c Tests/UnitTests.xml"
+                ],
+                "test:functional": [
+                    "paratest -c phpunit.xml.dist"
+                ],
+                "test:llm": [
+                    "paratest -c Tests/Llm/phpunit-llm.xml"
+                ],
+                "docs:check": [
+                    "docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --no-progress --fail-on-log"
+                ],
+                "phpstan": [
+                    "phpstan analyse --no-progress"
+                ],
+                "php-cs-fixer": [
+                    "php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff"
+                ],
+                "php-cs-fixer:fix": [
+                    "php-cs-fixer fix --config=.php-cs-fixer.dist.php"
+                ],
+                "rector": [
+                    "rector process --dry-run"
+                ],
+                "rector:fix": [
+                    "rector process"
+                ],
+                "fractor": [
+                    "fractor process --dry-run"
+                ],
+                "fractor:fix": [
+                    "fractor process"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pfeiffer",
+                    "email": "marco@hauptsache.net"
+                }
+            ],
+            "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
+            "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
+            "time": "2026-03-29T13:31:41+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -5525,20 +5718,119 @@
                 "url": "https://github.com/dirnbauer/blog.git",
                 "reference": "3672372988372b68fcc52168b08d837701cba6f4"
             },
-            "require": {
-                "typo3/cms-core": "^13.4.15 || 14.*.*@dev"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/3672372988372b68fcc52168b08d837701cba6f4",
+                "reference": "3672372988372b68fcc52168b08d837701cba6f4",
+                "shasum": ""
             },
+            "require": {
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "php": "^8.2",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.1 || ^2.0",
+                "typo3/cms-backend": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-core": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-extbase": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-extensionmanager": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-fluid": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-form": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-frontend": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-install": "^13.4.15 || 14.*.*@dev"
+            },
+            "require-dev": {
+                "bk2k/bootstrap-package": "^15.0 || 16.*.*@dev",
+                "bk2k/extension-helper": "^2.0",
+                "friendsofphp/php-cs-fixer": "^3.75",
+                "overtrue/phplint": "^9.6",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpstan/phpstan-strict-rules": "^2.0",
+                "typo3/cms-belog": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-beuser": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-filelist": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-fluid-styled-content": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-lowlevel": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-rte-ckeditor": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-seo": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-setup": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-tstemplate": "^13.4.15 || 14.*.*@dev",
+                "typo3/cms-workspaces": "^13.4.15 || 14.*.*@dev",
+                "typo3/testing-framework": "^9.0.0 || dev-main"
+            },
+            "suggest": {
+                "bk2k/bootstrap-package": "Theme for TYPO3",
+                "typo3/cms-fluid-styled-content": "Content rendering definition based on fluid"
+            },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "14.0.x-dev"
+                },
                 "typo3/cms": {
-                    "extension-key": "blog"
+                    "extension-key": "blog",
+                    "web-dir": ".build/public"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "T3G\\AgencyPack\\Blog\\": "Classes/"
                 }
-            }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "T3G\\AgencyPack\\Blog\\Tests\\": "Tests/"
+                }
+            },
+            "scripts": {
+                "test:php:lint": [
+                    "phplint"
+                ],
+                "test:php:unit": [
+                    "phpunit -c Build/UnitTests.xml"
+                ],
+                "test:php:functional": [
+                    "phpunit -c Build/FunctionalTests.xml"
+                ],
+                "phpstan": [
+                    "phpstan analyze --configuration Build/phpstan.neon"
+                ],
+                "phpstan:baseline": [
+                    "phpstan analyze --configuration Build/phpstan.neon --generate-baseline Build/phpstan-baseline.neon"
+                ],
+                "test": [
+                    "@test:php:lint",
+                    "@phpstan",
+                    "@test:php:unit",
+                    "@test:php:functional"
+                ],
+                "cgl": [
+                    "php-cs-fixer --diff -v fix"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 GmbH",
+                    "role": "Developer",
+                    "homepage": "https://typo3.com/"
+                }
+            ],
+            "description": "This blog extension uses TYPO3s core concepts and elements to provide a full-blown blog that users of TYPO3 can instantly understand and use.",
+            "homepage": "https://extensions.typo3.org/extension/blog/",
+            "support": {
+                "issues": "https://github.com/TYPO3GmbH/blog/issues",
+                "docs": "https://docs.typo3.org/typo3cms/extensions/blog/",
+                "source": "https://github.com/TYPO3GmbH/blog",
+                "slack": "https://typo3.slack.com/archives/t3g-ext-blog"
+            },
+            "time": "2026-03-12T06:38:00+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -5608,12 +5900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/backend.git",
-                "reference": "2b001a503ba643ccbd5d846b6c19401024c14eb6"
+                "reference": "1ccbe36a712eb809703b63678174db45570a60af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/2b001a503ba643ccbd5d846b6c19401024c14eb6",
-                "reference": "2b001a503ba643ccbd5d846b6c19401024c14eb6",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/1ccbe36a712eb809703b63678174db45570a60af",
+                "reference": "1ccbe36a712eb809703b63678174db45570a60af",
                 "shasum": ""
             },
             "require": {
@@ -5687,7 +5979,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-02T10:47:47+00:00"
+            "time": "2026-04-03T04:24:45+00:00"
         },
         {
             "name": "typo3/cms-belog",
@@ -5936,12 +6228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "90c3e745681a7f0b9fb08a5e8e1e6e504897ab72"
+                "reference": "915f3f7fd5802eb73312bb4336254465d18780a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/90c3e745681a7f0b9fb08a5e8e1e6e504897ab72",
-                "reference": "90c3e745681a7f0b9fb08a5e8e1e6e504897ab72",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/915f3f7fd5802eb73312bb4336254465d18780a5",
+                "reference": "915f3f7fd5802eb73312bb4336254465d18780a5",
                 "shasum": ""
             },
             "require": {
@@ -6088,7 +6380,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-02T10:47:47+00:00"
+            "time": "2026-04-02T20:56:35+00:00"
         },
         {
             "name": "typo3/cms-dashboard",

@@ -12,67 +12,30 @@
         "platform": {
             "php": "8.2.0"
         },
+        "use-github-api": false,
+        "preferred-install": {
+            "typo3/*": "source",
+            "hn/typo3-mcp-server": "source",
+            "t3g/blog": "source",
+            "*": "dist"
+        },
         "sort-packages": true
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "hn/typo3-mcp-server",
-                "version": "dev-master",
-                "type": "typo3-cms-extension",
-                "extra": {
-                    "typo3/cms": {
-                        "extension-key": "mcp_server"
-                    }
-                },
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                    "reference": "917010c0632aea15dbd9b3869393a5f8fab71668"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "Hn\\McpServer\\": "Classes/"
-                    }
-                },
-                "require": {
-                    "php": ">=8.2.0",
-                    "logiscape/mcp-sdk-php": "^1.2",
-                    "typo3/cms-core": "^14.0",
-                    "typo3/cms-workspaces": "^14.0"
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/typo3-mcp-server.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "t3g/blog",
-                "version": "dev-master",
-                "type": "typo3-cms-extension",
-                "extra": {
-                    "typo3/cms": {
-                        "extension-key": "blog"
-                    }
-                },
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/dirnbauer/blog.git",
-                    "reference": "3672372988372b68fcc52168b08d837701cba6f4"
-                },
-                "autoload": {
-                    "psr-4": {
-                        "T3G\\AgencyPack\\Blog\\": "Classes/"
-                    }
-                },
-                "require": {
-                    "typo3/cms-core": "^13.4.15 || 14.*.*@dev"
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/blog.git"
         }
     ],
     "extra": {
         "patches": {
+            "typo3/cms-backend": {
+                "Fix Records module page icons for workspace-overlaid page types": "patches/typo3-cms-backend-fix-recordlist-workspace-icons.patch"
+            },
             "typo3/cms-workspaces": {
                 "Fix slider preview height: module-body needs explicit height for grid 1fr to work": "patches/typo3-cms-workspaces-fix-slider-preview-height.patch"
             }
@@ -81,15 +44,20 @@
     "require": {
         "cweagans/composer-patches": "^1.7",
         "friendsoftypo3/visual-editor": "^1.1",
+        "georgringer/news": "^14.0",
+        "hn/typo3-mcp-server": "dev-main",
+        "t3g/blog": "dev-master",
         "typo3/cms-backend": "14.3.x-dev",
         "typo3/cms-belog": "14.3.x-dev",
         "typo3/cms-beuser": "14.3.x-dev",
         "typo3/cms-core": "14.3.x-dev",
         "typo3/cms-dashboard": "14.3.x-dev",
         "typo3/cms-extbase": "14.3.x-dev",
+        "typo3/cms-extensionmanager": "14.3.x-dev",
         "typo3/cms-felogin": "14.3.x-dev",
         "typo3/cms-filelist": "14.3.x-dev",
         "typo3/cms-fluid": "14.3.x-dev",
+        "typo3/cms-fluid-styled-content": "14.3.x-dev",
         "typo3/cms-form": "14.3.x-dev",
         "typo3/cms-frontend": "14.3.x-dev",
         "typo3/cms-impexp": "14.3.x-dev",
@@ -98,6 +66,7 @@
         "typo3/cms-reactions": "14.3.x-dev",
         "typo3/cms-recycler": "14.3.x-dev",
         "typo3/cms-rte-ckeditor": "14.3.x-dev",
+        "typo3/cms-scheduler": "14.3.x-dev",
         "typo3/cms-seo": "14.3.x-dev",
         "typo3/cms-setup": "14.3.x-dev",
         "typo3/cms-sys-note": "14.3.x-dev",
@@ -105,11 +74,6 @@
         "typo3/cms-viewpage": "14.3.x-dev",
         "typo3/cms-webhooks": "14.3.x-dev",
         "typo3/cms-workspaces": "14.3.x-dev",
-        "typo3/cms-scheduler": "14.3.x-dev",
-        "typo3/cms-fluid-styled-content": "14.3.x-dev",
-        "typo3/cms-extensionmanager": "14.3.x-dev",
-        "typo3/theme-camino": "14.3.x-dev",
-        "hn/typo3-mcp-server": "dev-master",
-        "t3g/blog": "dev-master"
+        "typo3/theme-camino": "14.3.x-dev"
     }
 }
