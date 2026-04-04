@@ -7622,12 +7622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/setup.git",
-                "reference": "05608102b07194373e36cf1bc6f04c570680848c"
+                "reference": "6f79a2316a4a4257a37f9fbcb9e48696ec7da1d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/setup/zipball/05608102b07194373e36cf1bc6f04c570680848c",
-                "reference": "05608102b07194373e36cf1bc6f04c570680848c",
+                "url": "https://api.github.com/repos/TYPO3-CMS/setup/zipball/6f79a2316a4a4257a37f9fbcb9e48696ec7da1d0",
+                "reference": "6f79a2316a4a4257a37f9fbcb9e48696ec7da1d0",
                 "shasum": ""
             },
             "require": {
@@ -7682,7 +7682,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-03-31T15:07:00+00:00"
+            "time": "2026-04-03T08:16:59+00:00"
         },
         {
             "name": "typo3/cms-sys-note",
@@ -8212,12 +8212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "294693f4f68c4ab0d0d5fec7e50fb0ea33b9269e"
+                "reference": "5c5652fff0ceee3be374fb595b26c24562b2653f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/294693f4f68c4ab0d0d5fec7e50fb0ea33b9269e",
-                "reference": "294693f4f68c4ab0d0d5fec7e50fb0ea33b9269e",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/5c5652fff0ceee3be374fb595b26c24562b2653f",
+                "reference": "5c5652fff0ceee3be374fb595b26c24562b2653f",
                 "shasum": ""
             },
             "require": {
@@ -8261,7 +8261,7 @@
                 }
             ],
             "description": "Multiple list view types for TYPO3 v14 Records module - grid, compact, teaser layouts with thumbnails",
-            "time": "2026-04-02T05:49:34+00:00"
+            "time": "2026-04-03T12:11:36+00:00"
         },
         {
             "name": "webmozart/assert",
