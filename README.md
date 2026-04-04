@@ -2,6 +2,11 @@
 
 [What is the Visual Editor?](https://github.com/andersundsehr/visual_editor)
 
+This demo now also includes:
+
+- `supseven/inline-page-module` for TYPO3 14 inline `news` content elements
+- `dirnbauer/visual-editor-news-addon`, which connects `news`, `inline_page_module`, and `visual_editor`
+
 ## Prerequisites
 
 - [ddev](https://ddev.com/)

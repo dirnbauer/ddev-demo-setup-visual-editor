@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e4e026f4256c9ab6a82047a61dce830",
+    "content-hash": "8864aa56337ef5bb157973337728addd",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -294,6 +294,42 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.7"
             },
             "time": "2025-09-16T12:23:56+00:00"
+        },
+        {
+            "name": "dirnbauer/visual-editor-news-addon",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/visual-editor-news-addon.git",
+                "reference": "f98ac19071b1a73b77b176b0a2dc2d85798a0130"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/visual-editor-news-addon/zipball/f98ac19071b1a73b77b176b0a2dc2d85798a0130",
+                "reference": "f98ac19071b1a73b77b176b0a2dc2d85798a0130",
+                "shasum": ""
+            },
+            "require": {
+                "friendsoftypo3/visual-editor": "^1.1",
+                "georgringer/news": "^14.0",
+                "php": "^8.2",
+                "supseven/inline-page-module": "^4.0",
+                "typo3/cms-backend": "^14.1",
+                "typo3/cms-core": "^14.1",
+                "typo3/cms-fluid": "^14.1"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "visual_editor_news_addon"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "TYPO3 14 addon for using visual_editor with news content elements",
+            "time": "2026-04-04T11:38:27+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -2498,6 +2534,49 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "supseven/inline-page-module",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/supseven-at/inline-page-module.git",
+                "reference": "f6e5fbc1d68a4cf83430d86f00d84179f031c44f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/supseven-at/inline-page-module/zipball/f6e5fbc1d68a4cf83430d86f00d84179f031c44f",
+                "reference": "f6e5fbc1d68a4cf83430d86f00d84179f031c44f",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-backend": "^14.1",
+                "typo3/cms-core": "^14.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.14.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "inline_page_module"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Supseven\\InlinePageModule\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "description": "Edit inline tt_content records in a page module view",
+            "support": {
+                "issues": "https://github.com/supseven-at/inline-page-module/issues",
+                "source": "https://github.com/supseven-at/inline-page-module/tree/v4.0.0"
+            },
+            "time": "2026-02-25T14:41:24+00:00"
         },
         {
             "name": "symfony/cache",
@@ -5900,12 +5979,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/backend.git",
-                "reference": "1ccbe36a712eb809703b63678174db45570a60af"
+                "reference": "0e291b6446ce5bda3cd0fbff9d80c4a177a3529a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/1ccbe36a712eb809703b63678174db45570a60af",
-                "reference": "1ccbe36a712eb809703b63678174db45570a60af",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/0e291b6446ce5bda3cd0fbff9d80c4a177a3529a",
+                "reference": "0e291b6446ce5bda3cd0fbff9d80c4a177a3529a",
                 "shasum": ""
             },
             "require": {
@@ -5979,7 +6058,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-03T04:24:45+00:00"
+            "time": "2026-04-03T16:50:15+00:00"
         },
         {
             "name": "typo3/cms-belog",
@@ -8212,12 +8291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "5c5652fff0ceee3be374fb595b26c24562b2653f"
+                "reference": "8a0aee112d105f01119862c0b54376a5687f3c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/5c5652fff0ceee3be374fb595b26c24562b2653f",
-                "reference": "5c5652fff0ceee3be374fb595b26c24562b2653f",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/8a0aee112d105f01119862c0b54376a5687f3c90",
+                "reference": "8a0aee112d105f01119862c0b54376a5687f3c90",
                 "shasum": ""
             },
             "require": {
@@ -8261,7 +8340,7 @@
                 }
             ],
             "description": "Multiple list view types for TYPO3 v14 Records module - grid, compact, teaser layouts with thumbnails",
-            "time": "2026-04-03T12:11:36+00:00"
+            "time": "2026-04-03T13:56:03+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -8330,6 +8409,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "dirnbauer/visual-editor-news-addon": 20,
         "hn/typo3-mcp-server": 20,
         "t3g/blog": 20,
         "typo3/cms-backend": 20,
