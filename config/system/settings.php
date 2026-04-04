@@ -43,6 +43,9 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'inline_page_module' => [
+            'listAllContentElements' => '0',
+        ],
         'mcp_server' => [
             'allowMcpTokenInQueryString' => '0',
             'enableMcpAuthHeaderDiagnostic' => '1',
