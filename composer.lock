@@ -5795,12 +5795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/blog.git",
-                "reference": "3672372988372b68fcc52168b08d837701cba6f4"
+                "reference": "6665278e2fea5fae79f0feee8d414d5f42109123"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/3672372988372b68fcc52168b08d837701cba6f4",
-                "reference": "3672372988372b68fcc52168b08d837701cba6f4",
+                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/6665278e2fea5fae79f0feee8d414d5f42109123",
+                "reference": "6665278e2fea5fae79f0feee8d414d5f42109123",
                 "shasum": ""
             },
             "require": {
@@ -5909,7 +5909,7 @@
                 "source": "https://github.com/TYPO3GmbH/blog",
                 "slack": "https://typo3.slack.com/archives/t3g-ext-blog"
             },
-            "time": "2026-03-12T06:38:00+00:00"
+            "time": "2026-04-04T14:24:46+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
