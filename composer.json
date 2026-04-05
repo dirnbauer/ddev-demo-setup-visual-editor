@@ -38,10 +38,25 @@
         {
             "type": "vcs",
             "url": "https://github.com/dirnbauer/visual-editor-news-addon.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/shadcn2fluid-templates.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/typo3-x402-paywall.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/typo3-capability-manifest.git"
         }
     ],
     "extra": {
         "patches": {
+            "friendsoftypo3/visual-editor": {
+                "Fix TYPO3 14 content area closures in deprecated mark.contentArea ViewHelper": "patches/friendsoftypo3-visual-editor-fix-content-area-closure.patch"
+            },
             "typo3/cms-backend": {
                 "Fix Records module page icons for workspace-overlaid page types": "patches/typo3-cms-backend-fix-recordlist-workspace-icons.patch"
             },
@@ -86,6 +101,9 @@
         "typo3/cms-webhooks": "14.3.x-dev",
         "typo3/cms-workspaces": "14.3.x-dev",
         "typo3/theme-camino": "14.3.x-dev",
-        "webconsulting/records-list-types": "dev-main"
+        "webconsulting/records-list-types": "dev-main",
+        "webconsulting/shadcn2fluid-templates": "dev-main",
+        "webconsulting/typo3-capability-manifest": "dev-main",
+        "webconsulting/typo3-x402-paywall": "dev-main"
     }
 }
