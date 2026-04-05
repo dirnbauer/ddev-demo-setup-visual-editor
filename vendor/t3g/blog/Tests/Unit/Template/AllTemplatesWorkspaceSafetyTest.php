@@ -76,7 +76,7 @@ final class AllTemplatesWorkspaceSafetyTest extends TestCase
 
     #[Test]
     #[DataProvider('allFluidTemplateProvider')]
-    public function templateDoesNotUseDeprecatedContentListOptionsViewHelper(string $path): void
+    public function templateDoesNotUseLegacySyntheticContentHelper(string $path): void
     {
         $content = file_get_contents($path);
         self::assertNotFalse($content);
@@ -84,7 +84,7 @@ final class AllTemplatesWorkspaceSafetyTest extends TestCase
         self::assertStringNotContainsString(
             'contentListOptions',
             $content,
-            'Must not use ContentListOptionsViewHelper — synthetic records '
+            'Must not use the removed synthetic content helper — synthetic records '
             . 'miss workspace system fields (t3ver_wsid, t3ver_oid, t3ver_state).'
         );
     }
@@ -99,8 +99,8 @@ final class AllTemplatesWorkspaceSafetyTest extends TestCase
         self::assertStringNotContainsString(
             'contentObjectData',
             $content,
-            'Must not reference {contentObjectData} — this variable was populated '
-            . 'by the deprecated ContentListOptionsViewHelper with fake UIDs.'
+            'Must not reference {contentObjectData} — this variable belonged to the '
+            . 'removed synthetic content rendering path.'
         );
     }
 
@@ -128,12 +128,12 @@ final class AllTemplatesWorkspaceSafetyTest extends TestCase
         $content = file_get_contents($path);
         self::assertNotFalse($content);
 
-        // The LISTTYPE_TO_FAKE_UID_MAPPING constants use negative UIDs (-1600000xxx).
-        // These should never appear directly in templates.
+        // Legacy synthetic-content rendering used negative fake UIDs. These
+        // should never appear directly in templates.
         self::assertDoesNotMatchRegularExpression(
             '/-16000000\d{2}/',
             $content,
-            'Templates must not contain hardcoded fake UID values from Constants::LISTTYPE_TO_FAKE_UID_MAPPING.'
+            'Templates must not contain hardcoded legacy fake UID values.'
         );
     }
 
