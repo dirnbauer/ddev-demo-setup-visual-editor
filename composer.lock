@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f671e09bbb9e86b464174700ff8101a2",
+    "content-hash": "f2184add5ae217ca35da2ad05cff7da4",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -8632,12 +8632,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/shadcn2fluid-templates.git",
-                "reference": "31fc811908eb4ea1ea034160295542883b9dbad4"
+                "reference": "33ae4da87d9383a3ffce527f03589a55b75d5030"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/31fc811908eb4ea1ea034160295542883b9dbad4",
-                "reference": "31fc811908eb4ea1ea034160295542883b9dbad4",
+                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/33ae4da87d9383a3ffce527f03589a55b75d5030",
+                "reference": "33ae4da87d9383a3ffce527f03589a55b75d5030",
                 "shasum": ""
             },
             "require": {
@@ -8689,7 +8689,166 @@
                 }
             ],
             "description": "shadcn/ui-inspired Fluid 5 component library and 250 content elements for TYPO3 14",
-            "time": "2026-04-04T17:22:10+00:00"
+            "time": "2026-04-04T22:04:21+00:00"
+        },
+        {
+            "name": "webconsulting/typo3-capability-manifest",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/typo3-capability-manifest.git",
+                "reference": "ac6447c1c3507ce78c033a5688f311720dc6c564"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-capability-manifest/zipball/ac6447c1c3507ce78c033a5688f311720dc6c564",
+                "reference": "ac6447c1c3507ce78c033a5688f311720dc6c564",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^5.0",
+                "php": "^8.2",
+                "symfony/console": "^6.4 || ^7.0",
+                "symfony/finder": "^6.4 || ^7.0",
+                "symfony/yaml": "^6.4 || ^7.0",
+                "typo3/cms-core": "^13.4 || ^14.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^2.0",
+                "phpunit/phpunit": "^11.0"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/capability-audit"
+            ],
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "capability_manifest"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webconsulting\\CapabilityManifest\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Webconsulting\\CapabilityManifest\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ],
+                "analyze": [
+                    "phpstan analyse"
+                ],
+                "fix-cs": [
+                    "php-cs-fixer fix"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kurt Dirnbauer",
+                    "email": "office@webconsulting.at",
+                    "homepage": "https://www.webconsulting.at",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Extension capability manifests for TYPO3 — declare, audit, and enforce what your extensions actually do.",
+            "homepage": "https://github.com/webconsulting-at/typo3-capability-manifest",
+            "keywords": [
+                "audit",
+                "capability",
+                "extension",
+                "manifest",
+                "security",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/webconsulting-at/typo3-capability-manifest/issues",
+                "source": "https://github.com/webconsulting-at/typo3-capability-manifest"
+            },
+            "time": "2026-04-02T08:01:23+00:00"
+        },
+        {
+            "name": "webconsulting/typo3-x402-paywall",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/typo3-x402-paywall.git",
+                "reference": "c354c2d96ea49fca4473a8930c084e4535459328"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-x402-paywall/zipball/c354c2d96ea49fca4473a8930c084e4535459328",
+                "reference": "c354c2d96ea49fca4473a8930c084e4535459328",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0",
+                "php": "^8.2",
+                "psr/http-message": "^2.0",
+                "psr/http-server-middleware": "^1.0",
+                "typo3/cms-core": "^13.4 || ^14.0",
+                "typo3/cms-frontend": "^13.4 || ^14.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^2.0",
+                "phpunit/phpunit": "^11.0"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "x402_paywall"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webconsulting\\X402Paywall\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Webconsulting\\X402Paywall\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kurt Dirnbauer",
+                    "email": "office@webconsulting.at",
+                    "homepage": "https://www.webconsulting.at",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "x402 payment protocol for TYPO3 — charge AI agents and users for content access via HTTP 402.",
+            "homepage": "https://github.com/dirnbauer/typo3-x402-paywall",
+            "keywords": [
+                "ai-agent",
+                "micropayment",
+                "monetization",
+                "payment",
+                "paywall",
+                "stablecoin",
+                "typo3",
+                "usdc",
+                "x402"
+            ],
+            "support": {
+                "issues": "https://github.com/dirnbauer/typo3-x402-paywall/issues",
+                "source": "https://github.com/dirnbauer/typo3-x402-paywall"
+            },
+            "time": "2026-04-05T08:20:19+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -8790,7 +8949,9 @@
         "typo3/cms-workspaces": 20,
         "typo3/theme-camino": 20,
         "webconsulting/records-list-types": 20,
-        "webconsulting/shadcn2fluid-templates": 20
+        "webconsulting/shadcn2fluid-templates": 20,
+        "webconsulting/typo3-capability-manifest": 20,
+        "webconsulting/typo3-x402-paywall": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
