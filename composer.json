@@ -66,9 +66,6 @@
             },
             "typo3/cms-workspaces": {
                 "Fix slider preview height: module-body needs explicit height for grid 1fr to work": "patches/typo3-cms-workspaces-fix-slider-preview-height.patch"
-            },
-            "t3g/blog": {
-                "Fix invalid SVG XML comment in backend module icon": "patches/t3g-blog-fix-invalid-svg-comment.patch"
             }
         }
     },
