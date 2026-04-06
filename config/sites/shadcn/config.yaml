@@ -1,8 +1,9 @@
 base: 'https://ddev-demo-setup-visual-editor.ddev.site/shadcn'
 dependencies:
-  - typo3/fluid-styled-content
+  - webconsulting/desiderio
   - webconsulting/shadcn2fluid-templates
   - georgringer/news
+  - webconsulting/desiderio-template2
 languages:
   -
     title: English
@@ -21,31 +22,38 @@ routeEnhancers:
     extension: News
     plugin: Pi1
     routes:
-      - routePath: '/'
+      -
+        routePath: /
         _controller: 'News::list'
-      - routePath: '/page-{page}'
+      -
+        routePath: '/page-{page}'
         _controller: 'News::list'
         _arguments:
           page: currentPage
-      - routePath: '/category/{category-name}/page-{page}'
+      -
+        routePath: '/category/{category-name}/page-{page}'
         _controller: 'News::list'
         _arguments:
           category-name: overwriteDemand/categories
           page: currentPage
-      - routePath: '/category/{category-name}'
+      -
+        routePath: '/category/{category-name}'
         _controller: 'News::list'
         _arguments:
           category-name: overwriteDemand/categories
-      - routePath: '/tag/{tag-name}/page-{page}'
+      -
+        routePath: '/tag/{tag-name}/page-{page}'
         _controller: 'News::list'
         _arguments:
           tag-name: overwriteDemand/tags
           page: currentPage
-      - routePath: '/tag/{tag-name}'
+      -
+        routePath: '/tag/{tag-name}'
         _controller: 'News::list'
         _arguments:
           tag-name: overwriteDemand/tags
-      - routePath: '/article/{news-title}'
+      -
+        routePath: '/article/{news-title}'
         _controller: 'News::detail'
         _arguments:
           news-title: news
