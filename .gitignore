@@ -12,3 +12,6 @@ nbproject
 !/public/fileadmin/user_upload
 /public/fileadmin/user_upload/_temp_
 !/public/.htaccess
+node_modules/*
+.cursor
+scripts/*
