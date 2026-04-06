@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2184add5ae217ca35da2ad05cff7da4",
+    "content-hash": "3a61395ae79420bc3d4435c00adef5e6",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6079,12 +6079,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/blog.git",
-                "reference": "6665278e2fea5fae79f0feee8d414d5f42109123"
+                "reference": "a749d7e3acc4f66e4ec609a4ddd04612f8933ba3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/6665278e2fea5fae79f0feee8d414d5f42109123",
-                "reference": "6665278e2fea5fae79f0feee8d414d5f42109123",
+                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/a749d7e3acc4f66e4ec609a4ddd04612f8933ba3",
+                "reference": "a749d7e3acc4f66e4ec609a4ddd04612f8933ba3",
                 "shasum": ""
             },
             "require": {
@@ -6193,7 +6193,7 @@
                 "source": "https://github.com/TYPO3GmbH/blog",
                 "slack": "https://typo3.slack.com/archives/t3g-ext-blog"
             },
-            "time": "2026-04-04T14:24:46+00:00"
+            "time": "2026-04-06T04:12:05+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -8570,6 +8570,54 @@
             "time": "2026-03-11T11:10:11+00:00"
         },
         {
+            "name": "webconsulting/desiderio",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/desiderio.git",
+                "reference": "c4f10330c31ac45acdaf26121fe86a101cd1ae8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/c4f10330c31ac45acdaf26121fe86a101cd1ae8f",
+                "reference": "c4f10330c31ac45acdaf26121fe86a101cd1ae8f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2",
+                "typo3/cms-core": "^14.3@dev",
+                "typo3/cms-fluid": "^14.3@dev",
+                "webconsulting/shadcn2fluid-templates": "^3.0"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "desiderio"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webconsulting\\Desiderio\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "webconsulting studio"
+                },
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Original Camino theme developers"
+                }
+            ],
+            "description": "Desiderio — Camino-inspired TYPO3 v14 theme built on shadcn2fluid components.",
+            "time": "2026-04-05T19:35:13+00:00"
+        },
+        {
             "name": "webconsulting/records-list-types",
             "version": "dev-main",
             "source": {
@@ -8914,7 +8962,14 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "webconsulting/shadcn2fluid-templates",
+            "version": "dev-main",
+            "alias": "3.0.0",
+            "alias_normalized": "3.0.0.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "dirnbauer/visual-editor-news-addon": 20,
@@ -8948,6 +9003,7 @@
         "typo3/cms-webhooks": 20,
         "typo3/cms-workspaces": 20,
         "typo3/theme-camino": 20,
+        "webconsulting/desiderio": 20,
         "webconsulting/records-list-types": 20,
         "webconsulting/shadcn2fluid-templates": 20,
         "webconsulting/typo3-capability-manifest": 20,
