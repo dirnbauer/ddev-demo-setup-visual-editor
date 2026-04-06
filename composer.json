@@ -72,7 +72,6 @@
     "require": {
         "cweagans/composer-patches": "^1.7",
         "dirnbauer/visual-editor-news-addon": "dev-main",
-        "webconsulting/desiderio": "dev-main",
         "friendsoftypo3/visual-editor": "^1.1",
         "georgringer/news": "^14.0",
         "hn/typo3-mcp-server": "dev-main",
@@ -106,6 +105,8 @@
         "typo3/cms-webhooks": "14.3.x-dev",
         "typo3/cms-workspaces": "14.3.x-dev",
         "typo3/theme-camino": "14.3.x-dev",
+        "wapplersystems/multisite-belogin": "^14.1",
+        "webconsulting/desiderio": "dev-main",
         "webconsulting/records-list-types": "dev-main",
         "webconsulting/shadcn2fluid-templates": "dev-main as 3.0.0",
         "webconsulting/typo3-capability-manifest": "dev-main",

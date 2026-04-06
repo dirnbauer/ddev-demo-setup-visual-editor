@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a61395ae79420bc3d4435c00adef5e6",
+    "content-hash": "b81eddb35feed6e7f2a61cc2db553535",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1496,12 +1496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "aa935dd6d379417bfa7f206ca6d62820d057a406"
+                "reference": "0837d715d5df61dadbde9edb03de224fc1dee83e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/aa935dd6d379417bfa7f206ca6d62820d057a406",
-                "reference": "aa935dd6d379417bfa7f206ca6d62820d057a406",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/0837d715d5df61dadbde9edb03de224fc1dee83e",
+                "reference": "0837d715d5df61dadbde9edb03de224fc1dee83e",
                 "shasum": ""
             },
             "require": {
@@ -1589,6 +1589,9 @@
                 ],
                 "fractor:fix": [
                     "fractor process"
+                ],
+                "build:ter": [
+                    "bash Build/build-ter.sh"
                 ]
             },
             "license": [
@@ -1602,7 +1605,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-05T15:20:33+00:00"
+            "time": "2026-04-06T16:50:07+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -6079,12 +6082,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/blog.git",
-                "reference": "ea2c9736270be242e56ece8dccf508d63523dacf"
+                "reference": "75f7ad6d4464e5d49cd5eaf7f9a07809d2202ab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/ea2c9736270be242e56ece8dccf508d63523dacf",
-                "reference": "ea2c9736270be242e56ece8dccf508d63523dacf",
+                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/75f7ad6d4464e5d49cd5eaf7f9a07809d2202ab9",
+                "reference": "75f7ad6d4464e5d49cd5eaf7f9a07809d2202ab9",
                 "shasum": ""
             },
             "require": {
@@ -6193,7 +6196,7 @@
                 "source": "https://github.com/TYPO3GmbH/blog",
                 "slack": "https://typo3.slack.com/archives/t3g-ext-blog"
             },
-            "time": "2026-04-06T04:39:43+00:00"
+            "time": "2026-04-06T16:30:09+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -7559,12 +7562,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/install.git",
-                "reference": "181ab089231fe9c234bfb707595c4abe263b16c6"
+                "reference": "92e9e2eb667eaa44e264ab59c1ce652d01b26206"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/install/zipball/181ab089231fe9c234bfb707595c4abe263b16c6",
-                "reference": "181ab089231fe9c234bfb707595c4abe263b16c6",
+                "url": "https://api.github.com/repos/TYPO3-CMS/install/zipball/92e9e2eb667eaa44e264ab59c1ce652d01b26206",
+                "reference": "92e9e2eb667eaa44e264ab59c1ce652d01b26206",
                 "shasum": ""
             },
             "require": {
@@ -7629,7 +7632,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-02T11:40:58+00:00"
+            "time": "2026-04-06T08:39:36+00:00"
         },
         {
             "name": "typo3/cms-reactions",
@@ -8570,17 +8573,65 @@
             "time": "2026-03-11T11:10:11+00:00"
         },
         {
+            "name": "wapplersystems/multisite-belogin",
+            "version": "14.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WapplerSystems/t3-multisite_belogin.git",
+                "reference": "86a155fe2144a08baa6006766192eaeffcb20568"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WapplerSystems/t3-multisite_belogin/zipball/86a155fe2144a08baa6006766192eaeffcb20568",
+                "reference": "86a155fe2144a08baa6006766192eaeffcb20568",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^14.0.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "multisite_belogin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WapplerSystems\\MultisiteBelogin\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Cross site/domain backend login for TYPO3. It allows backend users to work in the frontend across domains.",
+            "homepage": "https://wappler.systems",
+            "keywords": [
+                "backend",
+                "cross domain",
+                "extension",
+                "login",
+                "multisite",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/WapplerSystems/t3-multisite_belogin/issues",
+                "source": "https://github.com/WapplerSystems/t3-multisite_belogin/tree/14.1.0"
+            },
+            "time": "2026-02-22T15:32:44+00:00"
+        },
+        {
             "name": "webconsulting/desiderio",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/desiderio.git",
-                "reference": "c4f10330c31ac45acdaf26121fe86a101cd1ae8f"
+                "reference": "08f097180ad8ee712dba1d16cd61d4af93fac611"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/c4f10330c31ac45acdaf26121fe86a101cd1ae8f",
-                "reference": "c4f10330c31ac45acdaf26121fe86a101cd1ae8f",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/08f097180ad8ee712dba1d16cd61d4af93fac611",
+                "reference": "08f097180ad8ee712dba1d16cd61d4af93fac611",
                 "shasum": ""
             },
             "require": {
@@ -8615,7 +8666,7 @@
                 }
             ],
             "description": "Desiderio — Camino-inspired TYPO3 v14 theme built on shadcn2fluid components.",
-            "time": "2026-04-05T19:35:13+00:00"
+            "time": "2026-04-06T17:26:54+00:00"
         },
         {
             "name": "webconsulting/records-list-types",
@@ -8680,12 +8731,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/shadcn2fluid-templates.git",
-                "reference": "33ae4da87d9383a3ffce527f03589a55b75d5030"
+                "reference": "ae3a78e6c792c92ab1a20dc47c4d084cd29ed2a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/33ae4da87d9383a3ffce527f03589a55b75d5030",
-                "reference": "33ae4da87d9383a3ffce527f03589a55b75d5030",
+                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/ae3a78e6c792c92ab1a20dc47c4d084cd29ed2a8",
+                "reference": "ae3a78e6c792c92ab1a20dc47c4d084cd29ed2a8",
                 "shasum": ""
             },
             "require": {
@@ -8701,6 +8752,7 @@
                 "typo3/testing-framework": "^9.0"
             },
             "suggest": {
+                "friendsoftypo3/visual-editor": "Optional. Inline visual editing when templates use f:render.text for text fields (Content Blocks expose {data} as a Record).",
                 "typo3/cms-workspaces": "Recommended to stage and preview content elements in TYPO3 workspaces."
             },
             "default-branch": true,
@@ -8737,7 +8789,7 @@
                 }
             ],
             "description": "shadcn/ui-inspired Fluid 5 component library and 250 content elements for TYPO3 14",
-            "time": "2026-04-04T22:04:21+00:00"
+            "time": "2026-04-06T17:31:01+00:00"
         },
         {
             "name": "webconsulting/typo3-capability-manifest",
@@ -8745,12 +8797,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-capability-manifest.git",
-                "reference": "ac6447c1c3507ce78c033a5688f311720dc6c564"
+                "reference": "01325f068110f3f7fc3e725c73c4bb0ce4df36b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-capability-manifest/zipball/ac6447c1c3507ce78c033a5688f311720dc6c564",
-                "reference": "ac6447c1c3507ce78c033a5688f311720dc6c564",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-capability-manifest/zipball/01325f068110f3f7fc3e725c73c4bb0ce4df36b4",
+                "reference": "01325f068110f3f7fc3e725c73c4bb0ce4df36b4",
                 "shasum": ""
             },
             "require": {
@@ -8822,7 +8874,7 @@
                 "issues": "https://github.com/webconsulting-at/typo3-capability-manifest/issues",
                 "source": "https://github.com/webconsulting-at/typo3-capability-manifest"
             },
-            "time": "2026-04-02T08:01:23+00:00"
+            "time": "2026-04-06T15:05:58+00:00"
         },
         {
             "name": "webconsulting/typo3-x402-paywall",
@@ -8830,12 +8882,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-x402-paywall.git",
-                "reference": "d8ee316f6d3125e44140ef108b9f39ebd9892152"
+                "reference": "553702550d44f61d069687224e8b4f05151528de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-x402-paywall/zipball/d8ee316f6d3125e44140ef108b9f39ebd9892152",
-                "reference": "d8ee316f6d3125e44140ef108b9f39ebd9892152",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-x402-paywall/zipball/553702550d44f61d069687224e8b4f05151528de",
+                "reference": "553702550d44f61d069687224e8b4f05151528de",
                 "shasum": ""
             },
             "require": {
@@ -8896,7 +8948,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-x402-paywall/issues",
                 "source": "https://github.com/dirnbauer/typo3-x402-paywall"
             },
-            "time": "2026-04-05T13:41:42+00:00"
+            "time": "2026-04-06T15:05:57+00:00"
         },
         {
             "name": "webmozart/assert",
