@@ -8731,12 +8731,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/shadcn2fluid-templates.git",
-                "reference": "ae3a78e6c792c92ab1a20dc47c4d084cd29ed2a8"
+                "reference": "a2de5abbd2bb7251d13719d4fdbf9080b62aaca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/ae3a78e6c792c92ab1a20dc47c4d084cd29ed2a8",
-                "reference": "ae3a78e6c792c92ab1a20dc47c4d084cd29ed2a8",
+                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/a2de5abbd2bb7251d13719d4fdbf9080b62aaca5",
+                "reference": "a2de5abbd2bb7251d13719d4fdbf9080b62aaca5",
                 "shasum": ""
             },
             "require": {
@@ -8789,7 +8789,7 @@
                 }
             ],
             "description": "shadcn/ui-inspired Fluid 5 component library and 250 content elements for TYPO3 14",
-            "time": "2026-04-06T17:31:01+00:00"
+            "time": "2026-04-06T20:29:38+00:00"
         },
         {
             "name": "webconsulting/typo3-capability-manifest",
