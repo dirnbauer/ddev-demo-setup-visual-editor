@@ -54,6 +54,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/dirnbauer/typo3-capability-manifest.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:dirnbauer/workos.git"
         }
     ],
     "extra": {
@@ -62,10 +66,11 @@
                 "Fix TYPO3 14 content area closures in deprecated mark.contentArea ViewHelper": "patches/friendsoftypo3-visual-editor-fix-content-area-closure.patch"
             },
             "typo3/cms-backend": {
-                "Fix Records module page icons for workspace-overlaid page types": "patches/typo3-cms-backend-fix-recordlist-workspace-icons.patch"
+                "Fix Records module page icons for workspace-overlaid page types": "patches/typo3-cms-backend-fix-recordlist-workspace-icons.patch",
+                "Register BackendViewFactory explicitly for dashboard widget DI": "patches/typo3-cms-backend-register-backend-view-factory.patch"
             },
-            "typo3/cms-workspaces": {
-                "Fix slider preview height: module-body needs explicit height for grid 1fr to work": "patches/typo3-cms-workspaces-fix-slider-preview-height.patch"
+            "t3g/blog": {
+                "Grid main column: min-width 0 + overflow-wrap (avoid clipped text beside sidebar)": "patches/t3g-blog-blogcontainer-main-min-width.patch"
             }
         }
     },
@@ -110,6 +115,7 @@
         "webconsulting/records-list-types": "dev-main",
         "webconsulting/shadcn2fluid-templates": "dev-main as 3.0.0",
         "webconsulting/typo3-capability-manifest": "dev-main",
-        "webconsulting/typo3-x402-paywall": "dev-main"
+        "webconsulting/typo3-x402-paywall": "dev-main",
+        "webconsulting/workos-auth": "0.1.0"
     }
 }
