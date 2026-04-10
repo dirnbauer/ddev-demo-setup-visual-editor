@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a479b73752cb4c7f66500ce0869cd8e",
+    "content-hash": "7bd899a8b0fc6a8133b1c2a6b88bd8d9",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6407,12 +6407,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/blog.git",
-                "reference": "246920ab82fa2330ce983fc42c5ce992130b0050"
+                "reference": "b7f20bf0ce33f826897d1089705a5f05c3b2b956"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/246920ab82fa2330ce983fc42c5ce992130b0050",
-                "reference": "246920ab82fa2330ce983fc42c5ce992130b0050",
+                "url": "https://api.github.com/repos/dirnbauer/blog/zipball/b7f20bf0ce33f826897d1089705a5f05c3b2b956",
+                "reference": "b7f20bf0ce33f826897d1089705a5f05c3b2b956",
                 "shasum": ""
             },
             "require": {
@@ -6521,7 +6521,7 @@
                 "source": "https://github.com/TYPO3GmbH/blog",
                 "slack": "https://typo3.slack.com/archives/t3g-ext-blog"
             },
-            "time": "2026-04-06T21:06:37+00:00"
+            "time": "2026-04-10T20:27:05+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -9000,12 +9000,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "eaf25d0441e24fb39284f516de05ba2ea29f777b"
+                "reference": "dba9012d776704116291582a248a5450698f9ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/eaf25d0441e24fb39284f516de05ba2ea29f777b",
-                "reference": "eaf25d0441e24fb39284f516de05ba2ea29f777b",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/dba9012d776704116291582a248a5450698f9ea7",
+                "reference": "dba9012d776704116291582a248a5450698f9ea7",
                 "shasum": ""
             },
             "require": {
@@ -9049,7 +9049,7 @@
                 }
             ],
             "description": "Multiple list view types for TYPO3 v14 Records module - grid, compact, teaser layouts with thumbnails",
-            "time": "2026-04-10T19:26:37+00:00"
+            "time": "2026-04-10T19:53:55+00:00"
         },
         {
             "name": "webconsulting/shadcn2fluid-templates",
@@ -9278,16 +9278,16 @@
         },
         {
             "name": "webconsulting/workos-auth",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:dirnbauer/workos.git",
-                "reference": "6dbfb80912db346cfd82c54fe99933f02ee2f7dd"
+                "reference": "bf1755033616932e88c590f687f78577e4c2afb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/6dbfb80912db346cfd82c54fe99933f02ee2f7dd",
-                "reference": "6dbfb80912db346cfd82c54fe99933f02ee2f7dd",
+                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/bf1755033616932e88c590f687f78577e4c2afb4",
+                "reference": "bf1755033616932e88c590f687f78577e4c2afb4",
                 "shasum": ""
             },
             "require": {
@@ -9322,7 +9322,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "TYPO3 v14 extension for WorkOS-powered frontend and backend login.",
-            "time": "2026-04-10T20:22:55+00:00"
+            "time": "2026-04-10T20:58:29+00:00"
         },
         {
             "name": "webmozart/assert",

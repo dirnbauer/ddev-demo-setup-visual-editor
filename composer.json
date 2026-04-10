@@ -116,6 +116,6 @@
         "webconsulting/shadcn2fluid-templates": "dev-main as 3.0.0",
         "webconsulting/typo3-capability-manifest": "dev-main",
         "webconsulting/typo3-x402-paywall": "dev-main",
-        "webconsulting/workos-auth": "0.1.0"
+        "webconsulting/workos-auth": "0.1.1"
     }
 }
