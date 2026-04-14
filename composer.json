@@ -68,9 +68,6 @@
             "typo3/cms-backend": {
                 "Fix Records module page icons for workspace-overlaid page types": "patches/typo3-cms-backend-fix-recordlist-workspace-icons.patch",
                 "Register BackendViewFactory explicitly for dashboard widget DI": "patches/typo3-cms-backend-register-backend-view-factory.patch"
-            },
-            "t3g/blog": {
-                "Grid main column: min-width 0 + overflow-wrap (avoid clipped text beside sidebar)": "patches/t3g-blog-blogcontainer-main-min-width.patch"
             }
         }
     },
