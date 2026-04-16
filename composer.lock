@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95f0c602cfe5e61f873af0780ecbd959",
+    "content-hash": "ce8d5f958467a2d3db75d7f62b846bb6",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -995,16 +995,16 @@
         },
         {
             "name": "friendsoftypo3/visual-editor",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/visual_editor.git",
-                "reference": "c539c0d697d959bb5a31041b085ac55a7d1258c4"
+                "reference": "2c2330709c40e989accb5d7a66746af5941859b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/visual_editor/zipball/c539c0d697d959bb5a31041b085ac55a7d1258c4",
-                "reference": "c539c0d697d959bb5a31041b085ac55a7d1258c4",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/visual_editor/zipball/2c2330709c40e989accb5d7a66746af5941859b2",
+                "reference": "2c2330709c40e989accb5d7a66746af5941859b2",
                 "shasum": ""
             },
             "require": {
@@ -1055,9 +1055,74 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfTYPO3/visual_editor/issues",
-                "source": "https://github.com/FriendsOfTYPO3/visual_editor/tree/1.1.3"
+                "source": "https://github.com/FriendsOfTYPO3/visual_editor/tree/1.1.4"
             },
-            "time": "2026-04-09T15:39:50+00:00"
+            "time": "2026-04-16T07:04:11+00:00"
+        },
+        {
+            "name": "georgringer/context-edit-records",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/context_edit_records.git",
+                "reference": "6337d41fe2b0ce3f27e00b3d8e72df4805518703"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/context_edit_records/zipball/6337d41fe2b0ce3f27e00b3d8e72df4805518703",
+                "reference": "6337d41fe2b0ce3f27e00b3d8e72df4805518703",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 8.2",
+                "typo3/cms-backend": "^14.2"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "context_edit_records"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\ContextEditRecords\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Trigger context editing for all record types",
+            "support": {
+                "issues": "https://github.com/georgringer/context_edit_records/issues",
+                "source": "https://github.com/georgringer/context_edit_records/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2026-04-14T08:08:23+00:00"
         },
         {
             "name": "georgringer/news",
@@ -1496,12 +1561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "a45ce8f23eb8910f64584877ec46dcc5e27b1a8c"
+                "reference": "69e2733e9bb13bc15be19d129487c8aab30ab081"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/a45ce8f23eb8910f64584877ec46dcc5e27b1a8c",
-                "reference": "a45ce8f23eb8910f64584877ec46dcc5e27b1a8c",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/69e2733e9bb13bc15be19d129487c8aab30ab081",
+                "reference": "69e2733e9bb13bc15be19d129487c8aab30ab081",
                 "shasum": ""
             },
             "require": {
@@ -1523,6 +1588,7 @@
                 "typo3/cms-fluid": "^14.0",
                 "typo3/cms-frontend": "^14.0",
                 "typo3/cms-install": "^14.0",
+                "typo3/cms-redirects": "^14.0",
                 "typo3/coding-standards": "dev-main",
                 "typo3/testing-framework": "^9.4"
             },
@@ -1570,7 +1636,7 @@
                     "docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --no-progress --fail-on-log"
                 ],
                 "phpstan": [
-                    "phpstan analyse --no-progress"
+                    "phpstan analyse --no-progress --memory-limit=1G"
                 ],
                 "php-cs-fixer": [
                     "php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff"
@@ -1605,7 +1671,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-07T06:33:49+00:00"
+            "time": "2026-04-15T22:48:37+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -4641,7 +4707,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -4700,7 +4766,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4724,7 +4790,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -4782,7 +4848,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4806,7 +4872,7 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -4869,7 +4935,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4893,7 +4959,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -4954,7 +5020,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -4978,7 +5044,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -5039,7 +5105,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -5063,7 +5129,7 @@
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
@@ -5119,7 +5185,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -5143,7 +5209,7 @@
         },
         {
             "name": "symfony/polyfill-uuid",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-uuid.git",
@@ -5202,7 +5268,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.35.0"
+                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -6594,12 +6660,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/backend.git",
-                "reference": "200d89af6245e27237c729a5309a363c4d89d320"
+                "reference": "127df9378598828ca319f0b87db5964ff2d0f5b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/200d89af6245e27237c729a5309a363c4d89d320",
-                "reference": "200d89af6245e27237c729a5309a363c4d89d320",
+                "url": "https://api.github.com/repos/TYPO3-CMS/backend/zipball/127df9378598828ca319f0b87db5964ff2d0f5b3",
+                "reference": "127df9378598828ca319f0b87db5964ff2d0f5b3",
                 "shasum": ""
             },
             "require": {
@@ -6680,7 +6746,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-14T10:31:36+00:00"
+            "time": "2026-04-16T06:56:41+00:00"
         },
         {
             "name": "typo3/cms-belog",
@@ -6929,12 +6995,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "fecba9d663a61d9378bda26a7ff2d55713828e47"
+                "reference": "a425bc0bbba3591b8a74b58f4f44de150eb02997"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/fecba9d663a61d9378bda26a7ff2d55713828e47",
-                "reference": "fecba9d663a61d9378bda26a7ff2d55713828e47",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/a425bc0bbba3591b8a74b58f4f44de150eb02997",
+                "reference": "a425bc0bbba3591b8a74b58f4f44de150eb02997",
                 "shasum": ""
             },
             "require": {
@@ -7081,7 +7147,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-14T10:17:08+00:00"
+            "time": "2026-04-16T07:25:38+00:00"
         },
         {
             "name": "typo3/cms-dashboard",
@@ -7162,12 +7228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/extbase.git",
-                "reference": "c0dc4253cec503293cb6555ea31ba1655e933636"
+                "reference": "77432658da5e5791bab4c110e1a3edefa30abedf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/c0dc4253cec503293cb6555ea31ba1655e933636",
-                "reference": "c0dc4253cec503293cb6555ea31ba1655e933636",
+                "url": "https://api.github.com/repos/TYPO3-CMS/extbase/zipball/77432658da5e5791bab4c110e1a3edefa30abedf",
+                "reference": "77432658da5e5791bab4c110e1a3edefa30abedf",
                 "shasum": ""
             },
             "require": {
@@ -7241,7 +7307,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-12T12:07:33+00:00"
+            "time": "2026-04-14T18:46:10+00:00"
         },
         {
             "name": "typo3/cms-extensionmanager",
@@ -7249,12 +7315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/extensionmanager.git",
-                "reference": "33b3db9a95d0f8d1213543d5277bd4da6c36cb5a"
+                "reference": "c36d604ae5e0fd8254a01c027fa0eaa8d7d6026d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/extensionmanager/zipball/33b3db9a95d0f8d1213543d5277bd4da6c36cb5a",
-                "reference": "33b3db9a95d0f8d1213543d5277bd4da6c36cb5a",
+                "url": "https://api.github.com/repos/TYPO3-CMS/extensionmanager/zipball/c36d604ae5e0fd8254a01c027fa0eaa8d7d6026d",
+                "reference": "c36d604ae5e0fd8254a01c027fa0eaa8d7d6026d",
                 "shasum": ""
             },
             "require": {
@@ -7312,7 +7378,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-11T06:57:22+00:00"
+            "time": "2026-04-16T07:25:38+00:00"
         },
         {
             "name": "typo3/cms-felogin",
@@ -7388,12 +7454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/filelist.git",
-                "reference": "ccb88895f2c35554c20233a886c4fcbe55786428"
+                "reference": "ab9b9462c59706281b3e6bcd15911ec4fded4f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/filelist/zipball/ccb88895f2c35554c20233a886c4fcbe55786428",
-                "reference": "ccb88895f2c35554c20233a886c4fcbe55786428",
+                "url": "https://api.github.com/repos/TYPO3-CMS/filelist/zipball/ab9b9462c59706281b3e6bcd15911ec4fded4f82",
+                "reference": "ab9b9462c59706281b3e6bcd15911ec4fded4f82",
                 "shasum": ""
             },
             "require": {
@@ -7450,7 +7516,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-12T17:58:42+00:00"
+            "time": "2026-04-16T06:56:41+00:00"
         },
         {
             "name": "typo3/cms-fluid",
@@ -7603,12 +7669,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/form.git",
-                "reference": "c416ca1fbce9d26350849a2bf954cabc6e1a47d3"
+                "reference": "21dda12b8f7f2e7da7b9ce9749135dc60e396059"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/form/zipball/c416ca1fbce9d26350849a2bf954cabc6e1a47d3",
-                "reference": "c416ca1fbce9d26350849a2bf954cabc6e1a47d3",
+                "url": "https://api.github.com/repos/TYPO3-CMS/form/zipball/21dda12b8f7f2e7da7b9ce9749135dc60e396059",
+                "reference": "21dda12b8f7f2e7da7b9ce9749135dc60e396059",
                 "shasum": ""
             },
             "require": {
@@ -7671,7 +7737,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-14T10:23:52+00:00"
+            "time": "2026-04-14T18:56:47+00:00"
         },
         {
             "name": "typo3/cms-frontend",
@@ -7679,12 +7745,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/frontend.git",
-                "reference": "b836f4884f4f13595c28a6015cceff77c61a4bdf"
+                "reference": "9007100138771ae48e6927b5fcf336979f22ed68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/b836f4884f4f13595c28a6015cceff77c61a4bdf",
-                "reference": "b836f4884f4f13595c28a6015cceff77c61a4bdf",
+                "url": "https://api.github.com/repos/TYPO3-CMS/frontend/zipball/9007100138771ae48e6927b5fcf336979f22ed68",
+                "reference": "9007100138771ae48e6927b5fcf336979f22ed68",
                 "shasum": ""
             },
             "require": {
@@ -7750,7 +7816,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-13T16:24:19+00:00"
+            "time": "2026-04-15T07:58:29+00:00"
         },
         {
             "name": "typo3/cms-impexp",
@@ -9293,7 +9359,7 @@
             "version": "0.1.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:dirnbauer/workos.git",
+                "url": "https://github.com/dirnbauer/workos.git",
                 "reference": "bf1755033616932e88c590f687f78577e4c2afb4"
             },
             "dist": {
