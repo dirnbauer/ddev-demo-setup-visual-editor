@@ -1470,12 +1470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "82ba2f30c019d21d6aca8c8001c76db0137f58b8"
+                "reference": "45f7e24448436618af0cee322425304569cf409a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/82ba2f30c019d21d6aca8c8001c76db0137f58b8",
-                "reference": "82ba2f30c019d21d6aca8c8001c76db0137f58b8",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/45f7e24448436618af0cee322425304569cf409a",
+                "reference": "45f7e24448436618af0cee322425304569cf409a",
                 "shasum": ""
             },
             "require": {
@@ -1580,7 +1580,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-18T19:00:00+00:00"
+            "time": "2026-04-18T19:24:46+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -9328,12 +9328,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/workos.git",
-                "reference": "1fd3897d7b69f7871c10b1a7ac8092c3ef919397"
+                "reference": "bd6b04701e29b1d656d32654c97f12e1558951fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/1fd3897d7b69f7871c10b1a7ac8092c3ef919397",
-                "reference": "1fd3897d7b69f7871c10b1a7ac8092c3ef919397",
+                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/bd6b04701e29b1d656d32654c97f12e1558951fb",
+                "reference": "bd6b04701e29b1d656d32654c97f12e1558951fb",
                 "shasum": ""
             },
             "require": {
@@ -9417,7 +9417,7 @@
                 "issues": "https://github.com/webconsulting/typo3-workos-auth/issues",
                 "source": "https://github.com/webconsulting/typo3-workos-auth"
             },
-            "time": "2026-04-18T12:32:39+00:00"
+            "time": "2026-04-18T19:16:31+00:00"
         },
         {
             "name": "webmozart/assert",
