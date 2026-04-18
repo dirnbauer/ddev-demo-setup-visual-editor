@@ -1470,12 +1470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "58fe928174bc17369b9a02e994cbcd7fdb485998"
+                "reference": "82ba2f30c019d21d6aca8c8001c76db0137f58b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/58fe928174bc17369b9a02e994cbcd7fdb485998",
-                "reference": "58fe928174bc17369b9a02e994cbcd7fdb485998",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/82ba2f30c019d21d6aca8c8001c76db0137f58b8",
+                "reference": "82ba2f30c019d21d6aca8c8001c76db0137f58b8",
                 "shasum": ""
             },
             "require": {
@@ -1580,7 +1580,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-18T18:21:45+00:00"
+            "time": "2026-04-18T19:00:00+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -9103,17 +9103,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/shadcn2fluid-templates.git",
-                "reference": "dc1091c6dd687e27e71258730b4c28d857966d1b"
+                "reference": "9273e9c765f60148a82adba8b0447a6688cd2d68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/dc1091c6dd687e27e71258730b4c28d857966d1b",
-                "reference": "dc1091c6dd687e27e71258730b4c28d857966d1b",
+                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/9273e9c765f60148a82adba8b0447a6688cd2d68",
+                "reference": "9273e9c765f60148a82adba8b0447a6688cd2d68",
                 "shasum": ""
             },
             "require": {
                 "friendsoftypo3/content-blocks": "^2.2",
-                "php": "^8.2",
+                "php": "^8.3",
                 "typo3/cms-core": "^14.3@dev",
                 "typo3/cms-fluid": "^14.3@dev"
             },
@@ -9161,7 +9161,7 @@
                 }
             ],
             "description": "shadcn/ui-inspired Fluid 5 component library and 250 content elements for TYPO3 14",
-            "time": "2026-04-17T17:42:29+00:00"
+            "time": "2026-04-18T18:46:16+00:00"
         },
         {
             "name": "webconsulting/typo3-capability-manifest",
