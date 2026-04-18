@@ -6,13 +6,34 @@ dependencies:
 errorHandling: {  }
 languages:
   -
-    title: English
-    enabled: true
+    title: German
     languageId: 0
     base: /
+    locale: de_DE.UTF-8
+    navigationTitle: Deutsch
+    flag: de
+    iso-639-1: de
+    fallbackType: strict
+  -
+    title: English
+    enabled: true
+    languageId: 1
+    base: /en/
     locale: en_US.UTF-8
     navigationTitle: English
     flag: us
+    iso-639-1: en
+    fallbackType: fallback
+  -
+    title: Chinese
+    enabled: true
+    languageId: 2
+    base: /zh/
+    locale: zh_CN.UTF-8
+    navigationTitle: 中文
+    flag: cn
+    iso-639-1: zh
+    fallbackType: fallback
 rootPageId: 15
 routeEnhancers:
   News:
@@ -20,31 +41,38 @@ routeEnhancers:
     extension: News
     plugin: Pi1
     routes:
-      - routePath: '/'
+      -
+        routePath: /
         _controller: 'News::list'
-      - routePath: '/page-{page}'
+      -
+        routePath: '/page-{page}'
         _controller: 'News::list'
         _arguments:
           page: currentPage
-      - routePath: '/category/{category-name}/page-{page}'
+      -
+        routePath: '/category/{category-name}/page-{page}'
         _controller: 'News::list'
         _arguments:
           category-name: overwriteDemand/categories
           page: currentPage
-      - routePath: '/category/{category-name}'
+      -
+        routePath: '/category/{category-name}'
         _controller: 'News::list'
         _arguments:
           category-name: overwriteDemand/categories
-      - routePath: '/tag/{tag-name}/page-{page}'
+      -
+        routePath: '/tag/{tag-name}/page-{page}'
         _controller: 'News::list'
         _arguments:
           tag-name: overwriteDemand/tags
           page: currentPage
-      - routePath: '/tag/{tag-name}'
+      -
+        routePath: '/tag/{tag-name}'
         _controller: 'News::list'
         _arguments:
           tag-name: overwriteDemand/tags
-      - routePath: '/article/{news-title}'
+      -
+        routePath: '/article/{news-title}'
         _controller: 'News::detail'
         _arguments:
           news-title: news

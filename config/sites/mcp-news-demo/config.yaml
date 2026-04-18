@@ -1,0 +1,48 @@
+base: 'https://mcp-news-demo.ddev.site/'
+languages:
+  -
+    languageId: 0
+    title: English
+    navigationTitle: English
+    locale: en_US.UTF-8
+    base: /
+    flag: us
+    iso-639-1: en
+    fallbackType: strict
+  -
+    languageId: 1
+    title: Deutsch
+    navigationTitle: Deutsch
+    locale: de_DE.UTF-8
+    base: /de/
+    flag: de
+    iso-639-1: de
+    fallbackType: fallback
+  -
+    languageId: 2
+    title: 中文
+    navigationTitle: 中文
+    locale: zh_CN.UTF-8
+    base: /zh/
+    flag: cn
+    iso-639-1: zh
+    fallbackType: fallback
+  -
+    languageId: 3
+    title: עברית
+    navigationTitle: עברית
+    locale: he_IL.UTF-8
+    base: /he/
+    flag: il
+    iso-639-1: he
+    fallbackType: fallback
+  -
+    languageId: 4
+    title: Español
+    navigationTitle: Español
+    locale: es_ES.UTF-8
+    base: /es/
+    flag: es
+    iso-639-1: es
+    fallbackType: fallback
+rootPageId: 346

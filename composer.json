@@ -24,6 +24,11 @@
     },
     "repositories": [
         {
+            "name": "records-list-examples",
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/typo3-records-list-examples.git"
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/dirnbauer/desiderio.git"
         },
@@ -63,7 +68,6 @@
     "extra": {
         "patches": {
             "typo3/cms-backend": {
-                "Fix Records module page icons for workspace-overlaid page types": "patches/typo3-cms-backend-fix-recordlist-workspace-icons.patch",
                 "Register BackendViewFactory explicitly for dashboard widget DI": "patches/typo3-cms-backend-register-backend-view-factory.patch"
             }
         }
@@ -108,10 +112,11 @@
         "typo3/theme-camino": "14.3.x-dev",
         "wapplersystems/multisite-belogin": "^14.1",
         "webconsulting/desiderio": "dev-main",
-        "webconsulting/records-list-types": "dev-main",
+        "webconsulting/records-list-examples": "dev-main",
+        "webconsulting/records-list-types": "dev-main as 1.0.0",
         "webconsulting/shadcn2fluid-templates": "dev-main as 3.0.0",
         "webconsulting/typo3-capability-manifest": "dev-main",
         "webconsulting/typo3-x402-paywall": "dev-main",
-        "webconsulting/workos-auth": "0.1.1"
+        "webconsulting/workos-auth": "dev-main"
     }
 }
