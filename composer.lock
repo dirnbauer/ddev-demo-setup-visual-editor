@@ -9181,12 +9181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "97f18ca63a52428a88a590e1a71a3af54b5cec8a"
+                "reference": "3eca452d97c475cb3ec4c7f4e55672ab00226a16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/97f18ca63a52428a88a590e1a71a3af54b5cec8a",
-                "reference": "97f18ca63a52428a88a590e1a71a3af54b5cec8a",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/3eca452d97c475cb3ec4c7f4e55672ab00226a16",
+                "reference": "3eca452d97c475cb3ec4c7f4e55672ab00226a16",
                 "shasum": ""
             },
             "require": {
@@ -9239,7 +9239,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-04-19T06:58:23+00:00"
+            "time": "2026-04-19T07:36:45+00:00"
         },
         {
             "name": "webconsulting/shadcn2fluid-templates",
