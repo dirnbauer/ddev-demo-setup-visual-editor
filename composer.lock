@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4398cce52486f168d40fb8f81fc02f3",
+    "content-hash": "a022bccc63c8ad92cbd3c94c35223516",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -7803,6 +7803,75 @@
             "time": "2026-04-17T13:00:17+00:00"
         },
         {
+            "name": "typo3/cms-indexed-search",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/indexed_search.git",
+                "reference": "8d4af571a3ee0a0600a02d8ab4b719b6f6ab30de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/indexed_search/zipball/8d4af571a3ee0a0600a02d8ab4b719b6f6ab30de",
+                "reference": "8d4af571a3ee0a0600a02d8ab4b719b6f6ab30de",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "14.3.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "ext-exif": "Used to extract exif metadata 'COMMENT' and 'ImageDescription' of uploaded images",
+                "typo3/cms-scheduler": "For garbage collection of search statistics"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "indexed_search"
+                },
+                "branch-alias": {
+                    "dev-main": "14.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Indexed Search - Provides indexing functionality for TYPO3 pages and records as well as files including PDF, Word, HTML and plain text.",
+            "homepage": "https://typo3.community/",
+            "support": {
+                "chat": "https://typo3.community/meet/slack/",
+                "docs": "https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us/",
+                "forum": "https://talk.typo3.org/",
+                "issues": "https://forge.typo3.org/issues/",
+                "rss": "https://news.typo3.com/rss/",
+                "security": "https://typo3.org/security/",
+                "source": "https://github.com/TYPO3/typo3/"
+            },
+            "funding": [
+                {
+                    "url": "https://typo3.org/membership",
+                    "type": "membership"
+                }
+            ],
+            "time": "2026-04-11T07:51:45+00:00"
+        },
+        {
             "name": "typo3/cms-info",
             "version": "dev-main",
             "source": {
@@ -8373,6 +8442,81 @@
                 }
             ],
             "time": "2026-04-17T13:04:47+00:00"
+        },
+        {
+            "name": "typo3/cms-styleguide",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/styleguide.git",
+                "reference": "db6e824925c044d3a7e888c108f798701f75a502"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/styleguide/zipball/db6e824925c044d3a7e888c108f798701f75a502",
+                "reference": "db6e824925c044d3a7e888c108f798701f75a502",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "14.3.*@dev",
+                "typo3/cms-felogin": "14.3.*@dev",
+                "typo3/cms-fluid-styled-content": "14.3.*@dev",
+                "typo3/cms-form": "14.3.*@dev",
+                "typo3/cms-indexed-search": "14.3.*@dev",
+                "typo3/cms-seo": "14.3.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "styleguide"
+                },
+                "branch-alias": {
+                    "dev-main": "14.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Styleguide\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 extension to showcase TYPO3 Backend capabilities",
+            "homepage": "https://typo3.community/",
+            "keywords": [
+                "style guide",
+                "typo3",
+                "typo3 backend"
+            ],
+            "support": {
+                "chat": "https://typo3.community/meet/slack/",
+                "docs": "https://docs.typo3.org/",
+                "forum": "https://talk.typo3.org/",
+                "issues": "https://forge.typo3.org/issues/",
+                "rss": "https://news.typo3.com/rss/",
+                "security": "https://typo3.org/security/",
+                "source": "https://github.com/TYPO3/typo3/"
+            },
+            "funding": [
+                {
+                    "url": "https://typo3.org/membership",
+                    "type": "membership"
+                }
+            ],
+            "time": "2026-04-09T20:08:16+00:00"
         },
         {
             "name": "typo3/cms-sys-note",
@@ -9328,12 +9472,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/workos.git",
-                "reference": "bd6b04701e29b1d656d32654c97f12e1558951fb"
+                "reference": "5c7a0528974276a81e518b64d753d5b2fd166152"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/bd6b04701e29b1d656d32654c97f12e1558951fb",
-                "reference": "bd6b04701e29b1d656d32654c97f12e1558951fb",
+                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/5c7a0528974276a81e518b64d753d5b2fd166152",
+                "reference": "5c7a0528974276a81e518b64d753d5b2fd166152",
                 "shasum": ""
             },
             "require": {
@@ -9417,7 +9561,7 @@
                 "issues": "https://github.com/webconsulting/typo3-workos-auth/issues",
                 "source": "https://github.com/webconsulting/typo3-workos-auth"
             },
-            "time": "2026-04-18T19:16:31+00:00"
+            "time": "2026-04-18T19:36:08+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -9563,6 +9707,7 @@
         "typo3/cms-form": 20,
         "typo3/cms-frontend": 20,
         "typo3/cms-impexp": 20,
+        "typo3/cms-indexed-search": 20,
         "typo3/cms-info": 20,
         "typo3/cms-install": 20,
         "typo3/cms-reactions": 20,
@@ -9572,6 +9717,7 @@
         "typo3/cms-scheduler": 20,
         "typo3/cms-seo": 20,
         "typo3/cms-setup": 20,
+        "typo3/cms-styleguide": 20,
         "typo3/cms-sys-note": 20,
         "typo3/cms-tstemplate": 20,
         "typo3/cms-viewpage": 20,
