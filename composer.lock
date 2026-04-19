@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9cb2be8435163f86466816494d94a0a7",
+    "content-hash": "d09e3e1992eba2cf9b50e71fb33b6ae2",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6572,6 +6572,81 @@
             "time": "2026-04-17T09:41:06+00:00"
         },
         {
+            "name": "typo3/cms-adminpanel",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/adminpanel.git",
+                "reference": "c4272cf5b24c937b4aaa9dbc847308b1b403d2ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/adminpanel/zipball/c4272cf5b24c937b4aaa9dbc847308b1b403d2ab",
+                "reference": "c4272cf5b24c937b4aaa9dbc847308b1b403d2ab",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "typo3/cms-backend": "14.3.*@dev",
+                "typo3/cms-core": "14.3.*@dev",
+                "typo3/cms-fluid": "14.3.*@dev",
+                "typo3/cms-frontend": "14.3.*@dev",
+                "typo3fluid/fluid": "^5.3.0"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "adminpanel"
+                },
+                "branch-alias": {
+                    "dev-main": "14.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Adminpanel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Admin Panel - The Admin Panel displays information about your site in the frontend and contains a range of metrics including debug and caching information.",
+            "homepage": "https://typo3.community/",
+            "support": {
+                "chat": "https://typo3.community/meet/slack/",
+                "docs": "https://docs.typo3.org/c/typo3/cms-adminpanel/main/en-us/",
+                "forum": "https://talk.typo3.org/",
+                "issues": "https://forge.typo3.org/issues/",
+                "rss": "https://news.typo3.com/rss/",
+                "security": "https://typo3.org/security/",
+                "source": "https://github.com/TYPO3/typo3/"
+            },
+            "funding": [
+                {
+                    "url": "https://typo3.org/membership",
+                    "type": "membership"
+                }
+            ],
+            "time": "2026-04-10T09:52:42+00:00"
+        },
+        {
             "name": "typo3/cms-backend",
             "version": "dev-main",
             "source": {
@@ -9085,6 +9160,93 @@
             "time": "2026-02-22T15:32:44+00:00"
         },
         {
+            "name": "webconsulting/agentation",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/typo3-agentation.git",
+                "reference": "a53f052ac65427d2ebe8d3f6d7ca80b486a58850"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-agentation/zipball/a53f052ac65427d2ebe8d3f6d7ca80b486a58850",
+                "reference": "a53f052ac65427d2ebe8d3f6d7ca80b486a58850",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2",
+                "typo3/cms-adminpanel": "^14.0",
+                "typo3/cms-backend": "^14.0",
+                "typo3/cms-core": "^14.0",
+                "typo3/cms-extbase": "^14.0",
+                "typo3/cms-fluid": "^14.0",
+                "typo3/cms-frontend": "^14.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-strict-rules": "^2.0",
+                "phpunit/phpunit": "^11.5",
+                "praetorius/vite-asset-collector": "^1.0",
+                "saschaegerer/phpstan-typo3": "^3.0",
+                "typo3/testing-framework": "^9.2"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "agentation"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WebConsulting\\Agentation\\": "Classes/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "WebConsulting\\Agentation\\Tests\\": "Tests/"
+                }
+            },
+            "scripts": {
+                "phpstan": [
+                    "phpstan analyse --memory-limit=1G"
+                ],
+                "test:unit": [
+                    "phpunit -c Build/phpunit/UnitTests.xml"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "webconsulting",
+                    "email": "office@webconsulting.at",
+                    "homepage": "https://webconsulting.at",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 v14 integration for Agentation — visual UI annotations for AI coding agents, in frontend (via Admin Panel) and backend.",
+            "homepage": "https://github.com/webconsulting/typo3-agentation",
+            "keywords": [
+                "agentation",
+                "ai",
+                "annotations",
+                "claude-code",
+                "cursor",
+                "mcp",
+                "typo3",
+                "typo3-cms-extension"
+            ],
+            "support": {
+                "issues": "https://github.com/webconsulting/typo3-agentation/issues",
+                "source": "https://github.com/webconsulting/typo3-agentation"
+            },
+            "time": "2026-04-19T07:15:26+00:00"
+        },
+        {
             "name": "webconsulting/desiderio",
             "version": "dev-main",
             "source": {
@@ -9181,12 +9343,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "3eca452d97c475cb3ec4c7f4e55672ab00226a16"
+                "reference": "95e4a84668f18867a37e45cbe157d65e78099d73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/3eca452d97c475cb3ec4c7f4e55672ab00226a16",
-                "reference": "3eca452d97c475cb3ec4c7f4e55672ab00226a16",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/95e4a84668f18867a37e45cbe157d65e78099d73",
+                "reference": "95e4a84668f18867a37e45cbe157d65e78099d73",
                 "shasum": ""
             },
             "require": {
@@ -9239,7 +9401,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-04-19T07:36:45+00:00"
+            "time": "2026-04-19T09:12:25+00:00"
         },
         {
             "name": "webconsulting/shadcn2fluid-templates",
@@ -9693,6 +9855,7 @@
         "dirnbauer/visual-editor-news-addon": 20,
         "hn/typo3-mcp-server": 20,
         "t3g/blog": 20,
+        "typo3/cms-adminpanel": 20,
         "typo3/cms-backend": 20,
         "typo3/cms-belog": 20,
         "typo3/cms-beuser": 20,
@@ -9724,6 +9887,7 @@
         "typo3/cms-webhooks": 20,
         "typo3/cms-workspaces": 20,
         "typo3/theme-camino": 20,
+        "webconsulting/agentation": 20,
         "webconsulting/desiderio": 20,
         "webconsulting/records-list-examples": 20,
         "webconsulting/records-list-types": 20,
