@@ -3,6 +3,7 @@ contentSecurityPolicies: {  }
 dependencies:
   - blog/standalone
   - georgringer/news
+  - dirnbauer/adminpanel-defaults
 errorHandling: {  }
 languages:
   -

@@ -1,4 +1,6 @@
 base: 'https://mcp-news-demo.ddev.site/'
+dependencies:
+  - dirnbauer/adminpanel-defaults
 languages:
   -
     languageId: 0

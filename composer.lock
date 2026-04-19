@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15db23abdd1326a744a4148501ca473b",
+    "content-hash": "5936fe66a5dbb9f78a69007759bce328",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -294,6 +294,33 @@
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.7"
             },
             "time": "2025-09-16T12:23:56+00:00"
+        },
+        {
+            "name": "dirnbauer/adminpanel-defaults",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/adminpanel_defaults",
+                "reference": "fa0349d2873728b3c8ce00ab127b3bb43007a676"
+            },
+            "require": {
+                "typo3/cms-adminpanel": "^14.0",
+                "typo3/cms-core": "^14.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "adminpanel_defaults"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Shared TYPO3 admin panel defaults for the demo setup",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "dirnbauer/visual-editor-news-addon",
@@ -9852,6 +9879,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "dirnbauer/adminpanel-defaults": 20,
         "dirnbauer/visual-editor-news-addon": 20,
         "hn/typo3-mcp-server": 20,
         "t3g/blog": 20,

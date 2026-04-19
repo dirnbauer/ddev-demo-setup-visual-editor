@@ -1,3 +1,5 @@
+dependencies:
+  - dirnbauer/adminpanel-defaults
 languages:
   -
     title: Chinese

@@ -24,6 +24,13 @@
     },
     "repositories": [
         {
+            "type": "path",
+            "url": "packages/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/dirnbauer/typo3-agentation.git"
         },
@@ -79,6 +86,7 @@
     },
     "require": {
         "cweagans/composer-patches": "^1.7",
+        "dirnbauer/adminpanel-defaults": "dev-main",
         "dirnbauer/visual-editor-news-addon": "dev-main",
         "friendsoftypo3/visual-editor": "^1.1",
         "georgringer/context-edit-records": "^1.0",

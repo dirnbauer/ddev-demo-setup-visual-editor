@@ -4,6 +4,7 @@ dependencies:
   - typo3/form
   - webconsulting/shadcn2fluid-templates
   - webconsulting/desiderio
+  - dirnbauer/adminpanel-defaults
 languages:
   -
     languageId: 0

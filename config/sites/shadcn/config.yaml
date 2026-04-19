@@ -4,6 +4,7 @@ dependencies:
   - webconsulting/shadcn2fluid-templates
   - georgringer/news
   - webconsulting/desiderio-template2
+  - dirnbauer/adminpanel-defaults
 languages:
   -
     title: English

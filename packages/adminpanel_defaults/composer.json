@@ -1,0 +1,16 @@
+{
+    "name": "dirnbauer/adminpanel-defaults",
+    "description": "Shared TYPO3 admin panel defaults for the demo setup",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "version": "dev-main",
+    "require": {
+        "typo3/cms-adminpanel": "^14.0",
+        "typo3/cms-core": "^14.0"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "adminpanel_defaults"
+        }
+    }
+}

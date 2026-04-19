@@ -1,0 +1,4 @@
+#
+# Render the TYPO3 Admin Panel in the frontend for authenticated backend users.
+#
+config.admPanel = 1

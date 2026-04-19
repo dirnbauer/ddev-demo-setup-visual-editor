@@ -1,6 +1,7 @@
 base: /camino/
 dependencies:
   - typo3/theme-camino
+  - dirnbauer/adminpanel-defaults
 languages:
   -
     title: English
