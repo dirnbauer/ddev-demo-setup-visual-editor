@@ -24,6 +24,10 @@
     },
     "repositories": [
         {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/typo3-agentation.git"
+        },
+        {
             "name": "records-list-examples",
             "type": "vcs",
             "url": "https://github.com/dirnbauer/typo3-records-list-examples.git"

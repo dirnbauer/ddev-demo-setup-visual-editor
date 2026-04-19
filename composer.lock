@@ -1470,12 +1470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "45f7e24448436618af0cee322425304569cf409a"
+                "reference": "ede4bbb2631e3b5aaad3f5b4ae11e30254852595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/45f7e24448436618af0cee322425304569cf409a",
-                "reference": "45f7e24448436618af0cee322425304569cf409a",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/ede4bbb2631e3b5aaad3f5b4ae11e30254852595",
+                "reference": "ede4bbb2631e3b5aaad3f5b4ae11e30254852595",
                 "shasum": ""
             },
             "require": {
@@ -1580,7 +1580,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-18T19:24:46+00:00"
+            "time": "2026-04-18T20:00:35+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -9181,12 +9181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "d27952f906440e7cc9950e28edf3de38d03f944b"
+                "reference": "03ea1467bc34572743ec46de7376f1b2f7b11d35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/d27952f906440e7cc9950e28edf3de38d03f944b",
-                "reference": "d27952f906440e7cc9950e28edf3de38d03f944b",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/03ea1467bc34572743ec46de7376f1b2f7b11d35",
+                "reference": "03ea1467bc34572743ec46de7376f1b2f7b11d35",
                 "shasum": ""
             },
             "require": {
@@ -9239,7 +9239,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-04-18T12:56:53+00:00"
+            "time": "2026-04-19T06:52:29+00:00"
         },
         {
             "name": "webconsulting/shadcn2fluid-templates",
