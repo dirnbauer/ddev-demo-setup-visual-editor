@@ -6604,12 +6604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/adminpanel.git",
-                "reference": "c4272cf5b24c937b4aaa9dbc847308b1b403d2ab"
+                "reference": "9871bfc296d7b3373e41a8afefa4e976ded6c27d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/adminpanel/zipball/c4272cf5b24c937b4aaa9dbc847308b1b403d2ab",
-                "reference": "c4272cf5b24c937b4aaa9dbc847308b1b403d2ab",
+                "url": "https://api.github.com/repos/TYPO3-CMS/adminpanel/zipball/9871bfc296d7b3373e41a8afefa4e976ded6c27d",
+                "reference": "9871bfc296d7b3373e41a8afefa4e976ded6c27d",
                 "shasum": ""
             },
             "require": {
@@ -6620,7 +6620,7 @@
                 "typo3/cms-core": "14.3.*@dev",
                 "typo3/cms-fluid": "14.3.*@dev",
                 "typo3/cms-frontend": "14.3.*@dev",
-                "typo3fluid/fluid": "^5.3.0"
+                "typo3fluid/fluid": "^5.3.1"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -6671,7 +6671,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-10T09:52:42+00:00"
+            "time": "2026-04-19T12:15:16+00:00"
         },
         {
             "name": "typo3/cms-backend",
@@ -7014,12 +7014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "1c37bbef9df91eb1829af12c87b6b3f5cd859a24"
+                "reference": "c250eabacc3ee0855accb698036de19319a491fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/1c37bbef9df91eb1829af12c87b6b3f5cd859a24",
-                "reference": "1c37bbef9df91eb1829af12c87b6b3f5cd859a24",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/c250eabacc3ee0855accb698036de19319a491fb",
+                "reference": "c250eabacc3ee0855accb698036de19319a491fb",
                 "shasum": ""
             },
             "require": {
@@ -7080,7 +7080,7 @@
                 "typo3/cms-cli": "^3.1.3",
                 "typo3/cms-composer-installers": "^5.0.2",
                 "typo3/html-sanitizer": "^2.2.0",
-                "typo3fluid/fluid": "^5.3.0"
+                "typo3fluid/fluid": "^5.3.1"
             },
             "conflict": {
                 "hoa/core": "*",
@@ -7165,7 +7165,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-19T10:13:17+00:00"
+            "time": "2026-04-19T12:15:16+00:00"
         },
         {
             "name": "typo3/cms-dashboard",
@@ -7542,12 +7542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/fluid.git",
-                "reference": "e5ef560f84b05059c372c4640bd0a3593ac67e5f"
+                "reference": "3de8170c0b79a4f88a684e9a22b19faf66f8111e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/fluid/zipball/e5ef560f84b05059c372c4640bd0a3593ac67e5f",
-                "reference": "e5ef560f84b05059c372c4640bd0a3593ac67e5f",
+                "url": "https://api.github.com/repos/TYPO3-CMS/fluid/zipball/3de8170c0b79a4f88a684e9a22b19faf66f8111e",
+                "reference": "3de8170c0b79a4f88a684e9a22b19faf66f8111e",
                 "shasum": ""
             },
             "require": {
@@ -7555,7 +7555,7 @@
                 "symfony/finder": "^7.4.8",
                 "typo3/cms-core": "14.3.*@dev",
                 "typo3/cms-extbase": "14.3.*@dev",
-                "typo3fluid/fluid": "^5.3.0"
+                "typo3fluid/fluid": "^5.3.1"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -7609,7 +7609,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-19T10:13:17+00:00"
+            "time": "2026-04-19T12:15:16+00:00"
         },
         {
             "name": "typo3/cms-fluid-styled-content",
@@ -8267,12 +8267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/redirects.git",
-                "reference": "37db43c07479fcc461c30cb18bb6d2585cdaf144"
+                "reference": "ab80b4525e09af39427e145ced5d4dc801bd02d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/redirects/zipball/37db43c07479fcc461c30cb18bb6d2585cdaf144",
-                "reference": "37db43c07479fcc461c30cb18bb6d2585cdaf144",
+                "url": "https://api.github.com/repos/TYPO3-CMS/redirects/zipball/ab80b4525e09af39427e145ced5d4dc801bd02d8",
+                "reference": "ab80b4525e09af39427e145ced5d4dc801bd02d8",
                 "shasum": ""
             },
             "require": {
@@ -8282,7 +8282,7 @@
                 "symfony/console": "^7.4.8",
                 "typo3/cms-backend": "14.3.*@dev",
                 "typo3/cms-core": "14.3.*@dev",
-                "typo3fluid/fluid": "^5.3.0"
+                "typo3fluid/fluid": "^5.3.1"
             },
             "conflict": {
                 "typo3/cms": "*"
@@ -8337,7 +8337,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-19T10:13:17+00:00"
+            "time": "2026-04-19T12:15:16+00:00"
         },
         {
             "name": "typo3/cms-rte-ckeditor",
@@ -9192,12 +9192,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-agentation.git",
-                "reference": "a53f052ac65427d2ebe8d3f6d7ca80b486a58850"
+                "reference": "2821c6d7299ef0cf1ea848b6b262d5e17f79d3a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-agentation/zipball/a53f052ac65427d2ebe8d3f6d7ca80b486a58850",
-                "reference": "a53f052ac65427d2ebe8d3f6d7ca80b486a58850",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-agentation/zipball/2821c6d7299ef0cf1ea848b6b262d5e17f79d3a7",
+                "reference": "2821c6d7299ef0cf1ea848b6b262d5e17f79d3a7",
                 "shasum": ""
             },
             "require": {
@@ -9271,7 +9271,7 @@
                 "issues": "https://github.com/webconsulting/typo3-agentation/issues",
                 "source": "https://github.com/webconsulting/typo3-agentation"
             },
-            "time": "2026-04-19T07:15:26+00:00"
+            "time": "2026-04-19T14:42:29+00:00"
         },
         {
             "name": "webconsulting/desiderio",
@@ -9661,12 +9661,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/workos.git",
-                "reference": "37a8f68b90e8255b64547e27798cd83efeece20b"
+                "reference": "cb977c0564363665cf4da260ddbeef07e53c664c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/37a8f68b90e8255b64547e27798cd83efeece20b",
-                "reference": "37a8f68b90e8255b64547e27798cd83efeece20b",
+                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/cb977c0564363665cf4da260ddbeef07e53c664c",
+                "reference": "cb977c0564363665cf4da260ddbeef07e53c664c",
                 "shasum": ""
             },
             "require": {
@@ -9750,7 +9750,7 @@
                 "issues": "https://github.com/webconsulting/typo3-workos-auth/issues",
                 "source": "https://github.com/webconsulting/typo3-workos-auth"
             },
-            "time": "2026-04-19T10:21:34+00:00"
+            "time": "2026-04-19T11:05:02+00:00"
         },
         {
             "name": "webmozart/assert",

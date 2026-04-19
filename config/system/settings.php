@@ -26,6 +26,17 @@ return [
         ],
     ],
     'EXTENSIONS' => [
+        'agentation' => [
+            'additionalOptions' => '',
+            'apiKey' => '',
+            'backendEnabled' => '1',
+            'contextGate' => 'Development',
+            'defaultOptIn' => '1',
+            'frontendEnabled' => '1',
+            'toolbarPosition' => 'bottom-right',
+            'webhookUrl' => '',
+            'workspaceId' => '',
+        ],
         'backend' => [
             'backendFavicon' => '',
             'backendLogo' => '',
