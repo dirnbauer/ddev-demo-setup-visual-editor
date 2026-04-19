@@ -25,10 +25,6 @@ web_environment:
   - TYPO3_WORKOS_CLIENT_ID=<workos-client-id>
   - TYPO3_WORKOS_COOKIE_PASSWORD=<workos-cookie-password>
   - TYPO3_ENCRYPTION_KEY=<typo3-encryption-key>
-
-hooks:
-  post-start:
-    - exec: composer config -g github-oauth.github.com <github-token>
 ```
 
 | Variable | Where to find it |
