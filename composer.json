@@ -92,6 +92,8 @@
         "georgringer/context-edit-records": "^1.0",
         "georgringer/news": "^14.0",
         "hn/typo3-mcp-server": "dev-main",
+        "praetorius/vite-asset-collector": "^1.16",
+        "typo3/class-alias-loader": "2.0.1 as 1.99.0",
         "supseven/inline-page-module": "^4.0",
         "t3g/blog": "dev-master",
         "typo3/cms-adminpanel": "14.3.x-dev",

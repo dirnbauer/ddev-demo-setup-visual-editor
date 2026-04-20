@@ -1,7 +1,6 @@
 base: /camino/
 dependencies:
   - typo3/theme-camino
-  - dirnbauer/adminpanel-defaults
 languages:
   -
     title: English
@@ -12,6 +11,6 @@ languages:
     websiteTitle: Camino
     navigationTitle: English
     flag: global
-    languageId: '0'
+    languageId: 0
 rootPageId: 99
 websiteTitle: Camino

@@ -2,6 +2,7 @@ base: 'https://ddev-demo-setup-visual-editor.ddev.site/shadcn'
 dependencies:
   - webconsulting/desiderio
   - webconsulting/shadcn2fluid-templates
+  - webconsulting/shadcn2fluid-pages
   - georgringer/news
   - webconsulting/desiderio-template2
   - dirnbauer/adminpanel-defaults
