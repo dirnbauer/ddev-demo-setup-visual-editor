@@ -8,14 +8,17 @@
 ## First-time setup
 
 ```bash
+cp config/system/settings.php.example config/system/settings.php
 ddev start
 ddev composer install
 ddev typo3 cache:flush
 ```
 
-## Secrets / Environment Variables
+## Settings and Secrets
 
-Secrets are **not** stored in `config/system/settings.php` — they are injected via environment variables. DDEV reads these from `.ddev/config.local.yaml`, which is gitignored.
+`config/system/settings.php` is **gitignored** — TYPO3's Install Tool overwrites it with plain values whenever you save extension settings. A `settings.php.example` is committed as a template with `getenv()` calls for secrets.
+
+Secrets are injected via environment variables. DDEV reads these from `.ddev/config.local.yaml`, which is also gitignored.
 
 Create `.ddev/config.local.yaml` with the following content and fill in the actual values:
 
