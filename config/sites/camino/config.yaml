@@ -1,4 +1,4 @@
-base: /camino/
+base: 'https://ddev-demo-setup-visual-editor.ddev.site/camino/'
 dependencies:
   - typo3/theme-camino
 languages:

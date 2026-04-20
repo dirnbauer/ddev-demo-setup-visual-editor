@@ -7039,12 +7039,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/core.git",
-                "reference": "ae750ae4ba866e4d555eb68d24cbac4b02eca833"
+                "reference": "57ca4cd11fec9c3ebc8cd2a005e08b6bb176288d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/ae750ae4ba866e4d555eb68d24cbac4b02eca833",
-                "reference": "ae750ae4ba866e4d555eb68d24cbac4b02eca833",
+                "url": "https://api.github.com/repos/TYPO3-CMS/core/zipball/57ca4cd11fec9c3ebc8cd2a005e08b6bb176288d",
+                "reference": "57ca4cd11fec9c3ebc8cd2a005e08b6bb176288d",
                 "shasum": ""
             },
             "require": {
@@ -7190,7 +7190,7 @@
                     "type": "membership"
                 }
             ],
-            "time": "2026-04-20T16:32:24+00:00"
+            "time": "2026-04-20T17:17:40+00:00"
         },
         {
             "name": "typo3/cms-dashboard",
@@ -9217,12 +9217,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-agentation.git",
-                "reference": "8f6bff8334512cabbec0bbb7de20c54af541b67a"
+                "reference": "115be3515a66cbdd645fd3580c1c122017b12ac9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-agentation/zipball/8f6bff8334512cabbec0bbb7de20c54af541b67a",
-                "reference": "8f6bff8334512cabbec0bbb7de20c54af541b67a",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-agentation/zipball/115be3515a66cbdd645fd3580c1c122017b12ac9",
+                "reference": "115be3515a66cbdd645fd3580c1c122017b12ac9",
                 "shasum": ""
             },
             "require": {
@@ -9295,7 +9295,7 @@
                 "issues": "https://github.com/webconsulting/typo3-agentation/issues",
                 "source": "https://github.com/webconsulting/typo3-agentation"
             },
-            "time": "2026-04-20T16:44:10+00:00"
+            "time": "2026-04-20T17:49:35+00:00"
         },
         {
             "name": "webconsulting/desiderio",
@@ -9303,12 +9303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/desiderio.git",
-                "reference": "ea7aa8a0ba69e7b35d05d0c183c1b59693f7618a"
+                "reference": "e506735a070da5ca25023ee415af5411f925e83b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/ea7aa8a0ba69e7b35d05d0c183c1b59693f7618a",
-                "reference": "ea7aa8a0ba69e7b35d05d0c183c1b59693f7618a",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/e506735a070da5ca25023ee415af5411f925e83b",
+                "reference": "e506735a070da5ca25023ee415af5411f925e83b",
                 "shasum": ""
             },
             "require": {
@@ -9362,7 +9362,7 @@
                 }
             ],
             "description": "Desiderio — shadcn/ui-inspired Fluid 5 component library, 250 content elements, and theme layer for TYPO3 14",
-            "time": "2026-04-20T08:53:15+00:00"
+            "time": "2026-04-20T17:32:45+00:00"
         },
         {
             "name": "webconsulting/records-list-examples",
@@ -9413,12 +9413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "91b11976e336ef89335a9cd19a70c13eff99c1aa"
+                "reference": "27c1fab8ef67506ae3444c001729b620a68c0d83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/91b11976e336ef89335a9cd19a70c13eff99c1aa",
-                "reference": "91b11976e336ef89335a9cd19a70c13eff99c1aa",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/27c1fab8ef67506ae3444c001729b620a68c0d83",
+                "reference": "27c1fab8ef67506ae3444c001729b620a68c0d83",
                 "shasum": ""
             },
             "require": {
@@ -9471,7 +9471,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-04-20T07:07:03+00:00"
+            "time": "2026-04-20T17:04:33+00:00"
         },
         {
             "name": "webconsulting/shadcn2fluid-templates",
@@ -9705,12 +9705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/workos.git",
-                "reference": "1fb5401b412fad9ce8a860dfce3119aabad749d2"
+                "reference": "1dcd4d833956d630f777c13e60c8204e65a3771b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/1fb5401b412fad9ce8a860dfce3119aabad749d2",
-                "reference": "1fb5401b412fad9ce8a860dfce3119aabad749d2",
+                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/1dcd4d833956d630f777c13e60c8204e65a3771b",
+                "reference": "1dcd4d833956d630f777c13e60c8204e65a3771b",
                 "shasum": ""
             },
             "require": {
@@ -9794,7 +9794,7 @@
                 "issues": "https://github.com/webconsulting/typo3-workos-auth/issues",
                 "source": "https://github.com/webconsulting/typo3-workos-auth"
             },
-            "time": "2026-04-20T16:39:24+00:00"
+            "time": "2026-04-20T17:53:53+00:00"
         },
         {
             "name": "webmozart/assert",

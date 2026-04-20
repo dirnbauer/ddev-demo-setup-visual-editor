@@ -1,10 +1,10 @@
 base: 'https://ddev-demo-setup-visual-editor.ddev.site/tuga-102/'
 dependencies:
-  - typo3/fluid-styled-content
   - typo3/form
-  - webconsulting/shadcn2fluid-templates
   - webconsulting/desiderio
   - dirnbauer/adminpanel-defaults
+  - webconsulting/desiderio-skin4
+  - typo3/fluid-styled-content
 languages:
   -
     languageId: 0
@@ -25,3 +25,4 @@ languages:
     iso-639-1: de
     fallbackType: fallback
 rootPageId: 107
+websiteTitle: ''
