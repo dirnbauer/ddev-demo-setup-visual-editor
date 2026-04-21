@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8947e17e48bbe3cb3a31e59060d040cd",
+    "content-hash": "4e2a8b7cd266beeadb6a48e0b7dabcf2",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -9474,73 +9474,6 @@
             "time": "2026-04-20T17:04:33+00:00"
         },
         {
-            "name": "webconsulting/shadcn2fluid-templates",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dirnbauer/shadcn2fluid-templates.git",
-                "reference": "5a303730bbf741ffa9704691ab9ccc3463be7b13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/shadcn2fluid-templates/zipball/5a303730bbf741ffa9704691ab9ccc3463be7b13",
-                "reference": "5a303730bbf741ffa9704691ab9ccc3463be7b13",
-                "shasum": ""
-            },
-            "require": {
-                "friendsoftypo3/content-blocks": "^2.2",
-                "php": "^8.3",
-                "praetorius/vite-asset-collector": "^1.7",
-                "typo3/cms-core": "^14.3@dev",
-                "typo3/cms-fluid": "^14.3@dev"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^2.1",
-                "phpstan/phpstan-phpunit": "^2.0",
-                "phpunit/phpunit": "^11.5",
-                "typo3/testing-framework": "^9.0"
-            },
-            "suggest": {
-                "friendsoftypo3/visual-editor": "Optional. Inline visual editing when templates use f:render.text for text fields (Content Blocks expose {data} as a Record).",
-                "typo3/cms-workspaces": "Recommended to stage and preview content elements in TYPO3 workspaces."
-            },
-            "default-branch": true,
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "shadcn2fluid_templates"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Webconsulting\\Shadcn2fluidTemplates\\": "Classes/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Webconsulting\\Shadcn2fluidTemplates\\Tests\\": "Tests/"
-                }
-            },
-            "scripts": {
-                "phpstan": [
-                    "phpstan analyse --configuration=phpstan.neon.dist"
-                ],
-                "test": [
-                    "phpunit --configuration=phpunit.xml.dist"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "webconsulting studio"
-                }
-            ],
-            "description": "shadcn/ui-inspired Fluid 5 component library and 250 content elements for TYPO3 14",
-            "time": "2026-04-20T06:36:04+00:00"
-        },
-        {
             "name": "webconsulting/typo3-capability-manifest",
             "version": "dev-main",
             "source": {
@@ -9921,12 +9854,6 @@
             "version": "dev-main",
             "alias": "1.0.0",
             "alias_normalized": "1.0.0.0"
-        },
-        {
-            "package": "webconsulting/shadcn2fluid-templates",
-            "version": "dev-main",
-            "alias": "3.0.0",
-            "alias_normalized": "3.0.0.0"
         }
     ],
     "minimum-stability": "stable",
@@ -9971,7 +9898,6 @@
         "webconsulting/desiderio": 20,
         "webconsulting/records-list-examples": 20,
         "webconsulting/records-list-types": 20,
-        "webconsulting/shadcn2fluid-templates": 20,
         "webconsulting/typo3-capability-manifest": 20,
         "webconsulting/typo3-x402-paywall": 20,
         "webconsulting/workos-auth": 20
