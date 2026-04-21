@@ -5,7 +5,6 @@
     "type": "project",
     "config": {
         "allow-plugins": {
-            "cweagans/composer-patches": true,
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
         },
@@ -77,22 +76,13 @@
             "no-api": true
         }
     ],
-    "extra": {
-        "patches": {
-            "typo3/cms-backend": {
-                "Register BackendViewFactory explicitly for dashboard widget DI": "patches/typo3-cms-backend-register-backend-view-factory.patch"
-            }
-        }
-    },
     "require": {
-        "cweagans/composer-patches": "^1.7",
         "dirnbauer/adminpanel-defaults": "dev-main",
         "dirnbauer/visual-editor-news-addon": "dev-main",
         "friendsoftypo3/visual-editor": "^1.1",
         "georgringer/context-edit-records": "^1.0",
         "georgringer/news": "^14.0",
         "hn/typo3-mcp-server": "dev-main",
-        "praetorius/vite-asset-collector": "^1.16",
         "typo3/class-alias-loader": "2.0.1 as 1.99.0",
         "supseven/inline-page-module": "^4.0",
         "t3g/blog": "dev-master",

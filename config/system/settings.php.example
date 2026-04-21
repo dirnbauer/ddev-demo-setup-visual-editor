@@ -152,11 +152,6 @@ return [
             'zeroorder_input_2' => '',
             'zeroorder_input_3' => '',
         ],
-        'vite_asset_collector' => [
-            'defaultManifest' => '_assets/vite/.vite/manifest.json',
-            'devServerUri' => 'auto',
-            'useDevServer' => '0',
-        ],
         'workos_auth' => [
             'apiKey' => (string)getenv('TYPO3_WORKOS_API_KEY'),
             'authkitConnectionId' => '',
