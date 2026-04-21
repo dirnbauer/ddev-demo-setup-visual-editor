@@ -1,0 +1,42 @@
+Subject: [PATCH] PageTreeRepository: skip missing mount point records
+
+When the page tree filter (AJAX `/typo3/ajax/page/tree/filterData`) runs in
+a workspace whose `db_mountpoints` reference a deleted/non-existent page
+record, `BackendUtility::getRecordWSOL('pages', $mountPoint)` returns NULL.
+The subsequent `$pages[$mountPoint]['uid']` access then triggers a
+PHP 8 "Trying to access array offset on value of type null" warning, which
+the TYPO3 error handler promotes to an uncaught exception (#1476107295).
+
+This patch hardens the loop so that mount points pointing at records that
+cannot be resolved are skipped silently instead of producing a fatal.
+
+Affected file:
+  Classes/Tree/Repository/PageTreeRepository.php
+
+--- a/Classes/Tree/Repository/PageTreeRepository.php
++++ b/Classes/Tree/Repository/PageTreeRepository.php
+@@ -754,11 +754,17 @@ protected function filterPagesOnMountPoints(array $pages, array $mountPoints): a
+         }
+         // Make sure the mountpoints show up in page tree even when parent pages are not accessible pages
+         foreach ($mountPoints as $mountPoint) {
+-            if ($mountPoint !== 0) {
+-                if (!array_key_exists($mountPoint, $pages)) {
+-                    $pages[$mountPoint] = BackendUtility::getRecordWSOL('pages', $mountPoint);
+-                    $pages[$mountPoint]['uid'] = (int)$pages[$mountPoint]['uid'];
++            if ($mountPoint === 0) {
++                continue;
++            }
++            if (!array_key_exists($mountPoint, $pages)) {
++                $record = BackendUtility::getRecordWSOL('pages', $mountPoint);
++                if (!is_array($record)) {
++                    // Mount point references a deleted or otherwise unresolvable page – skip it.
++                    continue;
+                 }
+-                $pages[$mountPoint]['pid'] = 0;
++                $pages[$mountPoint] = $record;
++                $pages[$mountPoint]['uid'] = (int)$pages[$mountPoint]['uid'];
+             }
++            $pages[$mountPoint]['pid'] = 0;
+         }
+ 
+         return $pages;

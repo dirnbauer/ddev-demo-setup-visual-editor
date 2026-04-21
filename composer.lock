@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2e2df104ce5511ac05b25a3134e6837",
+    "content-hash": "ff9145e70e73cd7ce09017a1a928d068",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -196,6 +196,54 @@
                 }
             ],
             "time": "2025-08-20T19:15:30+00:00"
+        },
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
+            },
+            "time": "2022-12-20T22:53:13+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -6582,7 +6630,7 @@
         },
         {
             "name": "typo3/cms-adminpanel",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/adminpanel.git",
@@ -6607,7 +6655,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -6750,7 +6797,7 @@
         },
         {
             "name": "typo3/cms-belog",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/belog.git",
@@ -6768,7 +6815,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -6818,7 +6864,7 @@
         },
         {
             "name": "typo3/cms-beuser",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/beuser.git",
@@ -6836,7 +6882,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -7149,7 +7194,7 @@
         },
         {
             "name": "typo3/cms-dashboard",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/dashboard.git",
@@ -7171,7 +7216,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -7308,7 +7352,7 @@
         },
         {
             "name": "typo3/cms-extensionmanager",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/extensionmanager.git",
@@ -7327,7 +7371,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -7446,7 +7489,7 @@
         },
         {
             "name": "typo3/cms-filelist",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/filelist.git",
@@ -7464,7 +7507,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -7812,7 +7854,7 @@
         },
         {
             "name": "typo3/cms-impexp",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/impexp.git",
@@ -7830,7 +7872,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -7948,7 +7989,7 @@
         },
         {
             "name": "typo3/cms-info",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/info.git",
@@ -7969,7 +8010,6 @@
             "replace": {
                 "typo3/cms-info-pagetsconfig": "self.version"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8019,7 +8059,7 @@
         },
         {
             "name": "typo3/cms-install",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/install.git",
@@ -8044,7 +8084,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8097,7 +8136,7 @@
         },
         {
             "name": "typo3/cms-reactions",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/reactions.git",
@@ -8118,7 +8157,6 @@
             "suggest": {
                 "typo3/cms-lowlevel": "To display registered reactions in the configuration module"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8165,7 +8203,7 @@
         },
         {
             "name": "typo3/cms-recycler",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/recycler.git",
@@ -8186,7 +8224,6 @@
             "suggest": {
                 "typo3/cms-scheduler": "Remove deleted records after given time"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8236,7 +8273,7 @@
         },
         {
             "name": "typo3/cms-redirects",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/redirects.git",
@@ -8264,7 +8301,6 @@
                 "typo3/cms-reports": "Get reports of redirects",
                 "typo3/cms-scheduler": "Execute commands to update redirect status"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8314,7 +8350,7 @@
         },
         {
             "name": "typo3/cms-rte-ckeditor",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/rte_ckeditor.git",
@@ -8332,7 +8368,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8382,7 +8417,7 @@
         },
         {
             "name": "typo3/cms-scheduler",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/scheduler.git",
@@ -8400,7 +8435,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8519,7 +8553,7 @@
         },
         {
             "name": "typo3/cms-styleguide",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/styleguide.git",
@@ -8542,7 +8576,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8594,7 +8627,7 @@
         },
         {
             "name": "typo3/cms-sys-note",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/sys_note.git",
@@ -8615,7 +8648,6 @@
             "suggest": {
                 "typo3/cms-dashboard": "TYPO3 users can add widgets that can help to quickly see existing sys_note records"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8665,7 +8697,7 @@
         },
         {
             "name": "typo3/cms-tstemplate",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/tstemplate.git",
@@ -8683,7 +8715,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8733,7 +8764,7 @@
         },
         {
             "name": "typo3/cms-viewpage",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/viewpage.git",
@@ -8751,7 +8782,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8801,7 +8831,7 @@
         },
         {
             "name": "typo3/cms-webhooks",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/webhooks.git",
@@ -8823,7 +8853,6 @@
             "suggest": {
                 "typo3/cms-lowlevel": "To display registered webhooks in the configuration module"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8870,7 +8899,7 @@
         },
         {
             "name": "typo3/cms-workspaces",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/workspaces.git",
@@ -8891,7 +8920,6 @@
             "replace": {
                 "typo3/cms-version": "self.version"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -8989,7 +9017,7 @@
         },
         {
             "name": "typo3/theme-camino",
-            "version": "dev-main",
+            "version": "v14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3-CMS/theme_camino.git",
@@ -9007,7 +9035,6 @@
             "conflict": {
                 "typo3/cms": "*"
             },
-            "default-branch": true,
             "type": "typo3-cms-framework",
             "extra": {
                 "typo3/cms": {
@@ -9812,38 +9839,6 @@
         "dirnbauer/visual-editor-news-addon": 20,
         "hn/typo3-mcp-server": 20,
         "t3g/blog": 20,
-        "typo3/cms-adminpanel": 20,
-        "typo3/cms-backend": 20,
-        "typo3/cms-belog": 20,
-        "typo3/cms-beuser": 20,
-        "typo3/cms-core": 20,
-        "typo3/cms-dashboard": 20,
-        "typo3/cms-extbase": 20,
-        "typo3/cms-extensionmanager": 20,
-        "typo3/cms-felogin": 20,
-        "typo3/cms-filelist": 20,
-        "typo3/cms-fluid": 20,
-        "typo3/cms-fluid-styled-content": 20,
-        "typo3/cms-form": 20,
-        "typo3/cms-frontend": 20,
-        "typo3/cms-impexp": 20,
-        "typo3/cms-indexed-search": 20,
-        "typo3/cms-info": 20,
-        "typo3/cms-install": 20,
-        "typo3/cms-reactions": 20,
-        "typo3/cms-recycler": 20,
-        "typo3/cms-redirects": 20,
-        "typo3/cms-rte-ckeditor": 20,
-        "typo3/cms-scheduler": 20,
-        "typo3/cms-seo": 20,
-        "typo3/cms-setup": 20,
-        "typo3/cms-styleguide": 20,
-        "typo3/cms-sys-note": 20,
-        "typo3/cms-tstemplate": 20,
-        "typo3/cms-viewpage": 20,
-        "typo3/cms-webhooks": 20,
-        "typo3/cms-workspaces": 20,
-        "typo3/theme-camino": 20,
         "webconsulting/agentation": 20,
         "webconsulting/desiderio": 20,
         "webconsulting/records-list-examples": 20,
