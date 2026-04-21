@@ -2,8 +2,8 @@ base: 'https://ddev-demo-setup-visual-editor.ddev.site/shadcn'
 dependencies:
   - webconsulting/desiderio
   - georgringer/news
-  - webconsulting/desiderio-template2
   - dirnbauer/adminpanel-defaults
+  - webconsulting/desiderio-preset-saas
 languages:
   -
     title: English

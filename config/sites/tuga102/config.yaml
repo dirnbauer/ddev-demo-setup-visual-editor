@@ -3,7 +3,7 @@ dependencies:
   - typo3/form
   - webconsulting/desiderio
   - dirnbauer/adminpanel-defaults
-  - webconsulting/desiderio-skin4
+  - webconsulting/desiderio-preset-editorial
   - typo3/fluid-styled-content
 languages:
   -
