@@ -837,16 +837,16 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "bd5e45df1e136c505285b85317104b7a80cbb273"
+                "reference": "e1f9b5d21618e40fa93578d1ee9b76c5bb95906b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/bd5e45df1e136c505285b85317104b7a80cbb273",
-                "reference": "bd5e45df1e136c505285b85317104b7a80cbb273",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/e1f9b5d21618e40fa93578d1ee9b76c5bb95906b",
+                "reference": "e1f9b5d21618e40fa93578d1ee9b76c5bb95906b",
                 "shasum": ""
             },
             "require": {
@@ -858,10 +858,10 @@
                 "symfony/finder": "^7.3",
                 "symfony/var-exporter": "^7.3",
                 "symfony/yaml": "^7.3",
-                "typo3/cms-backend": "^14.2",
-                "typo3/cms-core": "^14.2",
-                "typo3/cms-fluid": "^14.2",
-                "typo3/cms-frontend": "^14.2"
+                "typo3/cms-backend": "^14.3",
+                "typo3/cms-core": "^14.3",
+                "typo3/cms-fluid": "^14.3",
+                "typo3/cms-frontend": "^14.3"
             },
             "replace": {
                 "contentblocks/content-blocks": "*"
@@ -872,14 +872,14 @@
                 "friendsofphp/php-cs-fixer": "^3.22",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-phpunit": "^2.0",
-                "typo3/cms-extbase": "^14.2",
-                "typo3/cms-extensionmanager": "^14.2",
-                "typo3/cms-filelist": "^14.2",
-                "typo3/cms-install": "^14.2",
-                "typo3/cms-lowlevel": "^14.2",
-                "typo3/cms-rte-ckeditor": "^14.2",
-                "typo3/cms-tstemplate": "^14.2",
-                "typo3/cms-workspaces": "^14.2",
+                "typo3/cms-extbase": "^14.3",
+                "typo3/cms-extensionmanager": "^14.3",
+                "typo3/cms-filelist": "^14.3",
+                "typo3/cms-install": "^14.3",
+                "typo3/cms-lowlevel": "^14.3",
+                "typo3/cms-rte-ckeditor": "^14.3",
+                "typo3/cms-tstemplate": "^14.3",
+                "typo3/cms-workspaces": "^14.3",
                 "typo3/coding-standards": "^0.8",
                 "typo3/testing-framework": "dev-main"
             },
@@ -889,16 +889,11 @@
                     "Package": {
                         "serviceProvider": "TYPO3\\CMS\\ContentBlocks\\ServiceProvider",
                         "providesPackages": {
-                            "php": "",
-                            "symfony/yaml": "",
-                            "symfony/finder": "",
-                            "symfony/console": "",
                             "opis/json-schema": "",
-                            "symfony/filesystem": "",
-                            "symfony/var-exporter": "",
-                            "symfony/dependency-injection": ""
+                            "symfony/var-exporter": ""
                         }
                     },
+                    "version": "2.2.4",
                     "web-dir": ".Build/public",
                     "extension-key": "content_blocks"
                 }
@@ -922,25 +917,25 @@
             "description": "TYPO3 CMS Content Blocks - Content Types API | Define reusable components via YAML",
             "homepage": "https://typo3.org",
             "support": {
-                "chat": "https://typo3.org/help",
+                "chat": "https://typo3.community/meet/slack",
                 "docs": "https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
+                "issues": "https://github.com/FriendsOfTYPO3/content-blocks/issues",
+                "source": "https://github.com/FriendsOfTYPO3/content-blocks"
             },
-            "time": "2026-04-17T08:37:08+00:00"
+            "time": "2026-04-21T12:16:53+00:00"
         },
         {
             "name": "friendsoftypo3/visual-editor",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/visual_editor.git",
-                "reference": "eaced82489abc216147129826eb913e48a2081d3"
+                "reference": "5dd422bcc8b076f3885a92b8551a68baab3314f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/visual_editor/zipball/eaced82489abc216147129826eb913e48a2081d3",
-                "reference": "eaced82489abc216147129826eb913e48a2081d3",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/visual_editor/zipball/5dd422bcc8b076f3885a92b8551a68baab3314f1",
+                "reference": "5dd422bcc8b076f3885a92b8551a68baab3314f1",
                 "shasum": ""
             },
             "require": {
@@ -991,9 +986,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfTYPO3/visual_editor/issues",
-                "source": "https://github.com/FriendsOfTYPO3/visual_editor/tree/1.2.1"
+                "source": "https://github.com/FriendsOfTYPO3/visual_editor/tree/1.3.0"
             },
-            "time": "2026-04-20T06:44:09+00:00"
+            "time": "2026-04-21T12:48:12+00:00"
         },
         {
             "name": "georgringer/context-edit-records",
@@ -1497,12 +1492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "8c8b76cdb0ca9ae86fc1159f105a03e824084e0f"
+                "reference": "52be3a376563ec1dff7231fe1fa755ed3fbfba26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/8c8b76cdb0ca9ae86fc1159f105a03e824084e0f",
-                "reference": "8c8b76cdb0ca9ae86fc1159f105a03e824084e0f",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/52be3a376563ec1dff7231fe1fa755ed3fbfba26",
+                "reference": "52be3a376563ec1dff7231fe1fa755ed3fbfba26",
                 "shasum": ""
             },
             "require": {
@@ -1607,7 +1602,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-19T16:55:48+00:00"
+            "time": "2026-04-21T12:43:02+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
