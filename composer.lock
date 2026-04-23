@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8b4397cdc1ed82eeccc3dbde274a9f3",
+    "content-hash": "eba869019fa68cd57a9da033571d7a31",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1606,16 +1606,16 @@
         },
         {
             "name": "logiscape/mcp-sdk-php",
-            "version": "v1.7.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/logiscape/mcp-sdk-php.git",
-                "reference": "00d1e9009d06643e164e6e338a7665644b10eab5"
+                "reference": "1ed29680249488e2e028ee5b8f169fe9881e01a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/logiscape/mcp-sdk-php/zipball/00d1e9009d06643e164e6e338a7665644b10eab5",
-                "reference": "00d1e9009d06643e164e6e338a7665644b10eab5",
+                "url": "https://api.github.com/repos/logiscape/mcp-sdk-php/zipball/1ed29680249488e2e028ee5b8f169fe9881e01a7",
+                "reference": "1ed29680249488e2e028ee5b8f169fe9881e01a7",
                 "shasum": ""
             },
             "require": {
@@ -1645,9 +1645,9 @@
             "description": "Model Context Protocol SDK for PHP",
             "support": {
                 "issues": "https://github.com/logiscape/mcp-sdk-php/issues",
-                "source": "https://github.com/logiscape/mcp-sdk-php/tree/v1.7.0"
+                "source": "https://github.com/logiscape/mcp-sdk-php/tree/v1.7.1"
             },
-            "time": "2026-04-21T06:57:29+00:00"
+            "time": "2026-04-23T03:47:26+00:00"
         },
         {
             "name": "lolli42/finediff",
