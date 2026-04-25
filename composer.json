@@ -84,6 +84,9 @@
     "extra": {
         "composer-exit-on-patch-failure": true,
         "patches": {
+            "netresearch/nr-mcp-agent": {
+                "Normalize MCP tool schemas for OpenAI function calling": "patches/netresearch/nr-mcp-agent/0001-normalize-mcp-tool-schemas-for-openai.patch"
+            },
             "typo3/cms-backend": {
                 "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch"
             }
