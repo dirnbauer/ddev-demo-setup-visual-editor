@@ -1854,12 +1854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-llm.git",
-                "reference": "def747b3b29b89f9a9f72c21b6afc3228429148f"
+                "reference": "9bed213d04152b3cec569cf180ae0df3df1ce5a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/def747b3b29b89f9a9f72c21b6afc3228429148f",
-                "reference": "def747b3b29b89f9a9f72c21b6afc3228429148f",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/9bed213d04152b3cec569cf180ae0df3df1ce5a0",
+                "reference": "9bed213d04152b3cec569cf180ae0df3df1ce5a0",
                 "shasum": ""
             },
             "require": {
@@ -2012,7 +2012,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-llm/issues",
                 "source": "https://github.com/netresearch/t3x-nr-llm"
             },
-            "time": "2026-04-29T20:24:44+00:00"
+            "time": "2026-04-29T21:57:02+00:00"
         },
         {
             "name": "netresearch/nr-mcp-agent",
@@ -2020,12 +2020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-mcp-agent.git",
-                "reference": "b4f183bd8bf6291431bd46eea896d047107a0c74"
+                "reference": "2ea94a2a5097b857070c9dbe8924faa0fe8b744e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/b4f183bd8bf6291431bd46eea896d047107a0c74",
-                "reference": "b4f183bd8bf6291431bd46eea896d047107a0c74",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/2ea94a2a5097b857070c9dbe8924faa0fe8b744e",
+                "reference": "2ea94a2a5097b857070c9dbe8924faa0fe8b744e",
                 "shasum": ""
             },
             "require": {
@@ -2145,7 +2145,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-mcp-agent/issues",
                 "source": "https://github.com/netresearch/t3x-nr-mcp-agent"
             },
-            "time": "2026-04-29T21:39:03+00:00"
+            "time": "2026-04-29T21:57:16+00:00"
         },
         {
             "name": "netresearch/nr-vault",
