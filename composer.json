@@ -73,6 +73,18 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/dirnbauer/t3x-nr-llm.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/t3x-nr-vault.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/t3x-cowriter.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/dirnbauer/t3x-nr-mcp-agent.git"
         },
         {
@@ -86,12 +98,6 @@
         "patches": {
             "friendsoftypo3/content-blocks": {
                 "Create parent reference columns for collection indexes": "patches/friendsoftypo3/content-blocks/0001-create-parent-uid-column-for-collection-index.patch"
-            },
-            "netresearch/nr-vault": {
-                "Allow XChaCha20 base64 nonces in secret table": "patches/netresearch/nr-vault/0001-allow-xchacha-base64-nonces.patch"
-            },
-            "netresearch/nr-mcp-agent": {
-                "Normalize MCP tool schemas for OpenAI function calling": "patches/netresearch/nr-mcp-agent/0001-normalize-mcp-tool-schemas-for-openai.patch"
             },
             "typo3/cms-backend": {
                 "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch"
@@ -107,9 +113,10 @@
         "georgringer/news": "^14.0",
         "hn/typo3-mcp-server": "dev-main",
         "marekskopal/typo3-mcp-docs": "^1.1",
-        "netresearch/nr-llm": "^0.6.0",
+        "netresearch/nr-llm": "dev-main as 0.6.0",
         "netresearch/nr-mcp-agent": "dev-main",
-        "netresearch/t3-cowriter": "^3.1",
+        "netresearch/nr-vault": "dev-main as 0.4.6",
+        "netresearch/t3-cowriter": "dev-main as 3.1.1",
         "supseven/inline-page-module": "^4.0",
         "t3g/blog": "dev-master",
         "typo3/class-alias-loader": "2.0.1 as 1.99.0",
