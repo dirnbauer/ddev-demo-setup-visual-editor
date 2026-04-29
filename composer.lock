@@ -10149,12 +10149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/desiderio.git",
-                "reference": "f985fc783dcf31eddcad8f7c7593e67441136cd3"
+                "reference": "915a8ff59a31d6e31698574b35af0d94a258dacc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/f985fc783dcf31eddcad8f7c7593e67441136cd3",
-                "reference": "f985fc783dcf31eddcad8f7c7593e67441136cd3",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/915a8ff59a31d6e31698574b35af0d94a258dacc",
+                "reference": "915a8ff59a31d6e31698574b35af0d94a258dacc",
                 "shasum": ""
             },
             "require": {
@@ -10211,7 +10211,7 @@
                 }
             ],
             "description": "Desiderio — shadcn/ui-inspired Fluid 5 component library, 255 content elements, and theme layer for TYPO3 14",
-            "time": "2026-04-29T14:12:52+00:00"
+            "time": "2026-04-29T19:51:30+00:00"
         },
         {
             "name": "webconsulting/records-list-examples",
