@@ -2020,12 +2020,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-mcp-agent.git",
-                "reference": "45f8453127d21ede14d1ff8993600a35c6452d35"
+                "reference": "38a90f1bd7f2ccdbdcf06e5770da447e15df8395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/45f8453127d21ede14d1ff8993600a35c6452d35",
-                "reference": "45f8453127d21ede14d1ff8993600a35c6452d35",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/38a90f1bd7f2ccdbdcf06e5770da447e15df8395",
+                "reference": "38a90f1bd7f2ccdbdcf06e5770da447e15df8395",
                 "shasum": ""
             },
             "require": {
@@ -2145,7 +2145,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-mcp-agent/issues",
                 "source": "https://github.com/netresearch/t3x-nr-mcp-agent"
             },
-            "time": "2026-04-29T22:18:31+00:00"
+            "time": "2026-04-29T22:22:42+00:00"
         },
         {
             "name": "netresearch/nr-vault",
