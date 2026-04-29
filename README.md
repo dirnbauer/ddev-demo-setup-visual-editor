@@ -20,6 +20,15 @@ This demo now also includes:
 5. Run `ddev launch /typo3/module/web/edit` user: `admin` password: `Demo123*`
 6. If you want to update the `EXT:visual_editor` run this: `ddev composer u friendsoftypo3/visual-editor`
 
+## Cowriter CKEditor preset
+
+The Cowriter RTE preset is enabled through the shared site set in
+`packages/adminpanel_defaults/Configuration/Sets/AdminPanelDefaults/page.tsconfig`:
+
+```typoscript
+RTE.default.preset = cowriter
+```
+
 
 You should see this:
 

@@ -1,0 +1,4 @@
+#
+# Enable the Cowriter CKEditor preset for rich text fields.
+#
+RTE.default.preset = cowriter
