@@ -1,6 +1,7 @@
-base: 'https://mcp-news-demo.ddev.site/'
+base: 'https://ddev-demo-setup-visual-editor.ddev.site/typo3-vienna-camp-2026/'
 dependencies:
-  - dirnbauer/adminpanel-defaults
+  - webconsulting/desiderio-preset-corporate
+  - marekskopal/typo3-mcp-docs
 languages:
   -
     languageId: 0
@@ -13,16 +14,16 @@ languages:
     fallbackType: strict
   -
     languageId: 1
-    title: Deutsch
+    title: German
     navigationTitle: Deutsch
-    locale: de_DE.UTF-8
+    locale: de_AT.UTF-8
     base: /de/
     flag: de
     iso-639-1: de
     fallbackType: fallback
   -
     languageId: 2
-    title: 中文
+    title: 'Chinese (Simplified)'
     navigationTitle: 中文
     locale: zh_CN.UTF-8
     base: /zh/
@@ -31,20 +32,11 @@ languages:
     fallbackType: fallback
   -
     languageId: 3
-    title: עברית
-    navigationTitle: עברית
-    locale: he_IL.UTF-8
-    base: /he/
-    flag: il
-    iso-639-1: he
+    title: Hungarian
+    navigationTitle: Magyar
+    locale: hu_HU.UTF-8
+    base: /hu/
+    flag: hu
+    iso-639-1: hu
     fallbackType: fallback
-  -
-    languageId: 4
-    title: Español
-    navigationTitle: Español
-    locale: es_ES.UTF-8
-    base: /es/
-    flag: es
-    iso-639-1: es
-    fallbackType: fallback
-rootPageId: 346
+rootPageId: 505

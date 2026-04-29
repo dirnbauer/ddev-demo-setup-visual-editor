@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a26f0fabb653c0d490d4a2c168e30aa6",
+    "content-hash": "33d1e82df380bcf491224b335a52b621",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -837,27 +837,27 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "2.2.4",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "e1f9b5d21618e40fa93578d1ee9b76c5bb95906b"
+                "reference": "9db3af3c8fb718edf8f27258e796f997f2bfae2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/e1f9b5d21618e40fa93578d1ee9b76c5bb95906b",
-                "reference": "e1f9b5d21618e40fa93578d1ee9b76c5bb95906b",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/9db3af3c8fb718edf8f27258e796f997f2bfae2b",
+                "reference": "9db3af3c8fb718edf8f27258e796f997f2bfae2b",
                 "shasum": ""
             },
             "require": {
                 "opis/json-schema": "^2.6",
                 "php": "^8.2",
-                "symfony/console": "^7.3",
-                "symfony/dependency-injection": "^7.3",
-                "symfony/filesystem": "^7.3",
-                "symfony/finder": "^7.3",
-                "symfony/var-exporter": "^7.3",
-                "symfony/yaml": "^7.3",
+                "symfony/console": "^7.4",
+                "symfony/dependency-injection": "^7.4",
+                "symfony/filesystem": "^7.4",
+                "symfony/finder": "^7.4",
+                "symfony/var-exporter": "^7.4 || ^8.0",
+                "symfony/yaml": "^7.4",
                 "typo3/cms-backend": "^14.3",
                 "typo3/cms-core": "^14.3",
                 "typo3/cms-fluid": "^14.3",
@@ -881,7 +881,7 @@
                 "typo3/cms-tstemplate": "^14.3",
                 "typo3/cms-workspaces": "^14.3",
                 "typo3/coding-standards": "^0.8",
-                "typo3/testing-framework": "dev-main"
+                "typo3/testing-framework": "^9.5"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -893,7 +893,7 @@
                             "symfony/var-exporter": ""
                         }
                     },
-                    "version": "2.2.4",
+                    "version": "2.3.1",
                     "web-dir": ".Build/public",
                     "extension-key": "content_blocks"
                 }
@@ -917,25 +917,25 @@
             "description": "TYPO3 CMS Content Blocks - Content Types API | Define reusable components via YAML",
             "homepage": "https://typo3.org",
             "support": {
-                "chat": "https://typo3.community/meet/slack",
+                "chat": "https://typo3.slack.com/archives/C8Z2UM50Q",
                 "docs": "https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/",
                 "issues": "https://github.com/FriendsOfTYPO3/content-blocks/issues",
                 "source": "https://github.com/FriendsOfTYPO3/content-blocks"
             },
-            "time": "2026-04-21T12:16:53+00:00"
+            "time": "2026-04-24T07:10:04+00:00"
         },
         {
             "name": "friendsoftypo3/visual-editor",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/visual_editor.git",
-                "reference": "5dd422bcc8b076f3885a92b8551a68baab3314f1"
+                "reference": "e8e5c434bc93771979a33bf9436c71817c8d3e8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/visual_editor/zipball/5dd422bcc8b076f3885a92b8551a68baab3314f1",
-                "reference": "5dd422bcc8b076f3885a92b8551a68baab3314f1",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/visual_editor/zipball/e8e5c434bc93771979a33bf9436c71817c8d3e8e",
+                "reference": "e8e5c434bc93771979a33bf9436c71817c8d3e8e",
                 "shasum": ""
             },
             "require": {
@@ -986,9 +986,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FriendsOfTYPO3/visual_editor/issues",
-                "source": "https://github.com/FriendsOfTYPO3/visual_editor/tree/1.3.0"
+                "source": "https://github.com/FriendsOfTYPO3/visual_editor/tree/1.4.0"
             },
-            "time": "2026-04-21T12:48:12+00:00"
+            "time": "2026-04-25T06:49:17+00:00"
         },
         {
             "name": "georgringer/context-edit-records",
@@ -1492,12 +1492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "52be3a376563ec1dff7231fe1fa755ed3fbfba26"
+                "reference": "daa56a067ddfdd76fdb552a748c3e88ba244e452"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/52be3a376563ec1dff7231fe1fa755ed3fbfba26",
-                "reference": "52be3a376563ec1dff7231fe1fa755ed3fbfba26",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/daa56a067ddfdd76fdb552a748c3e88ba244e452",
+                "reference": "daa56a067ddfdd76fdb552a748c3e88ba244e452",
                 "shasum": ""
             },
             "require": {
@@ -1561,7 +1561,8 @@
                     "paratest -c phpunit.xml.dist"
                 ],
                 "test:llm": [
-                    "paratest -c Tests/Llm/phpunit-llm.xml"
+                    "paratest -c Tests/Llm/phpunit-llm.xml --testdox --no-progress -p 5 --log-junit .Build/llm-results.xml || true",
+                    "php Build/check-llm-results.php --min-pass=3"
                 ],
                 "docs:check": [
                     "docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --no-progress --fail-on-log"
@@ -1602,7 +1603,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-21T12:43:02+00:00"
+            "time": "2026-04-26T15:20:01+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -1713,6 +1714,72 @@
                 "source": "https://github.com/lolli42/FineDiff/tree/1.1.2"
             },
             "time": "2025-10-31T12:28:27+00:00"
+        },
+        {
+            "name": "marekskopal/typo3-mcp-docs",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marekskopal/typo3-mcp-docs.git",
+                "reference": "0b4fd6b2b265cc8a7e7b86530e014258f5efaaa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marekskopal/typo3-mcp-docs/zipball/0b4fd6b2b265cc8a7e7b86530e014258f5efaaa7",
+                "reference": "0b4fd6b2b265cc8a7e7b86530e014258f5efaaa7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "typo3/cms-backend": "^13.4.24 || ^14.1.0",
+                "typo3/cms-core": "^13.4.24 || ^14.1.0",
+                "typo3/cms-extbase": "^13.4.24 || ^14.1.0",
+                "typo3/cms-fluid": "^13.4.24 || ^14.1.0",
+                "typo3/cms-frontend": "^13.4.24 || ^14.1.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^2.0",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^12.0",
+                "shipmonk/phpstan-rules": "^4.0",
+                "slevomat/coding-standard": "^8.14"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ms_mcp_docs"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MarekSkopal\\MsMcpDocs\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marek Skopal",
+                    "homepage": "https://marekskopal.cz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "MCP documentation plugin for TYPO3 CMS",
+            "homepage": "https://marekskopal.cz",
+            "keywords": [
+                "documentation",
+                "mcp",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/marekskopal/typo3-mcp-docs/issues",
+                "source": "https://github.com/marekskopal/typo3-mcp-docs/tree/v1.1.1"
+            },
+            "time": "2026-04-19T08:12:10+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -1865,12 +1932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-mcp-agent.git",
-                "reference": "ee2a42b63c3cfecace3191cd08e4b0a0bc58de48"
+                "reference": "d9426b07475a1896d6e60eb87114bbd5406b127d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/ee2a42b63c3cfecace3191cd08e4b0a0bc58de48",
-                "reference": "ee2a42b63c3cfecace3191cd08e4b0a0bc58de48",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/d9426b07475a1896d6e60eb87114bbd5406b127d",
+                "reference": "d9426b07475a1896d6e60eb87114bbd5406b127d",
                 "shasum": ""
             },
             "require": {
@@ -1990,7 +2057,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-mcp-agent/issues",
                 "source": "https://github.com/netresearch/t3x-nr-mcp-agent"
             },
-            "time": "2026-03-27T10:20:20+00:00"
+            "time": "2026-04-23T06:23:13+00:00"
         },
         {
             "name": "netresearch/nr-vault",
@@ -2069,6 +2136,95 @@
                 "source": "https://github.com/netresearch/t3x-nr-vault"
             },
             "time": "2026-03-07T19:15:36+00:00"
+        },
+        {
+            "name": "netresearch/t3-cowriter",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/t3x-cowriter.git",
+                "reference": "900f5e75c6d440de5a0d6146298662958bf8ea74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/t3x-cowriter/zipball/900f5e75c6d440de5a0d6146298662958bf8ea74",
+                "reference": "900f5e75c6d440de5a0d6146298662958bf8ea74",
+                "shasum": ""
+            },
+            "require": {
+                "netresearch/nr-llm": ">=0.3 <1.0",
+                "php": "^8.2",
+                "typo3/cms-backend": "^13.4 || ^14.0",
+                "typo3/cms-core": "^13.4 || ^14.0",
+                "typo3/cms-rte-ckeditor": "^13.4 || ^14.0"
+            },
+            "require-dev": {
+                "netresearch/typo3-ci-workflows": "^1.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/public",
+                    "extension-key": "t3_cowriter"
+                },
+                "branch-alias": {
+                    "dev-main": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Netresearch\\T3Cowriter\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Netresearch",
+                    "email": "andre.lademann@netresearch.de",
+                    "homepage": "https://www.netresearch.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Netresearch",
+                    "email": "thomas.schoene@netresearch.de",
+                    "homepage": "https://www.netresearch.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Netresearch",
+                    "email": "sebastian.koschel@netresearch.de",
+                    "homepage": "https://www.netresearch.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Netresearch",
+                    "email": "martin.wunderlich@netresearch.de",
+                    "homepage": "https://www.netresearch.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Netresearch DTT GmbH",
+                    "homepage": "https://www.netresearch.de"
+                }
+            ],
+            "description": "With the help of AI you can now work on a page together with a cowriter - a digital assistant that helps you to write your content.",
+            "homepage": "https://github.com/netresearch/t3x-cowriter",
+            "keywords": [
+                "ai",
+                "backend",
+                "cowriter",
+                "extension",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://github.com/netresearch/t3x-cowriter",
+                "issues": "https://github.com/netresearch/t3x-cowriter/issues",
+                "source": "https://github.com/netresearch/t3x-cowriter"
+            },
+            "time": "2026-03-24T17:39:07+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -3675,16 +3831,16 @@
         },
         {
             "name": "supseven/inline-page-module",
-            "version": "v4.0.0",
+            "version": "v4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/supseven-at/inline-page-module.git",
-                "reference": "f6e5fbc1d68a4cf83430d86f00d84179f031c44f"
+                "reference": "23eb05914cc3484c0f3f6162e4777b1066802481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/supseven-at/inline-page-module/zipball/f6e5fbc1d68a4cf83430d86f00d84179f031c44f",
-                "reference": "f6e5fbc1d68a4cf83430d86f00d84179f031c44f",
+                "url": "https://api.github.com/repos/supseven-at/inline-page-module/zipball/23eb05914cc3484c0f3f6162e4777b1066802481",
+                "reference": "23eb05914cc3484c0f3f6162e4777b1066802481",
                 "shasum": ""
             },
             "require": {
@@ -3712,9 +3868,9 @@
             "description": "Edit inline tt_content records in a page module view",
             "support": {
                 "issues": "https://github.com/supseven-at/inline-page-module/issues",
-                "source": "https://github.com/supseven-at/inline-page-module/tree/v4.0.0"
+                "source": "https://github.com/supseven-at/inline-page-module/tree/v4.0.1"
             },
-            "time": "2026-02-25T14:41:24+00:00"
+            "time": "2026-04-24T07:51:29+00:00"
         },
         {
             "name": "symfony/cache",
@@ -5167,7 +5323,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -5226,7 +5382,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -5250,16 +5406,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "ad1b7b9092976d6c948b8a187cec9faaea9ec1df"
+                "reference": "4864388bfbd3001ce88e234fab652acd91fdc57e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/ad1b7b9092976d6c948b8a187cec9faaea9ec1df",
-                "reference": "ad1b7b9092976d6c948b8a187cec9faaea9ec1df",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/4864388bfbd3001ce88e234fab652acd91fdc57e",
+                "reference": "4864388bfbd3001ce88e234fab652acd91fdc57e",
                 "shasum": ""
             },
             "require": {
@@ -5308,7 +5464,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -5328,11 +5484,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-10T16:19:22+00:00"
+            "time": "2026-04-26T13:13:48+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -5395,7 +5551,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -5419,7 +5575,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -5480,7 +5636,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -5504,7 +5660,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -5565,7 +5721,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -5589,7 +5745,7 @@
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
@@ -5645,7 +5801,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -5669,7 +5825,7 @@
         },
         {
             "name": "symfony/polyfill-uuid",
-            "version": "v1.36.0",
+            "version": "v1.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-uuid.git",
@@ -5728,7 +5884,7 @@
                 "uuid"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.36.0"
+                "source": "https://github.com/symfony/polyfill-uuid/tree/v1.37.0"
             },
             "funding": [
                 {
@@ -8630,6 +8786,73 @@
             "time": "2026-04-21T09:27:11+00:00"
         },
         {
+            "name": "typo3/cms-lowlevel",
+            "version": "v14.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/lowlevel.git",
+                "reference": "eb721a7f2a28489b76c3c1598362e51701b48ac7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/eb721a7f2a28489b76c3c1598362e51701b48ac7",
+                "reference": "eb721a7f2a28489b76c3c1598362e51701b48ac7",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "14.3.0"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "lowlevel"
+                },
+                "branch-alias": {
+                    "dev-main": "14.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Lowlevel - Technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
+            "homepage": "https://typo3.community/",
+            "support": {
+                "chat": "https://typo3.community/meet/slack/",
+                "docs": "https://docs.typo3.org/",
+                "forum": "https://talk.typo3.org/",
+                "issues": "https://forge.typo3.org/issues/",
+                "rss": "https://news.typo3.com/rss/",
+                "security": "https://typo3.org/security/",
+                "source": "https://github.com/TYPO3/typo3/"
+            },
+            "funding": [
+                {
+                    "url": "https://typo3.org/membership",
+                    "type": "membership"
+                }
+            ],
+            "time": "2026-04-21T09:27:11+00:00"
+        },
+        {
             "name": "typo3/cms-reactions",
             "version": "v14.3.0",
             "source": {
@@ -9724,12 +9947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/desiderio.git",
-                "reference": "ae4d96164a9ad714a5813b352ed5e01231ae9ce7"
+                "reference": "2fffa0fcd6fde515d70478971ad184ce40f1c74a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/ae4d96164a9ad714a5813b352ed5e01231ae9ce7",
-                "reference": "ae4d96164a9ad714a5813b352ed5e01231ae9ce7",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/2fffa0fcd6fde515d70478971ad184ce40f1c74a",
+                "reference": "2fffa0fcd6fde515d70478971ad184ce40f1c74a",
                 "shasum": ""
             },
             "require": {
@@ -9785,8 +10008,8 @@
                     "name": "webconsulting studio"
                 }
             ],
-            "description": "Desiderio — shadcn/ui-inspired Fluid 5 component library, 250 content elements, and theme layer for TYPO3 14",
-            "time": "2026-04-21T10:35:57+00:00"
+            "description": "Desiderio — shadcn/ui-inspired Fluid 5 component library, 255 content elements, and theme layer for TYPO3 14",
+            "time": "2026-04-29T12:33:25+00:00"
         },
         {
             "name": "webconsulting/records-list-examples",
@@ -10062,12 +10285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/workos.git",
-                "reference": "188eab46323cb6200a908bcb0bf9e754ad524b5d"
+                "reference": "ece9c5f5732bde1b55823f79ce86cbe759b82742"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/188eab46323cb6200a908bcb0bf9e754ad524b5d",
-                "reference": "188eab46323cb6200a908bcb0bf9e754ad524b5d",
+                "url": "https://api.github.com/repos/dirnbauer/workos/zipball/ece9c5f5732bde1b55823f79ce86cbe759b82742",
+                "reference": "ece9c5f5732bde1b55823f79ce86cbe759b82742",
                 "shasum": ""
             },
             "require": {
@@ -10089,6 +10312,7 @@
                 "phpstan/phpstan-strict-rules": "^2.0",
                 "phpunit/phpunit": "^11.5",
                 "saschaegerer/phpstan-typo3": "^3.0",
+                "typo3/cms-workspaces": "^14.0",
                 "typo3/coding-standards": "^0.8",
                 "typo3/testing-framework": "^9.2"
             },
@@ -10150,7 +10374,7 @@
                 }
             ],
             "description": "TYPO3 v14 extension for WorkOS-powered frontend and backend login (AuthKit, SSO, MFA, Admin Portal).",
-            "homepage": "https://github.com/webconsulting/typo3-workos-auth",
+            "homepage": "https://github.com/dirnbauer/workos",
             "keywords": [
                 "authentication",
                 "mfa",
@@ -10161,10 +10385,10 @@
                 "workos"
             ],
             "support": {
-                "issues": "https://github.com/webconsulting/typo3-workos-auth/issues",
-                "source": "https://github.com/webconsulting/typo3-workos-auth"
+                "issues": "https://github.com/dirnbauer/workos/issues",
+                "source": "https://github.com/dirnbauer/workos"
             },
-            "time": "2026-04-22T12:58:07+00:00"
+            "time": "2026-04-24T17:39:12+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -10230,16 +10454,16 @@
         },
         {
             "name": "workos/workos-php",
-            "version": "5.1.0",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/workos/workos-php.git",
-                "reference": "c7836c8003282060d08b974f7301f8987d7ad551"
+                "reference": "87571770ba3e6530629e6aa167958d4ae1d646db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/workos/workos-php/zipball/c7836c8003282060d08b974f7301f8987d7ad551",
-                "reference": "c7836c8003282060d08b974f7301f8987d7ad551",
+                "url": "https://api.github.com/repos/workos/workos-php/zipball/87571770ba3e6530629e6aa167958d4ae1d646db",
+                "reference": "87571770ba3e6530629e6aa167958d4ae1d646db",
                 "shasum": ""
             },
             "require": {
@@ -10273,9 +10497,9 @@
             "homepage": "https://workos.com",
             "support": {
                 "issues": "https://github.com/workos/workos-php/issues",
-                "source": "https://github.com/workos/workos-php/tree/5.1.0"
+                "source": "https://github.com/workos/workos-php/tree/5.2.1"
             },
-            "time": "2026-04-20T20:57:54+00:00"
+            "time": "2026-04-28T15:52:54+00:00"
         }
     ],
     "packages-dev": [],

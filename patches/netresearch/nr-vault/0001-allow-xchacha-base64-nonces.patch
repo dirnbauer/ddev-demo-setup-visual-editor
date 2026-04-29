@@ -1,0 +1,21 @@
+Subject: [PATCH] Allow XChaCha20 base64 nonces in secret table
+
+The local encryption adapter base64-encodes nonces before storing them. When
+XChaCha20-Poly1305 is used, libsodium generates 24-byte nonces, which encode
+to 32 characters. The previous varchar(24) schema only fit the raw nonce size
+and caused inserts to fail with "Data too long for column 'dek_nonce'".
+
+Affected file:
+  ext_tables.sql
+
+--- a/ext_tables.sql
++++ b/ext_tables.sql
+@@ -14,6 +14,6 @@ CREATE TABLE tx_nrvault_secret (
+     -- Encrypted data (local adapter only)
+     encrypted_value mediumblob,
+     encrypted_dek text,
+-    dek_nonce varchar(24) DEFAULT '' NOT NULL,
+-    value_nonce varchar(24) DEFAULT '' NOT NULL,
++    dek_nonce varchar(32) DEFAULT '' NOT NULL,
++    value_nonce varchar(32) DEFAULT '' NOT NULL,
+     encryption_version int(11) unsigned DEFAULT 1 NOT NULL,
