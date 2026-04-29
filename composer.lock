@@ -1854,12 +1854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-llm.git",
-                "reference": "569423df6f42a1c5745ca26a20efc56741765c6d"
+                "reference": "def747b3b29b89f9a9f72c21b6afc3228429148f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/569423df6f42a1c5745ca26a20efc56741765c6d",
-                "reference": "569423df6f42a1c5745ca26a20efc56741765c6d",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/def747b3b29b89f9a9f72c21b6afc3228429148f",
+                "reference": "def747b3b29b89f9a9f72c21b6afc3228429148f",
                 "shasum": ""
             },
             "require": {
@@ -2012,7 +2012,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-llm/issues",
                 "source": "https://github.com/netresearch/t3x-nr-llm"
             },
-            "time": "2026-04-29T16:04:58+00:00"
+            "time": "2026-04-29T20:24:44+00:00"
         },
         {
             "name": "netresearch/nr-mcp-agent",
@@ -2020,16 +2020,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-mcp-agent.git",
-                "reference": "587e20a5f7304d8536a0f9cfbb5d1d547d5fbdbe"
+                "reference": "976230ad3131f2bb477cfd37cf5b558a7fef3e3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/587e20a5f7304d8536a0f9cfbb5d1d547d5fbdbe",
-                "reference": "587e20a5f7304d8536a0f9cfbb5d1d547d5fbdbe",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/976230ad3131f2bb477cfd37cf5b558a7fef3e3b",
+                "reference": "976230ad3131f2bb477cfd37cf5b558a7fef3e3b",
                 "shasum": ""
             },
             "require": {
-                "netresearch/nr-llm": "^0.6.0",
+                "netresearch/nr-llm": "dev-main",
                 "php": "^8.2",
                 "phpoffice/phpword": "^1.0",
                 "smalot/pdfparser": "^2.0",
@@ -2087,7 +2087,7 @@
                     "@ci:tests"
                 ],
                 "ci:phpstan": [
-                    ".Build/bin/phpstan analyse -c Build/phpstan/phpstan.neon --no-progress"
+                    ".Build/bin/phpstan analyse -c Build/phpstan/phpstan.neon --no-progress --memory-limit=1G"
                 ],
                 "ci:cgl": [
                     ".Build/bin/php-cs-fixer fix --dry-run --diff"
@@ -2145,7 +2145,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-mcp-agent/issues",
                 "source": "https://github.com/netresearch/t3x-nr-mcp-agent"
             },
-            "time": "2026-04-29T16:05:10+00:00"
+            "time": "2026-04-29T20:20:09+00:00"
         },
         {
             "name": "netresearch/nr-vault",
@@ -2153,12 +2153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-vault.git",
-                "reference": "deed1485b55a6904dab5648900622488c4b5dca5"
+                "reference": "7f482cf3a95b2dbf32fabc99b2926f2e92832f4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-vault/zipball/deed1485b55a6904dab5648900622488c4b5dca5",
-                "reference": "deed1485b55a6904dab5648900622488c4b5dca5",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-vault/zipball/7f482cf3a95b2dbf32fabc99b2926f2e92832f4f",
+                "reference": "7f482cf3a95b2dbf32fabc99b2926f2e92832f4f",
                 "shasum": ""
             },
             "require": {
@@ -2282,7 +2282,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-vault/issues",
                 "source": "https://github.com/netresearch/t3x-nr-vault"
             },
-            "time": "2026-04-29T16:04:58+00:00"
+            "time": "2026-04-29T20:19:53+00:00"
         },
         {
             "name": "netresearch/t3-cowriter",
@@ -2290,12 +2290,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-cowriter.git",
-                "reference": "b0467a781bc8a2a0808540ebdf998bf3cf7f2bba"
+                "reference": "a0fad0ecbf0419778030da67f00032246bafdc51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-cowriter/zipball/b0467a781bc8a2a0808540ebdf998bf3cf7f2bba",
-                "reference": "b0467a781bc8a2a0808540ebdf998bf3cf7f2bba",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-cowriter/zipball/a0fad0ecbf0419778030da67f00032246bafdc51",
+                "reference": "a0fad0ecbf0419778030da67f00032246bafdc51",
                 "shasum": ""
             },
             "require": {
@@ -2426,7 +2426,7 @@
                 "source": "https://github.com/netresearch/t3x-cowriter",
                 "docs": "https://github.com/netresearch/t3x-cowriter"
             },
-            "time": "2026-04-29T16:04:58+00:00"
+            "time": "2026-04-29T20:19:57+00:00"
         },
         {
             "name": "nikic/php-parser",
