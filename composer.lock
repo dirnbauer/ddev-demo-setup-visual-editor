@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9268fdd00751b3d2fa6b9367a463bebb",
+    "content-hash": "5e2f95def9608e3fbda46d1ce70a1ba2",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -923,6 +923,71 @@
                 "source": "https://github.com/FriendsOfTYPO3/content-blocks"
             },
             "time": "2026-04-24T07:10:04+00:00"
+        },
+        {
+            "name": "friendsoftypo3/tt-address",
+            "version": "10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/tt_address.git",
+                "reference": "1070cc5d9485b0c02dfcfdb7245564c4ac37f299"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/tt_address/zipball/1070cc5d9485b0c02dfcfdb7245564c4ac37f299",
+                "reference": "1070cc5d9485b0c02dfcfdb7245564c4ac37f299",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/console": "^7.2",
+                "typo3/cms-core": "^13.4.20 || ^14.0",
+                "typo3/cms-install": "^13.4.20 || ^14.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^v3.89.2",
+                "kubawerlos/php-cs-fixer-custom-fixers": "^3.35.1",
+                "phpunit/phpunit": "^10.5.58",
+                "typo3/coding-standards": "^0.8.0",
+                "typo3/testing-framework": "^8.3.1",
+                "webmozart/assert": "^1.12.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/public",
+                    "extension-key": "tt_address"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FriendsOfTYPO3\\TtAddress\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "tt_address Development Team",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Displays a list of addresses from an address table on the page.",
+            "homepage": "https://extensions.typo3.org/extension/tt_address",
+            "keywords": [
+                "addresses",
+                "extension",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/friendsoftypo3/tt-address/main/en-us/",
+                "issues": "https://github.com/FriendsOfTYPO3/tt_address/issues",
+                "source": "https://github.com/FriendsOfTYPO3/tt_address"
+            },
+            "time": "2025-11-25T13:28:17+00:00"
         },
         {
             "name": "friendsoftypo3/visual-editor",
@@ -10268,19 +10333,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "b9938ac2f9d85544b7c9ae516d8663e9af50f37b"
+                "reference": "64ac835ef3cf39e0943c5bc5480a2f36fd08a8cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/b9938ac2f9d85544b7c9ae516d8663e9af50f37b",
-                "reference": "b9938ac2f9d85544b7c9ae516d8663e9af50f37b",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/64ac835ef3cf39e0943c5bc5480a2f36fd08a8cb",
+                "reference": "64ac835ef3cf39e0943c5bc5480a2f36fd08a8cb",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.3",
-                "typo3/cms-backend": "^14.0",
-                "typo3/cms-core": "^14.0",
-                "typo3/cms-fluid": "^14.0"
+                "typo3/cms-backend": "^14.3",
+                "typo3/cms-core": "^14.3",
+                "typo3/cms-fluid": "^14.3"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.0",
@@ -10326,7 +10391,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-04-21T07:57:02+00:00"
+            "time": "2026-04-30T05:50:59+00:00"
         },
         {
             "name": "webconsulting/typo3-capability-manifest",

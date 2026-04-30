@@ -108,6 +108,7 @@
         "cweagans/composer-patches": "^1.7",
         "dirnbauer/adminpanel-defaults": "dev-main",
         "dirnbauer/visual-editor-news-addon": "dev-main",
+        "friendsoftypo3/tt-address": "^10.0",
         "friendsoftypo3/visual-editor": "^1.1",
         "georgringer/context-edit-records": "^1.0",
         "georgringer/news": "^14.0",
