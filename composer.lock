@@ -1919,12 +1919,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-llm.git",
-                "reference": "f2b5beac40a301a089b98b8df2a29c49a6913697"
+                "reference": "cbb79fa87cb8c998fed5158c0d633287a3d0db8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/f2b5beac40a301a089b98b8df2a29c49a6913697",
-                "reference": "f2b5beac40a301a089b98b8df2a29c49a6913697",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/cbb79fa87cb8c998fed5158c0d633287a3d0db8e",
+                "reference": "cbb79fa87cb8c998fed5158c0d633287a3d0db8e",
                 "shasum": ""
             },
             "require": {
@@ -2079,7 +2079,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-llm/issues",
                 "source": "https://github.com/netresearch/t3x-nr-llm"
             },
-            "time": "2026-04-29T23:17:34+00:00"
+            "time": "2026-04-30T06:48:25+00:00"
         },
         {
             "name": "netresearch/nr-mcp-agent",
@@ -2087,12 +2087,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-mcp-agent.git",
-                "reference": "05fbfb7439b8a474e8d050960929c12f0b4c5dae"
+                "reference": "88ab64155e3e74ea5c0c5dc601de7d42aac2e4be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/05fbfb7439b8a474e8d050960929c12f0b4c5dae",
-                "reference": "05fbfb7439b8a474e8d050960929c12f0b4c5dae",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-mcp-agent/zipball/88ab64155e3e74ea5c0c5dc601de7d42aac2e4be",
+                "reference": "88ab64155e3e74ea5c0c5dc601de7d42aac2e4be",
                 "shasum": ""
             },
             "require": {
@@ -2212,7 +2212,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-mcp-agent/issues",
                 "source": "https://github.com/netresearch/t3x-nr-mcp-agent"
             },
-            "time": "2026-04-30T00:00:55+00:00"
+            "time": "2026-04-30T07:03:38+00:00"
         },
         {
             "name": "netresearch/nr-vault",
@@ -10333,12 +10333,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "64ac835ef3cf39e0943c5bc5480a2f36fd08a8cb"
+                "reference": "f915161eb591385287b60b85d7070275e9d782ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/64ac835ef3cf39e0943c5bc5480a2f36fd08a8cb",
-                "reference": "64ac835ef3cf39e0943c5bc5480a2f36fd08a8cb",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/f915161eb591385287b60b85d7070275e9d782ea",
+                "reference": "f915161eb591385287b60b85d7070275e9d782ea",
                 "shasum": ""
             },
             "require": {
@@ -10391,7 +10391,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-04-30T05:50:59+00:00"
+            "time": "2026-04-30T06:42:07+00:00"
         },
         {
             "name": "webconsulting/typo3-capability-manifest",
