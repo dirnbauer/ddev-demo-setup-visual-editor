@@ -15,7 +15,7 @@
         "use-github-api": false,
         "preferred-install": {
             "typo3/*": "source",
-            "hn/typo3-mcp-server": "source",
+            "marekskopal/typo3-mcp-server": "source",
             "t3g/blog": "source",
             "webconsulting/*": "source",
             "*": "source"
@@ -45,7 +45,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/dirnbauer/typo3-mcp-server.git"
+            "url": "https://github.com/marekskopal/typo3-mcp-server.git"
         },
         {
             "type": "vcs",
@@ -112,7 +112,7 @@
         "friendsoftypo3/visual-editor": "^1.1",
         "georgringer/context-edit-records": "^1.0",
         "georgringer/news": "^14.0",
-        "hn/typo3-mcp-server": "dev-main",
+        "marekskopal/typo3-mcp-server": "^0.9",
         "marekskopal/typo3-mcp-docs": "^1.1",
         "netresearch/nr-llm": "dev-main as 0.7.0",
         "netresearch/nr-mcp-agent": "dev-main",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e2f95def9608e3fbda46d1ce70a1ba2",
+    "content-hash": "a6f922d9012812a5e949f4be1985af25",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -837,16 +837,16 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "9db3af3c8fb718edf8f27258e796f997f2bfae2b"
+                "reference": "e5d36d9892108fb566a208cb4d9f7a4da3b88c22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/9db3af3c8fb718edf8f27258e796f997f2bfae2b",
-                "reference": "9db3af3c8fb718edf8f27258e796f997f2bfae2b",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/e5d36d9892108fb566a208cb4d9f7a4da3b88c22",
+                "reference": "e5d36d9892108fb566a208cb4d9f7a4da3b88c22",
                 "shasum": ""
             },
             "require": {
@@ -893,7 +893,7 @@
                             "symfony/var-exporter": ""
                         }
                     },
-                    "version": "2.3.1",
+                    "version": "2.3.2",
                     "web-dir": ".Build/public",
                     "extension-key": "content_blocks"
                 }
@@ -922,7 +922,7 @@
                 "issues": "https://github.com/FriendsOfTYPO3/content-blocks/issues",
                 "source": "https://github.com/FriendsOfTYPO3/content-blocks"
             },
-            "time": "2026-04-24T07:10:04+00:00"
+            "time": "2026-04-30T07:00:51+00:00"
         },
         {
             "name": "friendsoftypo3/tt-address",
@@ -1552,170 +1552,6 @@
             "time": "2026-03-10T16:41:02+00:00"
         },
         {
-            "name": "hn/typo3-mcp-server",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "b1549aace1436749c34fd2210d04162771c5711e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/b1549aace1436749c34fd2210d04162771c5711e",
-                "reference": "b1549aace1436749c34fd2210d04162771c5711e",
-                "shasum": ""
-            },
-            "require": {
-                "logiscape/mcp-sdk-php": "^1.2",
-                "php": ">=8.2.0",
-                "typo3/cms-backend": "^14.0",
-                "typo3/cms-core": "^14.0",
-                "typo3/cms-workspaces": "^14.0"
-            },
-            "require-dev": {
-                "a9f/typo3-fractor": "^0.5",
-                "brianium/paratest": "7.8.4",
-                "friendsofphp/php-cs-fixer": "^3.94",
-                "georgringer/news": "^14.0",
-                "phpat/phpat": "^0.12.3",
-                "phpstan/phpstan": "^2.1",
-                "ssch/typo3-rector": "^3.0",
-                "typo3/cms-extbase": "^14.0",
-                "typo3/cms-fluid": "^14.0",
-                "typo3/cms-frontend": "^14.0",
-                "typo3/cms-install": "^14.0",
-                "typo3/cms-redirects": "^14.0",
-                "typo3/coding-standards": "dev-main",
-                "typo3/testing-framework": "^9.4"
-            },
-            "default-branch": true,
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "mcp_server"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Hn\\McpServer\\": "Classes/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Hn\\McpServer\\Tests\\": "Tests/"
-                }
-            },
-            "scripts": {
-                "setup": [
-                    "bash Build/setup-typo3.sh"
-                ],
-                "post-install-cmd": [
-                    "@setup"
-                ],
-                "post-update-cmd": [
-                    "@setup"
-                ],
-                "test": [
-                    "@test:unit",
-                    "@test:functional"
-                ],
-                "test:unit": [
-                    "phpunit -c Tests/UnitTests.xml"
-                ],
-                "test:functional": [
-                    "paratest -c phpunit.xml.dist"
-                ],
-                "test:llm": [
-                    "paratest -c Tests/Llm/phpunit-llm.xml --testdox --no-progress -p 5 --log-junit .Build/llm-results.xml || true",
-                    "php Build/check-llm-results.php --min-pass=3"
-                ],
-                "docs:check": [
-                    "docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --no-progress --fail-on-log"
-                ],
-                "phpstan": [
-                    "phpstan analyse --no-progress --memory-limit=1G"
-                ],
-                "php-cs-fixer": [
-                    "php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff"
-                ],
-                "php-cs-fixer:fix": [
-                    "php-cs-fixer fix --config=.php-cs-fixer.dist.php"
-                ],
-                "rector": [
-                    "rector process --dry-run"
-                ],
-                "rector:fix": [
-                    "rector process"
-                ],
-                "fractor": [
-                    "fractor process --dry-run"
-                ],
-                "fractor:fix": [
-                    "fractor process"
-                ],
-                "build:ter": [
-                    "bash Build/build-ter.sh"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pfeiffer",
-                    "email": "marco@hauptsache.net"
-                }
-            ],
-            "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
-            "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-04-30T09:36:59+00:00"
-        },
-        {
-            "name": "logiscape/mcp-sdk-php",
-            "version": "v1.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/logiscape/mcp-sdk-php.git",
-                "reference": "1ed29680249488e2e028ee5b8f169fe9881e01a7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/logiscape/mcp-sdk-php/zipball/1ed29680249488e2e028ee5b8f169fe9881e01a7",
-                "reference": "1ed29680249488e2e028ee5b8f169fe9881e01a7",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=8.1",
-                "psr/log": "^2.0 ||^3.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^10.0"
-            },
-            "suggest": {
-                "ext-pcntl": "For better process handling in CLI environments",
-                "monolog/monolog": "^3.0 - For debugging and logging capabilities"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Mcp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Model Context Protocol SDK for PHP",
-            "support": {
-                "issues": "https://github.com/logiscape/mcp-sdk-php/issues",
-                "source": "https://github.com/logiscape/mcp-sdk-php/tree/v1.7.1"
-            },
-            "time": "2026-04-23T03:47:26+00:00"
-        },
-        {
             "name": "lolli42/finediff",
             "version": "1.1.2",
             "source": {
@@ -1847,6 +1683,74 @@
             "time": "2026-04-19T08:12:10+00:00"
         },
         {
+            "name": "marekskopal/typo3-mcp-server",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marekskopal/typo3-mcp-server.git",
+                "reference": "edf7a8a39fe8559c5d7ba9ac8f01b27bf6587ee1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marekskopal/typo3-mcp-server/zipball/edf7a8a39fe8559c5d7ba9ac8f01b27bf6587ee1",
+                "reference": "edf7a8a39fe8559c5d7ba9ac8f01b27bf6587ee1",
+                "shasum": ""
+            },
+            "require": {
+                "mcp/sdk": "^0.5",
+                "php": ">=8.3",
+                "typo3/cms-backend": "^13.4.24 || ^14.3.0",
+                "typo3/cms-core": "^13.4.24 || ^14.3.0",
+                "typo3/cms-extbase": "^13.4.24 || ^14.3.0",
+                "typo3/cms-fluid": "^13.4.24 || ^14.3.0",
+                "typo3/cms-frontend": "^13.4.24 || ^14.3.0"
+            },
+            "require-dev": {
+                "dg/bypass-finals": "^1.9",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^2.0",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^12.0",
+                "shipmonk/phpstan-rules": "^4.0",
+                "slevomat/coding-standard": "^8.14"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ms_mcp_server"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MarekSkopal\\MsMcpServer\\": "Classes/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "MarekSkopal\\MsMcpServer\\Tests\\": "Tests/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marek Skopal",
+                    "role": "Developer",
+                    "homepage": "https://marekskopal.com"
+                }
+            ],
+            "description": "MCP server for TYPO3 CMS administration",
+            "homepage": "https://marekskopal.com",
+            "keywords": [
+                "TYPO3",
+                "mcp",
+                "server"
+            ],
+            "time": "2026-04-30T18:46:13+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.10.0",
             "source": {
@@ -1912,6 +1816,90 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
             },
             "time": "2025-07-25T09:04:22+00:00"
+        },
+        {
+            "name": "mcp/sdk",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/modelcontextprotocol/php-sdk.git",
+                "reference": "fb2c8c2ee4ab2791239c5f534bb07bfb7589d4e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/modelcontextprotocol/php-sdk/zipball/fb2c8c2ee4ab2791239c5f534bb07bfb7589d4e8",
+                "reference": "fb2c8c2ee4ab2791239c5f534bb07bfb7589d4e8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "opis/json-schema": "^2.4",
+                "php": "^8.1",
+                "php-http/discovery": "^1.20",
+                "phpdocumentor/reflection-docblock": "^5.6 || ^6.0",
+                "psr/clock": "^1.0",
+                "psr/container": "^1.0 || ^2.0",
+                "psr/event-dispatcher": "^1.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.1",
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "psr/log": "^1.0 || ^2.0 || ^3.0",
+                "symfony/uid": "^5.4 || ^6.4 || ^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "composer/semver": "^3.0",
+                "ext-openssl": "*",
+                "firebase/php-jwt": "^6.10 || ^7.0",
+                "laminas/laminas-httphandlerrunner": "^2.12",
+                "nyholm/psr7": "^1.8",
+                "nyholm/psr7-server": "^1.1",
+                "phar-io/composer-distributor": "^1.0.2",
+                "php-cs-fixer/shim": "^3.91",
+                "phpdocumentor/shim": "^3",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^10.5",
+                "psr/simple-cache": "^2.0 || ^3.0",
+                "symfony/cache": "^5.4 || ^6.4 || ^7.3 || ^8.0",
+                "symfony/console": "^5.4 || ^6.4 || ^7.3 || ^8.0",
+                "symfony/finder": "^5.4 || ^6.4 || ^7.3 || ^8.0",
+                "symfony/http-client": "^5.4 || ^6.4 || ^7.3 || ^8.0",
+                "symfony/process": "^5.4 || ^6.4 || ^7.3 || ^8.0"
+            },
+            "suggest": {
+                "symfony/finder": "Required for file-based discovery."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mcp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Hertel",
+                    "email": "mail@christopher-hertel.de"
+                },
+                {
+                    "name": "Kyrian Obikwelu",
+                    "email": "koshnawaza@gmail.com"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                }
+            ],
+            "description": "Model Context Protocol SDK for Client and Server applications in PHP",
+            "support": {
+                "issues": "https://github.com/modelcontextprotocol/php-sdk/issues",
+                "source": "https://github.com/modelcontextprotocol/php-sdk/tree/v0.5.0"
+            },
+            "time": "2026-04-26T13:37:40+00:00"
         },
         {
             "name": "netresearch/nr-llm",
@@ -3035,6 +3023,85 @@
                 "source": "https://github.com/paragonie/sodium_compat/tree/v2.5.0"
             },
             "time": "2025-12-30T16:12:18+00:00"
+        },
+        {
+            "name": "php-http/discovery",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/discovery.git",
+                "reference": "82fe4c73ef3363caed49ff8dd1539ba06044910d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/discovery/zipball/82fe4c73ef3363caed49ff8dd1539ba06044910d",
+                "reference": "82fe4c73ef3363caed49ff8dd1539ba06044910d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0|^2.0",
+                "php": "^7.1 || ^8.0"
+            },
+            "conflict": {
+                "nyholm/psr7": "<1.0",
+                "zendframework/zend-diactoros": "*"
+            },
+            "provide": {
+                "php-http/async-client-implementation": "*",
+                "php-http/client-implementation": "*",
+                "psr/http-client-implementation": "*",
+                "psr/http-factory-implementation": "*",
+                "psr/http-message-implementation": "*"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0.2|^2.0",
+                "graham-campbell/phpspec-skip-example-extension": "^5.0",
+                "php-http/httplug": "^1.0 || ^2.0",
+                "php-http/message-factory": "^1.0",
+                "phpspec/phpspec": "^5.1 || ^6.1 || ^7.3",
+                "sebastian/comparator": "^3.0.5 || ^4.0.8",
+                "symfony/phpunit-bridge": "^6.4.4 || ^7.0.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Http\\Discovery\\Composer\\Plugin",
+                "plugin-optional": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Discovery\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "src/Composer/Plugin.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Finds and installs PSR-7, PSR-17, PSR-18 and HTTPlug implementations",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "adapter",
+                "client",
+                "discovery",
+                "factory",
+                "http",
+                "message",
+                "psr17",
+                "psr7"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/discovery/issues",
+                "source": "https://github.com/php-http/discovery/tree/1.20.0"
+            },
+            "time": "2024-10-02T11:20:13+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -9957,16 +10024,16 @@
         },
         {
             "name": "typo3/html-sanitizer",
-            "version": "v2.2.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/html-sanitizer.git",
-                "reference": "c672a2e02925de8eed0dcaeb3a3c90d3642049a0"
+                "reference": "ff31c943a8ff27b01698d63a2576e39bc213e48a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/html-sanitizer/zipball/c672a2e02925de8eed0dcaeb3a3c90d3642049a0",
-                "reference": "c672a2e02925de8eed0dcaeb3a3c90d3642049a0",
+                "url": "https://api.github.com/repos/TYPO3/html-sanitizer/zipball/ff31c943a8ff27b01698d63a2576e39bc213e48a",
+                "reference": "ff31c943a8ff27b01698d63a2576e39bc213e48a",
                 "shasum": ""
             },
             "require": {
@@ -10002,9 +10069,9 @@
             "description": "HTML sanitizer aiming to provide XSS-safe markup based on explicitly allowed tags, attributes and values.",
             "support": {
                 "issues": "https://github.com/TYPO3/html-sanitizer/issues",
-                "source": "https://github.com/TYPO3/html-sanitizer/tree/v2.2.0"
+                "source": "https://github.com/TYPO3/html-sanitizer/tree/v2.3.0"
             },
-            "time": "2024-07-12T15:52:25+00:00"
+            "time": "2026-04-30T08:43:42+00:00"
         },
         {
             "name": "typo3/theme-camino",
@@ -10812,7 +10879,6 @@
     "stability-flags": {
         "dirnbauer/adminpanel-defaults": 20,
         "dirnbauer/visual-editor-news-addon": 20,
-        "hn/typo3-mcp-server": 20,
         "netresearch/nr-llm": 20,
         "netresearch/nr-mcp-agent": 20,
         "netresearch/nr-vault": 20,

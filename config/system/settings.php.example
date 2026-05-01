@@ -75,11 +75,21 @@ return [
         'inline_page_module' => [
             'listAllContentElements' => '0',
         ],
-        'mcp_server' => [
-            'allowMcpTokenInQueryString' => '0',
-            'enableMcpAuthHeaderDiagnostic' => '1',
-            'fileSandboxRoot' => '1:/mcp/',
-            'workspaceUploadSubfolders' => '1',
+        'ms_mcp_server' => [
+            'accessTokenLifetime' => '3600',
+            'codeLifetime' => '60',
+            'rateLimitAuthorize' => '5',
+            'rateLimitAuthorizeGet' => '20',
+            'rateLimitAuthorizeGetWindow' => '300',
+            'rateLimitAuthorizeWindow' => '300',
+            'rateLimitEnabled' => '1',
+            'rateLimitRegister' => '10',
+            'rateLimitRegisterWindow' => '3600',
+            'rateLimitRevoke' => '20',
+            'rateLimitRevokeWindow' => '300',
+            'rateLimitToken' => '20',
+            'rateLimitTokenWindow' => '300',
+            'refreshTokenLifetime' => '2592000',
         ],
         'news' => [
             'advancedMediaPreview' => '1',
