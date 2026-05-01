@@ -3,6 +3,8 @@
 plugin.tx_solr.search.faceting = 1
 plugin.tx_solr.search.faceting.facets.type {
   label = Content type
+  field = type
+  partialName = Options
   keepAllOptionsOnSelection = 1
   manualSortOrder = pages,tx_news_domain_model_news
   renderingInstruction = CASE
@@ -18,4 +20,9 @@ plugin.tx_solr.search.faceting.facets.type {
     tx_news_domain_model_news = TEXT
     tx_news_domain_model_news.value = News
   }
+}
+
+page.includeJSFooterlibs {
+  solr-jquery = EXT:solr/Resources/Public/JavaScript/JQuery/jquery.min.js
+  solr-options = EXT:solr/Resources/Public/JavaScript/facet_options_controller.js
 }
