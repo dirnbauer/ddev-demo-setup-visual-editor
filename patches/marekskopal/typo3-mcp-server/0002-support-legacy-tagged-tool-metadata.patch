@@ -1,0 +1,118 @@
+Subject: [PATCH] Support legacy tagged MCP tool metadata
+
+Some TYPO3 extensions register MCP tools through the `mcp.tool` service tag
+and expose their contract through `getName()`, `getDescription()`, and
+`getInputSchema()` instead of the SDK's `#[McpTool]` attribute. Register those
+tools with their declared name and schema, and adapt the handler so the tool
+still receives the raw MCP call arguments expected by its `execute(array $args)`
+method.
+
+--- a/Classes/Server/McpServerFactory.php
++++ b/Classes/Server/McpServerFactory.php
+@@ -13,7 +13,9 @@ use Mcp\Capability\Attribute\McpPrompt;
+ use Mcp\Capability\Attribute\McpResource;
+ use Mcp\Capability\Attribute\McpResourceTemplate;
+ use Mcp\Capability\Attribute\McpTool;
++use Mcp\Schema\Request\CallToolRequest;
+ use Mcp\Server;
++use Mcp\Server\RequestContext;
+ use Mcp\Server\Session\FileSessionStore;
+ use Psr\Container\ContainerInterface;
+ use Psr\Log\LoggerInterface;
+@@ -58,7 +60,28 @@ readonly class McpServerFactory
+
+         foreach ($this->tools as $tool) {
+             $attribute = $this->getMethodAttribute($tool, McpTool::class);
+-            $builder->addTool([$tool::class, 'execute'], $attribute?->name);
++            if ($attribute !== null) {
++                $builder->addTool([$tool::class, 'execute'], $attribute->name);
++                continue;
++            }
++
++            $legacyName = $this->getStringMethodResult($tool, 'getName');
++            $legacyDescription = $this->getStringMethodResult($tool, 'getDescription');
++            $legacyInputSchema = $this->getArrayMethodResult($tool, 'getInputSchema');
++
++            if ($legacyName !== null || $legacyDescription !== null || $legacyInputSchema !== null) {
++                $builder->addTool(
++                    $this->createLegacyToolHandler($tool),
++                    $legacyName,
++                    null,
++                    $legacyDescription,
++                    null,
++                    $this->normalizeLegacyInputSchema($legacyInputSchema),
++                );
++                continue;
++            }
++
++            $builder->addTool([$tool::class, 'execute']);
+         }
+
+         $this->dynamicToolRegistrar->register($builder);
+@@ -104,6 +127,66 @@ readonly class McpServerFactory
+         return $attributes[0]->newInstance();
+     }
+
++    private function getStringMethodResult(object $instance, string $method): ?string
++    {
++        if (!is_callable([$instance, $method])) {
++            return null;
++        }
++
++        $result = $instance->{$method}();
++
++        return is_string($result) && $result !== '' ? $result : null;
++    }
++
++    /**
++     * @return array<string, mixed>|null
++     */
++    private function getArrayMethodResult(object $instance, string $method): ?array
++    {
++        if (!is_callable([$instance, $method])) {
++            return null;
++        }
++
++        $result = $instance->{$method}();
++
++        return is_array($result) ? $result : null;
++    }
++
++    /**
++     * @param array<string, mixed>|null $inputSchema
++     * @return array<string, mixed>|null
++     */
++    private function normalizeLegacyInputSchema(?array $inputSchema): ?array
++    {
++        if ($inputSchema === null) {
++            return $inputSchema;
++        }
++
++        if (($inputSchema['type'] ?? null) !== 'object') {
++            $inputSchema['type'] = 'object';
++        }
++
++        if (!isset($inputSchema['properties']) || !is_array($inputSchema['properties'])) {
++            $inputSchema['properties'] = new \stdClass();
++        }
++
++        if (is_array($inputSchema['properties']) && $inputSchema['properties'] === []) {
++            $inputSchema['properties'] = new \stdClass();
++        }
++
++        return $inputSchema;
++    }
++
++    private function createLegacyToolHandler(object $tool): \Closure
++    {
++        return static function (RequestContext $context) use ($tool): mixed {
++            $request = $context->getRequest();
++            $arguments = $request instanceof CallToolRequest ? $request->arguments : [];
++
++            return $tool->execute($arguments);
++        };
++    }
++
+     /** @return array<class-string, 'tool'|'resource'> */
+     private function buildHandlerTypeMap(): array
+     {

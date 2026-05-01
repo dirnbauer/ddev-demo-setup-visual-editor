@@ -1,0 +1,82 @@
+Subject: [PATCH] Normalize MCP tool schemas and chat active state
+
+OpenAI-compatible tool schemas require array nodes to define `items`. Normalize
+schemas recursively before sending them to the chat provider so malformed MCP
+server schemas cannot break chat setup.
+
+Also remove the inset left stripe from active chat sidebar items. The active
+background already communicates selection, and the inset stripe reads as a
+broken border in the TYPO3 backend sidebar.
+
+--- a/Classes/Mcp/McpToolProvider.php
++++ b/Classes/Mcp/McpToolProvider.php
+@@ -290,6 +290,8 @@ final class McpToolProvider implements McpToolProviderInterface
+             return ['type' => 'object', 'properties' => new stdClass()];
+         }
+
++        $schema = $this->normalizeSchemaNode($schema);
++
+         if (($schema['type'] ?? null) !== 'object') {
+             $schema['type'] = 'object';
+         }
+@@ -313,4 +315,36 @@ final class McpToolProvider implements McpToolProviderInterface
+
+         return $schema;
+     }
++
++    /**
++     * @param array<string, mixed> $schema
++     * @return array<string, mixed>
++     */
++    private function normalizeSchemaNode(array $schema): array
++    {
++        if (($schema['type'] ?? null) === 'array' && !isset($schema['items'])) {
++            $schema['items'] = new stdClass();
++        }
++
++        if (isset($schema['properties']) && is_array($schema['properties'])) {
++            foreach ($schema['properties'] as $name => $propertySchema) {
++                if (is_array($propertySchema)) {
++                    /** @var array<string, mixed> $propertySchema */
++                    $schema['properties'][$name] = $this->normalizeSchemaNode($propertySchema);
++                }
++            }
++
++            if ($schema['properties'] === []) {
++                $schema['properties'] = new stdClass();
++            }
++        }
++
++        if (isset($schema['items']) && is_array($schema['items'])) {
++            /** @var array<string, mixed> $itemsSchema */
++            $itemsSchema = $schema['items'];
++            $schema['items'] = $this->normalizeSchemaNode($itemsSchema);
++        }
++
++        return $schema;
++    }
+ }
+--- a/Resources/Public/JavaScript/ai-chat-panel.js
++++ b/Resources/Public/JavaScript/ai-chat-panel.js
+@@ -265,8 +265,7 @@ export class AiChatPanel extends LitElement {
+             --nr-chat-active-item-color: var(--typo3-component-active-color, #fff);
+             background: var(--typo3-component-active-bg);
+             color: var(--nr-chat-active-item-color);
+-            border-color: color-mix(in srgb, var(--nr-chat-active-item-color), transparent 55%);
+-            box-shadow: inset 3px 0 0 color-mix(in srgb, var(--nr-chat-active-item-color), transparent 10%);
++            border-color: transparent;
+         }
+         .sidebar-item.active:hover,
+         .sidebar-item.active:focus-visible {
+--- a/Resources/Public/JavaScript/chat-app.js
++++ b/Resources/Public/JavaScript/chat-app.js
+@@ -140,8 +140,7 @@ export class ChatApp extends LitElement {
+             --nr-chat-active-item-color: var(--typo3-component-active-color, #fff);
+             background: var(--typo3-component-active-bg);
+             color: var(--nr-chat-active-item-color);
+-            border-color: color-mix(in srgb, var(--nr-chat-active-item-color), transparent 55%);
+-            box-shadow: inset 3px 0 0 color-mix(in srgb, var(--nr-chat-active-item-color), transparent 10%);
++            border-color: transparent;
+         }
+         .conversation-item.active:hover,
+         .conversation-item.active:focus-visible {

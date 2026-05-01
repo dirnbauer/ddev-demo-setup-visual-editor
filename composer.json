@@ -100,8 +100,18 @@
             "friendsoftypo3/content-blocks": {
                 "Create parent reference columns for collection indexes": "patches/friendsoftypo3/content-blocks/0001-create-parent-uid-column-for-collection-index.patch"
             },
+            "marekskopal/typo3-mcp-server": {
+                "Support resource-specific OAuth protected resource metadata": "patches/marekskopal/typo3-mcp-server/0001-support-resource-specific-oauth-metadata.patch",
+                "Support legacy tagged MCP tool metadata": "patches/marekskopal/typo3-mcp-server/0002-support-legacy-tagged-tool-metadata.patch"
+            },
+            "netresearch/nr-mcp-agent": {
+                "Normalize MCP tool schemas and remove active chat list inset border": "patches/netresearch/nr-mcp-agent/0001-normalize-tool-schemas-and-chat-active-state.patch"
+            },
             "typo3/cms-backend": {
                 "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch"
+            },
+            "webconsulting/typo3-x402-paywall": {
+                "Use current MCP SDK result types": "patches/webconsulting/typo3-x402-paywall/0001-use-current-mcp-sdk-result-types.patch"
             }
         }
     },

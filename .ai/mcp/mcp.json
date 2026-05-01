@@ -14,6 +14,18 @@
         "agentation-mcp",
         "server"
       ]
+    },
+    "typo3": {
+      "command": "ddev",
+      "args": [
+        "exec",
+        "php",
+        "vendor/bin/typo3",
+        "mcp:server",
+        "--user",
+        "admin"
+      ],
+      "cwd": "/Users/dirnbauer/projects/ddev-demo-setup-visual-editor"
     }
   }
 }
