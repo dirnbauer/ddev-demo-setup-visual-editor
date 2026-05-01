@@ -1,4 +1,7 @@
 plugin:
+  tx_solr:
+    view:
+      partialRootPath: 'EXT:solr_numbered_pagination/Resources/Private/Partials/'
   tx_blog:
     settings:
       blogUid: 15

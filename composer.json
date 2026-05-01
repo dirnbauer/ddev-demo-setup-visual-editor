@@ -6,6 +6,7 @@
     "config": {
         "allow-plugins": {
             "cweagans/composer-patches": true,
+            "php-http/discovery": true,
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
         },
@@ -105,6 +106,7 @@
         }
     },
     "require": {
+        "apache-solr-for-typo3/solr": "^14.0@alpha",
         "cweagans/composer-patches": "^1.7",
         "dirnbauer/adminpanel-defaults": "dev-main",
         "dirnbauer/visual-editor-news-addon": "dev-main",
@@ -112,12 +114,14 @@
         "friendsoftypo3/visual-editor": "^1.1",
         "georgringer/context-edit-records": "^1.0",
         "georgringer/news": "^14.0",
-        "marekskopal/typo3-mcp-server": "^0.9",
+        "georgringer/numbered-pagination": "^2.2",
         "marekskopal/typo3-mcp-docs": "^1.1",
+        "marekskopal/typo3-mcp-server": "^0.9",
         "netresearch/nr-llm": "dev-main as 0.7.0",
         "netresearch/nr-mcp-agent": "dev-main",
         "netresearch/nr-vault": "dev-main as 0.5.0",
         "netresearch/t3-cowriter": "dev-main as 3.1.1",
+        "studiomitte/solr-numbered-pagination": "dev-main",
         "supseven/inline-page-module": "^4.0",
         "t3g/blog": "dev-master",
         "typo3/class-alias-loader": "2.0.1 as 1.99.0",

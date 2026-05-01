@@ -1,0 +1,103 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:variable name="visiblePages" value="{pagination.allPageNumbers}" />
+<f:if condition="{pages}">
+    <f:variable name="visiblePages" value="{pages}" />
+</f:if>
+<f:variable name="activePage" value="{paginator.currentPageNumber}" />
+<f:if condition="{currentPage}">
+    <f:variable name="activePage" value="{currentPage}" />
+</f:if>
+
+<f:if condition="{visiblePages -> f:count()} > 1">
+    <nav class="mx-auto flex w-full justify-center" role="navigation" aria-label="Pagination">
+        <ul class="flex flex-row items-center gap-1">
+            <f:if condition="{pagination.previousPageNumber}">
+                <li>
+                    <a
+                        class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        href="{f:uri.action(action: actionName, arguments: {currentPage: pagination.previousPageNumber}, addQueryString: 'untrusted')}"
+                        aria-label="Go to previous page"
+                        rel="prev"
+                    >
+                        <span aria-hidden="true">&lsaquo;</span>
+                        <span>Previous</span>
+                    </a>
+                </li>
+            </f:if>
+
+            <f:if condition="{pagination.hasLessPages}">
+                <li>
+                    <a
+                        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        href="{f:uri.action(action: actionName, arguments: {currentPage: pagination.firstPageNumber}, addQueryString: 'untrusted')}"
+                        aria-label="Go to page {pagination.firstPageNumber}"
+                    >
+                        {pagination.firstPageNumber}
+                    </a>
+                </li>
+                <li>
+                    <span class="flex h-9 w-9 items-center justify-center text-muted-foreground" aria-hidden="true">&hellip;</span>
+                </li>
+            </f:if>
+
+            <f:for each="{visiblePages}" as="page">
+                <f:if condition="{page} == {activePage}">
+                    <f:then>
+                        <li>
+                            <span
+                                class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-input bg-primary px-3 text-sm font-medium text-primary-foreground shadow-sm"
+                                aria-current="page"
+                                aria-label="Page {page}"
+                            >
+                                {page}
+                            </span>
+                        </li>
+                    </f:then>
+                    <f:else>
+                        <li>
+                            <a
+                                class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                                href="{f:uri.action(action: actionName, arguments: {currentPage: page}, addQueryString: 'untrusted')}"
+                                aria-label="Go to page {page}"
+                            >
+                                {page}
+                            </a>
+                        </li>
+                    </f:else>
+                </f:if>
+            </f:for>
+
+            <f:if condition="{pagination.hasMorePages}">
+                <li>
+                    <span class="flex h-9 w-9 items-center justify-center text-muted-foreground" aria-hidden="true">&hellip;</span>
+                </li>
+                <li>
+                    <a
+                        class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        href="{f:uri.action(action: actionName, arguments: {currentPage: pagination.lastPageNumber}, addQueryString: 'untrusted')}"
+                        aria-label="Go to page {pagination.lastPageNumber}"
+                    >
+                        {pagination.lastPageNumber}
+                    </a>
+                </li>
+            </f:if>
+
+            <f:if condition="{pagination.nextPageNumber}">
+                <li>
+                    <a
+                        class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                        href="{f:uri.action(action: actionName, arguments: {currentPage: pagination.nextPageNumber}, addQueryString: 'untrusted')}"
+                        aria-label="Go to next page"
+                        rel="next"
+                    >
+                        <span>Next</span>
+                        <span aria-hidden="true">&rsaquo;</span>
+                    </a>
+                </li>
+            </f:if>
+        </ul>
+    </nav>
+</f:if>
+
+</html>

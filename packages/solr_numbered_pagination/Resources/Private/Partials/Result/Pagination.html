@@ -1,0 +1,128 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+    xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+    xmlns:s="http://typo3.org/ns/ApacheSolrForTypo3/Solr/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<f:section name="Pagination">
+    <f:if condition="{pagination.allPageNumbers -> f:count()} > 1">
+        <nav class="mx-auto flex w-full justify-center solr-pagination" role="navigation" aria-label="Pagination">
+            <ul class="flex flex-row items-center gap-1">
+                <f:if condition="{pagination.previousPageNumber}">
+                    <li>
+                        <f:if condition="{pagination.previousPageNumber} > 1">
+                            <f:then>
+                                <a
+                                    class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                    href="{s:uri.paginate.resultPage(page: pagination.previousPageNumber)}"
+                                    aria-label="Go to previous page"
+                                    rel="prev"
+                                >
+                                    <span aria-hidden="true">&lsaquo;</span>
+                                    <span>Previous</span>
+                                </a>
+                            </f:then>
+                            <f:else>
+                                <a
+                                    class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                    href="{s:uri.paginate.resultPage()}"
+                                    aria-label="Go to previous page"
+                                    rel="prev"
+                                >
+                                    <span aria-hidden="true">&lsaquo;</span>
+                                    <span>Previous</span>
+                                </a>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:if>
+
+                <f:if condition="{pagination.hasLessPages}">
+                    <li>
+                        <a
+                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                            href="{s:uri.paginate.resultPage()}"
+                            aria-label="Go to page {pagination.firstPageNumber}"
+                        >
+                            {pagination.firstPageNumber}
+                        </a>
+                    </li>
+                    <li>
+                        <span class="flex h-9 w-9 items-center justify-center text-muted-foreground" aria-hidden="true">&hellip;</span>
+                    </li>
+                </f:if>
+
+                <f:for each="{pagination.allPageNumbers}" as="page">
+                    <f:if condition="{page} == {currentPage}">
+                        <f:then>
+                            <li>
+                                <span
+                                    class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-input bg-primary px-3 text-sm font-medium text-primary-foreground shadow-sm"
+                                    aria-current="page"
+                                    aria-label="Page {page}"
+                                >
+                                    {page}
+                                </span>
+                            </li>
+                        </f:then>
+                        <f:else>
+                            <li>
+                                <f:if condition="{page} > 1">
+                                    <f:then>
+                                        <a
+                                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                            href="{s:uri.paginate.resultPage(page: page)}"
+                                            aria-label="Go to page {page}"
+                                        >
+                                            {page}
+                                        </a>
+                                    </f:then>
+                                    <f:else>
+                                        <a
+                                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                            href="{s:uri.paginate.resultPage()}"
+                                            aria-label="Go to page {page}"
+                                        >
+                                            {page}
+                                        </a>
+                                    </f:else>
+                                </f:if>
+                            </li>
+                        </f:else>
+                    </f:if>
+                </f:for>
+
+                <f:if condition="{pagination.hasMorePages}">
+                    <li>
+                        <span class="flex h-9 w-9 items-center justify-center text-muted-foreground" aria-hidden="true">&hellip;</span>
+                    </li>
+                    <li>
+                        <a
+                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                            href="{s:uri.paginate.resultPage(page: pagination.lastPageNumber)}"
+                            aria-label="Go to page {pagination.lastPageNumber}"
+                        >
+                            {pagination.lastPageNumber}
+                        </a>
+                    </li>
+                </f:if>
+
+                <f:if condition="{pagination.nextPageNumber}">
+                    <li>
+                        <a
+                            class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                            href="{s:uri.paginate.resultPage(page: pagination.nextPageNumber)}"
+                            aria-label="Go to next page"
+                            rel="next"
+                        >
+                            <span>Next</span>
+                            <span aria-hidden="true">&rsaquo;</span>
+                        </a>
+                    </li>
+                </f:if>
+            </ul>
+        </nav>
+    </f:if>
+</f:section>
+
+</html>

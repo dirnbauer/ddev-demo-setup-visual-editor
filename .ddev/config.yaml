@@ -294,3 +294,6 @@ corepack_enable: false
 #hooks:
 #  post-start:
 #    - exec: composer install -d /var/www/html
+hooks:
+  post-start:
+    - exec-host: ddev solrctl apply
