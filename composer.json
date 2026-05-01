@@ -33,6 +33,14 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/dirnbauer/ext-solr.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dirnbauer/solr_numbered_pagination.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/dirnbauer/typo3-agentation.git"
         },
         {

@@ -3,5 +3,5 @@
 #
 config.admPanel = 1
 
-plugin.tx_news.view.partialRootPaths.100 = EXT:adminpanel_defaults/Resources/Private/Partials/
-plugin.tx_blog.view.partialRootPaths.100 = EXT:adminpanel_defaults/Resources/Private/Partials/
+plugin.tx_news.view.partialRootPaths.100 = EXT:desiderio/Resources/Private/Partials/
+plugin.tx_blog.view.partialRootPaths.100 = EXT:desiderio/Resources/Private/Partials/
