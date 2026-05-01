@@ -3,7 +3,6 @@
     "type": "typo3-cms-extension",
     "description": "Limit the amount of used pages in EXT:solr in the pagination",
     "license": "GPL-2.0-or-later",
-    "version": "dev-main",
     "require": {
         "apache-solr-for-typo3/solr": "^14.0@alpha",
         "georgringer/numbered-pagination": "^2.2",

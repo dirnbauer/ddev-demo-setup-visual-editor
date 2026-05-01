@@ -165,5 +165,8 @@
         "webconsulting/typo3-capability-manifest": "dev-main",
         "webconsulting/typo3-x402-paywall": "dev-main",
         "webconsulting/workos-auth": "dev-main"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1"
     }
 }

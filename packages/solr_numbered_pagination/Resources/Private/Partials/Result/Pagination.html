@@ -4,33 +4,37 @@
     data-namespace-typo3-fluid="true"
 >
 
+<f:argument name="pagination" type="GeorgRinger\NumberedPagination\NumberedPagination" />
+<f:argument name="currentPage" type="int" />
+
 <f:section name="Pagination">
     <f:if condition="{pagination.allPageNumbers -> f:count()} > 1">
-        <nav class="mx-auto flex w-full justify-center solr-pagination" role="navigation" aria-label="Pagination">
+        <f:variable name="totalPages" value="{pagination.lastPageNumber}" />
+        <nav class="mx-auto flex w-full justify-center solr-pagination" role="navigation" aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.label', arguments: {totalPages: totalPages})}">
             <ul class="flex flex-row items-center gap-1">
                 <f:if condition="{pagination.previousPageNumber}">
                     <li>
                         <f:if condition="{pagination.previousPageNumber} > 1">
                             <f:then>
                                 <a
-                                    class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                    class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-2.5 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                                     href="{s:uri.paginate.resultPage(page: pagination.previousPageNumber)}"
-                                    aria-label="Go to previous page"
+                                    aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.previous')}"
                                     rel="prev"
                                 >
                                     <span aria-hidden="true">&lsaquo;</span>
-                                    <span>Previous</span>
+                                    <span><f:translate key="LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.previous" /></span>
                                 </a>
                             </f:then>
                             <f:else>
                                 <a
-                                    class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                    class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-2.5 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                                     href="{s:uri.paginate.resultPage()}"
-                                    aria-label="Go to previous page"
+                                    aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.previous')}"
                                     rel="prev"
                                 >
                                     <span aria-hidden="true">&lsaquo;</span>
-                                    <span>Previous</span>
+                                    <span><f:translate key="LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.previous" /></span>
                                 </a>
                             </f:else>
                         </f:if>
@@ -40,9 +44,9 @@
                 <f:if condition="{pagination.hasLessPages}">
                     <li>
                         <a
-                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                             href="{s:uri.paginate.resultPage()}"
-                            aria-label="Go to page {pagination.firstPageNumber}"
+                            aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.goToPage', arguments: {page: pagination.firstPageNumber, totalPages: totalPages})}"
                         >
                             {pagination.firstPageNumber}
                         </a>
@@ -57,9 +61,9 @@
                         <f:then>
                             <li>
                                 <span
-                                    class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-input bg-primary px-3 text-sm font-medium text-primary-foreground shadow-sm"
+                                    class="inline-flex h-9 min-w-9 items-center justify-center rounded-md border border-input bg-background px-3 text-sm font-medium shadow-sm"
                                     aria-current="page"
-                                    aria-label="Page {page}"
+                                    aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.currentPage', arguments: {page: page, totalPages: totalPages})}"
                                 >
                                     {page}
                                 </span>
@@ -70,18 +74,18 @@
                                 <f:if condition="{page} > 1">
                                     <f:then>
                                         <a
-                                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                                             href="{s:uri.paginate.resultPage(page: page)}"
-                                            aria-label="Go to page {page}"
+                                            aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.goToPage', arguments: {page: page, totalPages: totalPages})}"
                                         >
                                             {page}
                                         </a>
                                     </f:then>
                                     <f:else>
                                         <a
-                                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                                             href="{s:uri.paginate.resultPage()}"
-                                            aria-label="Go to page {page}"
+                                            aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.goToPage', arguments: {page: page, totalPages: totalPages})}"
                                         >
                                             {page}
                                         </a>
@@ -98,9 +102,9 @@
                     </li>
                     <li>
                         <a
-                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                            class="inline-flex h-9 min-w-9 items-center justify-center rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                             href="{s:uri.paginate.resultPage(page: pagination.lastPageNumber)}"
-                            aria-label="Go to page {pagination.lastPageNumber}"
+                            aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.goToPage', arguments: {page: pagination.lastPageNumber, totalPages: totalPages})}"
                         >
                             {pagination.lastPageNumber}
                         </a>
@@ -110,12 +114,12 @@
                 <f:if condition="{pagination.nextPageNumber}">
                     <li>
                         <a
-                            class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-3 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 solr-ajaxified"
+                            class="inline-flex h-9 items-center justify-center gap-1 rounded-md px-2.5 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring solr-ajaxified"
                             href="{s:uri.paginate.resultPage(page: pagination.nextPageNumber)}"
-                            aria-label="Go to next page"
+                            aria-label="{f:translate(key: 'LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.aria.next')}"
                             rel="next"
                         >
-                            <span>Next</span>
+                            <span><f:translate key="LLL:EXT:solr_numbered_pagination/Resources/Private/Language/locallang.xlf:pagination.next" /></span>
                             <span aria-hidden="true">&rsaquo;</span>
                         </a>
                     </li>
