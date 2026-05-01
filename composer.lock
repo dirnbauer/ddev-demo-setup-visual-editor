@@ -2161,12 +2161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-llm.git",
-                "reference": "cbb79fa87cb8c998fed5158c0d633287a3d0db8e"
+                "reference": "3bb00accd5677adaa5efea0cd0422935c09a7b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/cbb79fa87cb8c998fed5158c0d633287a3d0db8e",
-                "reference": "cbb79fa87cb8c998fed5158c0d633287a3d0db8e",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/3bb00accd5677adaa5efea0cd0422935c09a7b2b",
+                "reference": "3bb00accd5677adaa5efea0cd0422935c09a7b2b",
                 "shasum": ""
             },
             "require": {
@@ -2321,7 +2321,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-llm/issues",
                 "source": "https://github.com/netresearch/t3x-nr-llm"
             },
-            "time": "2026-04-30T06:48:25+00:00"
+            "time": "2026-05-01T11:42:17+00:00"
         },
         {
             "name": "netresearch/nr-mcp-agent",
@@ -10830,12 +10830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-records-list-types.git",
-                "reference": "500528d2d2430956dd682d06b7e7a52e27db6bac"
+                "reference": "450bac58201afce1c0ef1ef2425662062bb8fe27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/500528d2d2430956dd682d06b7e7a52e27db6bac",
-                "reference": "500528d2d2430956dd682d06b7e7a52e27db6bac",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-records-list-types/zipball/450bac58201afce1c0ef1ef2425662062bb8fe27",
+                "reference": "450bac58201afce1c0ef1ef2425662062bb8fe27",
                 "shasum": ""
             },
             "require": {
@@ -10888,7 +10888,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-records-list-types/issues",
                 "source": "https://github.com/dirnbauer/typo3-records-list-types"
             },
-            "time": "2026-05-01T11:16:04+00:00"
+            "time": "2026-05-01T13:37:18+00:00"
         },
         {
             "name": "webconsulting/typo3-capability-manifest",

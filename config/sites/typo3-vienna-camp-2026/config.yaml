@@ -4,6 +4,7 @@ dependencies:
   - marekskopal/typo3-mcp-docs
   - dirnbauer/adminpanel-defaults
   - dirnbauer/solr-defaults
+  - desiderio/content-blocks-bundle
 languages:
   -
     languageId: 0
@@ -49,6 +50,7 @@ rootPageId: 505
 solr_enabled_read: true
 solr_host_read: typo3-solr
 solr_path_read: /
-solr_port_read: 8983
+solr_port_read: '8983'
 solr_scheme_read: http
 solr_use_write_connection: false
+websiteTitle: ''

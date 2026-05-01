@@ -1,4 +1,4 @@
-base: 'https://ddev-demo-setup-visual-editor.ddev.site/camino/'
+base: 'https://ddev-demo-setup-visual-editor.ddev.site/'
 dependencies:
   - typo3/theme-camino
   - dirnbauer/adminpanel-defaults
@@ -19,7 +19,7 @@ rootPageId: 99
 solr_enabled_read: true
 solr_host_read: typo3-solr
 solr_path_read: /
-solr_port_read: 8983
+solr_port_read: '8983'
 solr_scheme_read: http
 solr_use_write_connection: false
 websiteTitle: Camino
