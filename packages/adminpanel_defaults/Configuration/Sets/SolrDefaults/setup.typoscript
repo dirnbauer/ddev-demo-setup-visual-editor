@@ -1,1 +1,21 @@
 @import 'EXT:solr/Configuration/TypoScript/Solr/setup.typoscript'
+
+plugin.tx_solr.search.faceting = 1
+plugin.tx_solr.search.faceting.facets.type {
+  label = Content type
+  keepAllOptionsOnSelection = 1
+  manualSortOrder = pages,tx_news_domain_model_news
+  renderingInstruction = CASE
+  renderingInstruction {
+    key.field = optionValue
+
+    default = TEXT
+    default.field = optionValue
+
+    pages = TEXT
+    pages.value = Pages
+
+    tx_news_domain_model_news = TEXT
+    tx_news_domain_model_news.value = News
+  }
+}
