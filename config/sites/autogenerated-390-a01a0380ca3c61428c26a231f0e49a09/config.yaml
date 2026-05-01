@@ -3,6 +3,7 @@ contentSecurityPolicies: {  }
 dependencies:
   - blog/standalone
   - dirnbauer/adminpanel-defaults
+  - dirnbauer/solr-defaults
 errorHandling: {  }
 languages:
   -

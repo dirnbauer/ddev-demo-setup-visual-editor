@@ -3,6 +3,7 @@ dependencies:
   - webconsulting/desiderio-preset-corporate
   - marekskopal/typo3-mcp-docs
   - dirnbauer/adminpanel-defaults
+  - dirnbauer/solr-defaults
 languages:
   -
     languageId: 0

@@ -4,6 +4,7 @@ dependencies:
   - blog/standalone
   - georgringer/news
   - dirnbauer/adminpanel-defaults
+  - dirnbauer/solr-defaults
 errorHandling: {  }
 languages:
   -
