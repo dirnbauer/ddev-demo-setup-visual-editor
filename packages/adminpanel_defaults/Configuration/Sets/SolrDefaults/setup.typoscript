@@ -1,24 +1,46 @@
 @import 'EXT:solr/Configuration/TypoScript/Solr/setup.typoscript'
+@import 'EXT:solr/Configuration/TypoScript/Examples/EverythingOn/setup.typoscript'
+@import 'EXT:solr/Configuration/TypoScript/Examples/IndexQueueNews/setup.typoscript'
 
-plugin.tx_solr.search.faceting = 1
-plugin.tx_solr.search.faceting.facets.type {
-  label = Content type
-  field = type
-  partialName = Options
-  keepAllOptionsOnSelection = 1
-  manualSortOrder = pages,tx_news_domain_model_news
-  renderingInstruction = CASE
-  renderingInstruction {
-    key.field = optionValue
+# Keep EverythingOn's Solr features enabled without dumping raw debug output into the frontend response.
+plugin.tx_solr.logging.debugOutput = 0
+plugin.tx_solr.logging.indexing.queue {
+  tt_news >
+  news = 1
+  tx_news = 1
+  tt_address = 1
+}
+plugin.tx_solr.index.queue.news.fields {
+  rootline.data = siteSettings:news.pages.detail // site:rootPageId
+  url.default.typolink.parameter.data = siteSettings:news.pages.detail // site:rootPageId
+}
 
-    default = TEXT
-    default.field = optionValue
+plugin.tx_solr.search.faceting {
+  minimumCount = 0
+  keepAllFacetsOnSelection = 1
 
-    pages = TEXT
-    pages.value = Pages
+  facets {
+    type {
+      label = Content type
+      field = type
+      partialName = Options
+      minimumCount = 0
+      keepAllOptionsOnSelection = 1
+      manualSortOrder = pages,tx_news_domain_model_news
+      renderingInstruction = CASE
+      renderingInstruction {
+        key.field = optionValue
 
-    tx_news_domain_model_news = TEXT
-    tx_news_domain_model_news.value = News
+        default = TEXT
+        default.field = optionValue
+
+        pages = TEXT
+        pages.value = Pages
+
+        tx_news_domain_model_news = TEXT
+        tx_news_domain_model_news.value = News
+      }
+    }
   }
 }
 
