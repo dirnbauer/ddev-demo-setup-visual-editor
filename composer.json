@@ -113,7 +113,8 @@
                 "Support legacy tagged MCP tool metadata": "patches/marekskopal/typo3-mcp-server/0002-support-legacy-tagged-tool-metadata.patch"
             },
             "netresearch/nr-mcp-agent": {
-                "Normalize MCP tool schemas and remove active chat list inset border": "patches/netresearch/nr-mcp-agent/0001-normalize-tool-schemas-and-chat-active-state.patch"
+                "Normalize MCP tool schemas and remove active chat list inset border": "patches/netresearch/nr-mcp-agent/0001-normalize-tool-schemas-and-chat-active-state.patch",
+                "Add visible label to AI chat toolbar item": "patches/netresearch/nr-mcp-agent/0002-add-chat-toolbar-label.patch"
             },
             "typo3/cms-backend": {
                 "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch"

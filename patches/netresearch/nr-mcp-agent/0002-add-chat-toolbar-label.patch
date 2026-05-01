@@ -1,0 +1,46 @@
+Subject: [PATCH] Add visible label to AI chat toolbar item
+
+The TYPO3 backend toolbar renders labels for its expanded/mobile toolbar
+entries through `.toolbar-item-title`. Add the AI chat title next to the
+chat icon so the item is consistent with the surrounding toolbar entries.
+
+--- a/Classes/Backend/ToolbarItems/ChatToolbarItem.php
++++ b/Classes/Backend/ToolbarItems/ChatToolbarItem.php
+@@ -9,10 +9,13 @@ use Psr\Http\Message\ServerRequestInterface;
+ use TYPO3\CMS\Backend\Toolbar\RequestAwareToolbarItemInterface;
+ use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
+ use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
++use TYPO3\CMS\Core\Localization\LanguageService;
+ use TYPO3\CMS\Core\Page\PageRenderer;
+ 
+ final readonly class ChatToolbarItem implements ToolbarItemInterface, RequestAwareToolbarItemInterface
+ {
++    private const LABEL = 'LLL:EXT:nr_mcp_agent/Resources/Private/Language/locallang_chat.xlf:panel.title';
++
+     public function __construct(
+         private ExtensionConfiguration $config,
+         private PageRenderer $pageRenderer,
+@@ -49,8 +52,10 @@ final readonly class ChatToolbarItem implements ToolbarItemInterface, RequestAwa
+ 
+         // Badge count is updated client-side from the status endpoint
+         // to avoid a DB query on every backend page load.
+-        return '<span class="toolbar-item-link ai-chat-toolbar-btn" role="button" title="AI Chat" tabindex="0">'
+-            . '<typo3-backend-icon identifier="actions-message" size="small"></typo3-backend-icon>'
++        $label = htmlspecialchars($this->getLanguageService()?->sL(self::LABEL) ?: 'AI Chat', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
++        return '<span class="toolbar-item-link ai-chat-toolbar-btn" role="button" title="' . $label . '" aria-label="' . $label . '" tabindex="0">'
++            . '<span class="toolbar-item-icon" title="' . $label . '"><typo3-backend-icon identifier="actions-message" size="small"></typo3-backend-icon></span>'
++            . '<span class="toolbar-item-title">' . $label . '</span>'
+             . '<span class="badge badge-warning ai-chat-badge" style="display:none">0</span>'
+             . '</span>';
+     }
+@@ -81,4 +86,10 @@ final readonly class ChatToolbarItem implements ToolbarItemInterface, RequestAwa
+         $user = $GLOBALS['BE_USER'] ?? null;
+         return $user instanceof BackendUserAuthentication ? $user : null;
+     }
++
++    private function getLanguageService(): ?LanguageService
++    {
++        $languageService = $GLOBALS['LANG'] ?? null;
++        return $languageService instanceof LanguageService ? $languageService : null;
++    }
+ }
