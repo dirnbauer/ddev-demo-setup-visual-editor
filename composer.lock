@@ -1824,12 +1824,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "d803c4a51b60fc44bfd8aa30574374fd4df3edf3"
+                "reference": "4aab741e9f02d87f90f903db612cb9e7e19a058b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/d803c4a51b60fc44bfd8aa30574374fd4df3edf3",
-                "reference": "d803c4a51b60fc44bfd8aa30574374fd4df3edf3",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/4aab741e9f02d87f90f903db612cb9e7e19a058b",
+                "reference": "4aab741e9f02d87f90f903db612cb9e7e19a058b",
                 "shasum": ""
             },
             "require": {
@@ -1936,7 +1936,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-05-01T09:18:18+00:00"
+            "time": "2026-05-02T20:00:54+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
