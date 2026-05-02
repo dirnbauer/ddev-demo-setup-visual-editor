@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d437184d1787984467efc2a024e218b2",
+    "content-hash": "02361cbb2d611458eba07d14f5d08a5e",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
