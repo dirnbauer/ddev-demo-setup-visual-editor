@@ -2222,12 +2222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-llm.git",
-                "reference": "aaddde5fab5f352abf727f54a324102d3a55d779"
+                "reference": "8d1b4279bc88ac40d83d6fcfe4c78fa04e35571d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/aaddde5fab5f352abf727f54a324102d3a55d779",
-                "reference": "aaddde5fab5f352abf727f54a324102d3a55d779",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-llm/zipball/8d1b4279bc88ac40d83d6fcfe4c78fa04e35571d",
+                "reference": "8d1b4279bc88ac40d83d6fcfe4c78fa04e35571d",
                 "shasum": ""
             },
             "require": {
@@ -2382,7 +2382,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-llm/issues",
                 "source": "https://github.com/netresearch/t3x-nr-llm"
             },
-            "time": "2026-05-02T18:53:43+00:00"
+            "time": "2026-05-02T19:16:48+00:00"
         },
         {
             "name": "netresearch/nr-mcp-agent",
@@ -2523,12 +2523,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/t3x-nr-vault.git",
-                "reference": "385ee36c4ff755c4c8855ab4d34bf95720d8b197"
+                "reference": "4e0480876965de143c8329b42fe5e0a1cbc2a722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-vault/zipball/385ee36c4ff755c4c8855ab4d34bf95720d8b197",
-                "reference": "385ee36c4ff755c4c8855ab4d34bf95720d8b197",
+                "url": "https://api.github.com/repos/dirnbauer/t3x-nr-vault/zipball/4e0480876965de143c8329b42fe5e0a1cbc2a722",
+                "reference": "4e0480876965de143c8329b42fe5e0a1cbc2a722",
                 "shasum": ""
             },
             "require": {
@@ -2654,7 +2654,7 @@
                 "issues": "https://github.com/netresearch/t3x-nr-vault/issues",
                 "source": "https://github.com/netresearch/t3x-nr-vault"
             },
-            "time": "2026-05-02T18:53:43+00:00"
+            "time": "2026-05-02T19:16:48+00:00"
         },
         {
             "name": "netresearch/t3-cowriter",
