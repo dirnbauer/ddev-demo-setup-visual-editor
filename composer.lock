@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "02361cbb2d611458eba07d14f5d08a5e",
+    "content-hash": "acd6a750ab37eb753bc89fd4f43f1dfe",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -11046,16 +11046,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-x402-paywall.git",
-                "reference": "c0e1cc2fa09f406bc05d92433a4bca93f7a1f773"
+                "reference": "97cc7866a26cb6cbad457d52bbe32fb243d47091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-x402-paywall/zipball/c0e1cc2fa09f406bc05d92433a4bca93f7a1f773",
-                "reference": "c0e1cc2fa09f406bc05d92433a4bca93f7a1f773",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-x402-paywall/zipball/97cc7866a26cb6cbad457d52bbe32fb243d47091",
+                "reference": "97cc7866a26cb6cbad457d52bbe32fb243d47091",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.0",
+                "mcp/sdk": "^0.5",
                 "php": "^8.2",
                 "psr/http-message": "^2.0",
                 "psr/http-server-middleware": "^1.0",
@@ -11112,7 +11113,7 @@
                 "issues": "https://github.com/dirnbauer/typo3-x402-paywall/issues",
                 "source": "https://github.com/dirnbauer/typo3-x402-paywall"
             },
-            "time": "2026-04-21T08:51:57+00:00"
+            "time": "2026-05-02T19:35:55+00:00"
         },
         {
             "name": "webconsulting/workos-auth",

@@ -111,9 +111,6 @@
             },
             "netresearch/nr-mcp-agent": {
                 "Normalize MCP tool schemas": "patches/netresearch/nr-mcp-agent/0001-normalize-tool-schemas.patch"
-            },
-            "webconsulting/typo3-x402-paywall": {
-                "Use current MCP SDK result types": "patches/webconsulting/typo3-x402-paywall/0001-use-current-mcp-sdk-result-types.patch"
             }
         }
     },
