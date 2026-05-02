@@ -119,6 +119,9 @@
             "netresearch/nr-llm": {
                 "Keep LLM child modules out of the main sidebar": "patches/netresearch/nr-llm/0001-hide-child-modules-from-main-sidebar.patch"
             },
+            "netresearch/nr-vault": {
+                "Keep Vault child modules out of the main sidebar": "patches/netresearch/nr-vault/0001-hide-child-modules-from-main-sidebar.patch"
+            },
             "typo3/cms-backend": {
                 "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch",
                 "Keep overview modules visible when submodules are hidden from the main module menu": "patches/typo3/cms-backend/0002-keep-overview-modules-visible-with-hidden-submodules.patch"
