@@ -117,7 +117,8 @@
                 "Add visible label to AI chat toolbar item": "patches/netresearch/nr-mcp-agent/0002-add-chat-toolbar-label.patch"
             },
             "typo3/cms-backend": {
-                "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch"
+                "PageTreeRepository: skip missing mount point records (forge bug, search filter null deref)": "patches/typo3/cms-backend/0001-pagetreerepository-skip-missing-mountpoint-records.patch",
+                "Keep overview modules visible when submodules are hidden from the main module menu": "patches/typo3/cms-backend/0002-keep-overview-modules-visible-with-hidden-submodules.patch"
             },
             "webconsulting/typo3-x402-paywall": {
                 "Use current MCP SDK result types": "patches/webconsulting/typo3-x402-paywall/0001-use-current-mcp-sdk-result-types.patch"
@@ -125,7 +126,7 @@
         }
     },
     "require": {
-        "apache-solr-for-typo3/solr": "^14.0@alpha",
+        "apache-solr-for-typo3/solr": "dev-main as 14.0.0-alpha2",
         "cweagans/composer-patches": "^1.7",
         "dirnbauer/adminpanel-defaults": "dev-main",
         "dirnbauer/visual-editor-news-addon": "dev-main",

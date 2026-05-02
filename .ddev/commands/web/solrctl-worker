@@ -56,6 +56,7 @@ cmd_copy_config() {
 
     # Copy typo3lib
     echo "🐳 Copy typo3lib to container"
+    rm -rf "${SOLR_DATA}/typo3lib"
     cp -r "$typo3lib" "${SOLR_DATA}/"
 
     # Copy each configset
@@ -75,6 +76,7 @@ cmd_copy_config() {
         fi
 
         echo "🐳 Copy configset '$configset_name' to container"
+        rm -rf "${SOLR_DATA}/configsets/${configset_name}"
         mkdir -p "${SOLR_DATA}/configsets/${configset_name}"
         cp -r "${configset_path}/." "${SOLR_DATA}/configsets/${configset_name}/"
     done
@@ -192,7 +194,10 @@ cmd_wipe() {
 
     # Delete all configsets and solr.xml
     echo "🗑️Delete all configsets and solr.xml configuration"
-    rm -rf "${SOLR_DATA}/configsets" "${SOLR_DATA}/solr.xml"
+    rm -rf "${SOLR_DATA}/configsets" "${SOLR_DATA}/solr.xml" "${SOLR_DATA}/typo3lib"
+
+    # Remove orphaned core directories left by previous Solr/configset versions.
+    find "${SOLR_DATA}" -maxdepth 1 -mindepth 1 -type d -name 'core_*' -exec rm -rf {} +
 }
 
 cmd_list() {

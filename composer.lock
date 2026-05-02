@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27bffcfd21a37b7685d31abc972c38a1",
+    "content-hash": "d437184d1787984467efc2a024e218b2",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
-            "version": "14.0.0-alpha1",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/ext-solr.git",
-                "reference": "3d966b3ebde3561b33e3297eb9650466babedf11"
+                "reference": "551d9b3a0522b1b35478319a01ff4cb61cd987ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/3d966b3ebde3561b33e3297eb9650466babedf11",
-                "reference": "3d966b3ebde3561b33e3297eb9650466babedf11",
+                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/551d9b3a0522b1b35478319a01ff4cb61cd987ef",
+                "reference": "551d9b3a0522b1b35478319a01ff4cb61cd987ef",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
                 "php": "^8.2",
                 "solarium/solarium": "6.4.1",
                 "typo3/cms-backend": "*",
-                "typo3/cms-core": "14.*.*@dev",
+                "typo3/cms-core": "^v14.3.0",
                 "typo3/cms-extbase": "*",
                 "typo3/cms-fluid": "*",
                 "typo3/cms-frontend": "*",
@@ -55,6 +55,7 @@
                 "typo3/coding-standards": "v0.8.0",
                 "typo3/testing-framework": "^9.5.0"
             },
+            "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
                 "branch-alias": {
@@ -71,7 +72,7 @@
                         "ext-solrconsole": "^14.0",
                         "ext-solrdebugtools": "^14.0",
                         "Apache-Solr": [
-                            "9.10.1"
+                            "10.0.0"
                         ],
                         "configset": "ext_solr_14_0_0"
                     },
@@ -178,7 +179,7 @@
                 "source": "https://github.com/TYPO3-Solr/ext-solr",
                 "docs": "https://docs.typo3.org/p/apache-solr-for-typo3/solr/main/en-us/"
             },
-            "time": "2026-03-31T13:18:47+00:00"
+            "time": "2026-05-02T09:18:05+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -11393,6 +11394,12 @@
     ],
     "aliases": [
         {
+            "package": "apache-solr-for-typo3/solr",
+            "version": "dev-main",
+            "alias": "14.0.0-alpha2",
+            "alias_normalized": "14.0.0.0-alpha2"
+        },
+        {
             "package": "netresearch/nr-llm",
             "version": "dev-main",
             "alias": "0.7.0",
@@ -11425,7 +11432,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "apache-solr-for-typo3/solr": 15,
+        "apache-solr-for-typo3/solr": 20,
         "dirnbauer/adminpanel-defaults": 20,
         "dirnbauer/visual-editor-news-addon": 20,
         "netresearch/nr-llm": 20,
