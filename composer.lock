@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acd6a750ab37eb753bc89fd4f43f1dfe",
+    "content-hash": "373c850ae2ca78c0921fdb3e1041c32f",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -1867,6 +1867,171 @@
             "time": "2025-12-05T14:53:09+00:00"
         },
         {
+            "name": "hn/typo3-mcp-server",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
+                "reference": "d803c4a51b60fc44bfd8aa30574374fd4df3edf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/d803c4a51b60fc44bfd8aa30574374fd4df3edf3",
+                "reference": "d803c4a51b60fc44bfd8aa30574374fd4df3edf3",
+                "shasum": ""
+            },
+            "require": {
+                "logiscape/mcp-sdk-php": "^1.2",
+                "php": ">=8.2.0",
+                "typo3/cms-backend": "^14.0",
+                "typo3/cms-core": "^14.0",
+                "typo3/cms-workspaces": "^14.0"
+            },
+            "require-dev": {
+                "a9f/typo3-fractor": "^0.5",
+                "brianium/paratest": "7.8.4",
+                "friendsofphp/php-cs-fixer": "^3.94",
+                "georgringer/news": "^14.0",
+                "phpat/phpat": "^0.12.3",
+                "phpstan/phpstan": "^2.1",
+                "ssch/typo3-rector": "^3.0",
+                "typo3/cms-extbase": "^14.0",
+                "typo3/cms-fluid": "^14.0",
+                "typo3/cms-frontend": "^14.0",
+                "typo3/cms-install": "^14.0",
+                "typo3/cms-redirects": "^14.0",
+                "typo3/coding-standards": "dev-main",
+                "typo3/testing-framework": "^9.4"
+            },
+            "default-branch": true,
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mcp_server"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hn\\McpServer\\": "Classes/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Hn\\McpServer\\Tests\\": "Tests/"
+                }
+            },
+            "scripts": {
+                "setup": [
+                    "bash Build/setup-typo3.sh"
+                ],
+                "post-install-cmd": [
+                    "@setup"
+                ],
+                "post-update-cmd": [
+                    "@setup"
+                ],
+                "test": [
+                    "@test:unit",
+                    "@test:functional"
+                ],
+                "test:unit": [
+                    "phpunit -c Tests/UnitTests.xml"
+                ],
+                "test:functional": [
+                    "paratest -c phpunit.xml.dist"
+                ],
+                "test:llm": [
+                    "rm -rf .Build/llm-stats",
+                    "paratest -c Tests/Llm/phpunit-llm.xml --testdox --no-progress -p 5 --log-junit .Build/llm-results.xml || true",
+                    "php Build/check-llm-results.php --min-pass=3"
+                ],
+                "docs:check": [
+                    "docker run --rm --pull always -v $(pwd):/project ghcr.io/typo3-documentation/render-guides:latest --no-progress --fail-on-log"
+                ],
+                "phpstan": [
+                    "phpstan analyse --no-progress --memory-limit=1G"
+                ],
+                "php-cs-fixer": [
+                    "php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run --diff"
+                ],
+                "php-cs-fixer:fix": [
+                    "php-cs-fixer fix --config=.php-cs-fixer.dist.php"
+                ],
+                "rector": [
+                    "rector process --dry-run"
+                ],
+                "rector:fix": [
+                    "rector process"
+                ],
+                "fractor": [
+                    "fractor process --dry-run"
+                ],
+                "fractor:fix": [
+                    "fractor process"
+                ],
+                "build:ter": [
+                    "bash Build/build-ter.sh"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pfeiffer",
+                    "email": "marco@hauptsache.net"
+                }
+            ],
+            "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
+            "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
+            "time": "2026-05-01T09:18:18+00:00"
+        },
+        {
+            "name": "logiscape/mcp-sdk-php",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/logiscape/mcp-sdk-php.git",
+                "reference": "1ed29680249488e2e028ee5b8f169fe9881e01a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/logiscape/mcp-sdk-php/zipball/1ed29680249488e2e028ee5b8f169fe9881e01a7",
+                "reference": "1ed29680249488e2e028ee5b8f169fe9881e01a7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=8.1",
+                "psr/log": "^2.0 ||^3.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.0"
+            },
+            "suggest": {
+                "ext-pcntl": "For better process handling in CLI environments",
+                "monolog/monolog": "^3.0 - For debugging and logging capabilities"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mcp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Model Context Protocol SDK for PHP",
+            "support": {
+                "issues": "https://github.com/logiscape/mcp-sdk-php/issues",
+                "source": "https://github.com/logiscape/mcp-sdk-php/tree/v1.7.1"
+            },
+            "time": "2026-04-23T03:47:26+00:00"
+        },
+        {
             "name": "lolli42/finediff",
             "version": "1.1.2",
             "source": {
@@ -1996,74 +2161,6 @@
                 "source": "https://github.com/marekskopal/typo3-mcp-docs/tree/v1.1.1"
             },
             "time": "2026-04-19T08:12:10+00:00"
-        },
-        {
-            "name": "marekskopal/typo3-mcp-server",
-            "version": "v0.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/marekskopal/typo3-mcp-server.git",
-                "reference": "edf7a8a39fe8559c5d7ba9ac8f01b27bf6587ee1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/marekskopal/typo3-mcp-server/zipball/edf7a8a39fe8559c5d7ba9ac8f01b27bf6587ee1",
-                "reference": "edf7a8a39fe8559c5d7ba9ac8f01b27bf6587ee1",
-                "shasum": ""
-            },
-            "require": {
-                "mcp/sdk": "^0.5",
-                "php": ">=8.3",
-                "typo3/cms-backend": "^13.4.24 || ^14.3.0",
-                "typo3/cms-core": "^13.4.24 || ^14.3.0",
-                "typo3/cms-extbase": "^13.4.24 || ^14.3.0",
-                "typo3/cms-fluid": "^13.4.24 || ^14.3.0",
-                "typo3/cms-frontend": "^13.4.24 || ^14.3.0"
-            },
-            "require-dev": {
-                "dg/bypass-finals": "^1.9",
-                "phpstan/extension-installer": "^1.3",
-                "phpstan/phpstan": "^2.0",
-                "phpstan/phpstan-deprecation-rules": "^2.0",
-                "phpstan/phpstan-phpunit": "^2.0",
-                "phpunit/phpunit": "^12.0",
-                "shipmonk/phpstan-rules": "^4.0",
-                "slevomat/coding-standard": "^8.14"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "ms_mcp_server"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MarekSkopal\\MsMcpServer\\": "Classes/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "MarekSkopal\\MsMcpServer\\Tests\\": "Tests/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Marek Skopal",
-                    "role": "Developer",
-                    "homepage": "https://marekskopal.com"
-                }
-            ],
-            "description": "MCP server for TYPO3 CMS administration",
-            "homepage": "https://marekskopal.com",
-            "keywords": [
-                "TYPO3",
-                "mcp",
-                "server"
-            ],
-            "time": "2026-04-30T18:46:13+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -11436,6 +11533,7 @@
         "apache-solr-for-typo3/solr": 20,
         "dirnbauer/adminpanel-defaults": 20,
         "dirnbauer/visual-editor-news-addon": 20,
+        "hn/typo3-mcp-server": 20,
         "netresearch/nr-llm": 20,
         "netresearch/nr-mcp-agent": 20,
         "netresearch/nr-vault": 20,
