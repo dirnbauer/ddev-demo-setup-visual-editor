@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/ext-solr.git",
-                "reference": "551d9b3a0522b1b35478319a01ff4cb61cd987ef"
+                "reference": "8059eb82c1b241e4c13c6079082303849dd7ed09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/551d9b3a0522b1b35478319a01ff4cb61cd987ef",
-                "reference": "551d9b3a0522b1b35478319a01ff4cb61cd987ef",
+                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/8059eb82c1b241e4c13c6079082303849dd7ed09",
+                "reference": "8059eb82c1b241e4c13c6079082303849dd7ed09",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "source": "https://github.com/TYPO3-Solr/ext-solr",
                 "docs": "https://docs.typo3.org/p/apache-solr-for-typo3/solr/main/en-us/"
             },
-            "time": "2026-05-02T09:18:05+00:00"
+            "time": "2026-05-02T16:42:38+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
