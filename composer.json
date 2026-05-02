@@ -5,7 +5,6 @@
     "type": "project",
     "config": {
         "allow-plugins": {
-            "cweagans/composer-patches": true,
             "php-http/discovery": true,
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
@@ -102,17 +101,8 @@
             "no-api": true
         }
     ],
-    "extra": {
-        "composer-exit-on-patch-failure": true,
-        "patches": {
-            "netresearch/nr-mcp-agent": {
-                "Normalize MCP tool schemas": "patches/netresearch/nr-mcp-agent/0001-normalize-tool-schemas.patch"
-            }
-        }
-    },
     "require": {
-        "apache-solr-for-typo3/solr": "dev-main as 14.0.0-alpha2",
-        "cweagans/composer-patches": "^1.7",
+        "apache-solr-for-typo3/solr": "dev-main",
         "dirnbauer/adminpanel-defaults": "dev-main",
         "dirnbauer/visual-editor-news-addon": "dev-main",
         "friendsoftypo3/tt-address": "^10.0",
