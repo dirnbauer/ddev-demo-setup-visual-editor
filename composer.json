@@ -5,6 +5,7 @@
     "type": "project",
     "config": {
         "allow-plugins": {
+            "cweagans/composer-patches": true,
             "php-http/discovery": true,
             "typo3/class-alias-loader": true,
             "typo3/cms-composer-installers": true
@@ -162,6 +163,15 @@
         "webconsulting/workos-auth": "dev-main"
     },
     "require-dev": {
+        "cweagans/composer-patches": "^2.0",
         "phpstan/phpstan": "^2.1"
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "friendsoftypo3/content-blocks": {
+                "Add foreign_field column for Collection child tables (upstream pending: TODO link to issue)": "patches/content-blocks-add-foreign-field-column.patch"
+            }
+        }
     }
 }
