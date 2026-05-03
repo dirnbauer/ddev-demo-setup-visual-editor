@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/ext-solr.git",
-                "reference": "7b3fdc9bb31abf6771ab673bad4d132f6a034932"
+                "reference": "1e9ec04e014c575b6bbccaf2dd29bc903a82716e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/7b3fdc9bb31abf6771ab673bad4d132f6a034932",
-                "reference": "7b3fdc9bb31abf6771ab673bad4d132f6a034932",
+                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/1e9ec04e014c575b6bbccaf2dd29bc903a82716e",
+                "reference": "1e9ec04e014c575b6bbccaf2dd29bc903a82716e",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "source": "https://github.com/TYPO3-Solr/ext-solr",
                 "docs": "https://docs.typo3.org/p/apache-solr-for-typo3/solr/main/en-us/"
             },
-            "time": "2026-05-03T12:34:43+00:00"
+            "time": "2026-05-03T14:14:27+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1824,12 +1824,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "f18549d069dc4734ba3cf5e32053075810402f21"
+                "reference": "fd3a210b8d26980531f0371aee1388815c064372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/f18549d069dc4734ba3cf5e32053075810402f21",
-                "reference": "f18549d069dc4734ba3cf5e32053075810402f21",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/fd3a210b8d26980531f0371aee1388815c064372",
+                "reference": "fd3a210b8d26980531f0371aee1388815c064372",
                 "shasum": ""
             },
             "require": {
@@ -1939,7 +1939,7 @@
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
             "homepage": "https://github.com/dirnbauer/typo3-mcp-server",
-            "time": "2026-05-03T12:00:27+00:00"
+            "time": "2026-05-03T14:13:35+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -10834,12 +10834,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/desiderio.git",
-                "reference": "f4462f8ac50805660bb5197b75814ea8252455ae"
+                "reference": "ca7614f8dacd1e16ab7a09fba201c3f2b8af117c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/f4462f8ac50805660bb5197b75814ea8252455ae",
-                "reference": "f4462f8ac50805660bb5197b75814ea8252455ae",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/ca7614f8dacd1e16ab7a09fba201c3f2b8af117c",
+                "reference": "ca7614f8dacd1e16ab7a09fba201c3f2b8af117c",
                 "shasum": ""
             },
             "require": {
@@ -10854,7 +10854,6 @@
                 "webconsulting/shadcn2fluid-templates": "*"
             },
             "require-dev": {
-                "cweagans/composer-patches": "^2.0",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-phpunit": "^2.0",
@@ -10872,12 +10871,6 @@
             "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
-                "composer-exit-on-patch-failure": true,
-                "patches": {
-                    "friendsoftypo3/content-blocks": {
-                        "Add foreign_field column for Collection child tables (upstream pending: TODO link to issue)": "patches/content-blocks-add-foreign-field-column.patch"
-                    }
-                },
                 "typo3/cms": {
                     "extension-key": "desiderio"
                 }
@@ -10912,7 +10905,7 @@
                 }
             ],
             "description": "Desiderio — shadcn/ui-inspired Fluid 5 component library, 255 content elements, and theme layer for TYPO3 14",
-            "time": "2026-05-03T11:41:45+00:00"
+            "time": "2026-05-03T15:16:24+00:00"
         },
         {
             "name": "webconsulting/records-list-examples",
