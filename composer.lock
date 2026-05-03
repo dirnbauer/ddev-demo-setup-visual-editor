@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6fa30f2e91b3f55e56c1b5295c2aaf5",
+    "content-hash": "09c77cfc61a3a7e0abfd45ef076253fd",
     "packages": [
         {
             "name": "apache-solr-for-typo3/solr",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/ext-solr.git",
-                "reference": "8059eb82c1b241e4c13c6079082303849dd7ed09"
+                "reference": "7b3fdc9bb31abf6771ab673bad4d132f6a034932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/8059eb82c1b241e4c13c6079082303849dd7ed09",
-                "reference": "8059eb82c1b241e4c13c6079082303849dd7ed09",
+                "url": "https://api.github.com/repos/dirnbauer/ext-solr/zipball/7b3fdc9bb31abf6771ab673bad4d132f6a034932",
+                "reference": "7b3fdc9bb31abf6771ab673bad4d132f6a034932",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "source": "https://github.com/TYPO3-Solr/ext-solr",
                 "docs": "https://docs.typo3.org/p/apache-solr-for-typo3/solr/main/en-us/"
             },
-            "time": "2026-05-02T16:42:38+00:00"
+            "time": "2026-05-03T12:34:43+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1824,12 +1824,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/typo3-mcp-server.git",
-                "reference": "4aab741e9f02d87f90f903db612cb9e7e19a058b"
+                "reference": "f18549d069dc4734ba3cf5e32053075810402f21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/4aab741e9f02d87f90f903db612cb9e7e19a058b",
-                "reference": "4aab741e9f02d87f90f903db612cb9e7e19a058b",
+                "url": "https://api.github.com/repos/dirnbauer/typo3-mcp-server/zipball/f18549d069dc4734ba3cf5e32053075810402f21",
+                "reference": "f18549d069dc4734ba3cf5e32053075810402f21",
                 "shasum": ""
             },
             "require": {
@@ -1841,11 +1841,14 @@
             },
             "require-dev": {
                 "a9f/typo3-fractor": "^0.5",
-                "brianium/paratest": "7.8.4",
+                "brianium/paratest": "^7.8",
                 "friendsofphp/php-cs-fixer": "^3.94",
                 "georgringer/news": "^14.0",
                 "phpat/phpat": "^0.12.3",
-                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan": "^2.1.33",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-strict-rules": "^2.0",
+                "saschaegerer/phpstan-typo3": "^3.0",
                 "ssch/typo3-rector": "^3.0",
                 "typo3/cms-extbase": "^14.0",
                 "typo3/cms-fluid": "^14.0",
@@ -1890,7 +1893,7 @@
                     "phpunit -c Tests/UnitTests.xml"
                 ],
                 "test:functional": [
-                    "paratest -c phpunit.xml.dist"
+                    "paratest -c phpunit.xml.dist -p 4"
                 ],
                 "test:llm": [
                     "rm -rf .Build/llm-stats",
@@ -1935,8 +1938,8 @@
                 }
             ],
             "description": "TYPO3 extension that provides a Model Context Protocol (MCP) server for interacting with TYPO3 pages and records",
-            "homepage": "https://github.com/hauptsacheNet/typo3-mcp-server",
-            "time": "2026-05-02T20:00:54+00:00"
+            "homepage": "https://github.com/dirnbauer/typo3-mcp-server",
+            "time": "2026-05-03T12:00:27+00:00"
         },
         {
             "name": "logiscape/mcp-sdk-php",
@@ -10831,37 +10834,50 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dirnbauer/desiderio.git",
-                "reference": "f6c62026d8fa654624aa6b678237676b163a42f6"
+                "reference": "f4462f8ac50805660bb5197b75814ea8252455ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/f6c62026d8fa654624aa6b678237676b163a42f6",
-                "reference": "f6c62026d8fa654624aa6b678237676b163a42f6",
+                "url": "https://api.github.com/repos/dirnbauer/desiderio/zipball/f4462f8ac50805660bb5197b75814ea8252455ae",
+                "reference": "f4462f8ac50805660bb5197b75814ea8252455ae",
                 "shasum": ""
             },
             "require": {
                 "friendsoftypo3/content-blocks": "^2.2",
                 "php": "^8.3",
                 "praetorius/vite-asset-collector": "^1.7",
-                "typo3/cms-core": "^14.3@dev",
-                "typo3/cms-fluid": "^14.3@dev"
+                "typo3/cms-core": "^14.3",
+                "typo3/cms-fluid": "^14.3",
+                "typo3/cms-workspaces": "^14.3"
             },
             "conflict": {
                 "webconsulting/shadcn2fluid-templates": "*"
             },
             "require-dev": {
+                "cweagans/composer-patches": "^2.0",
+                "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-phpunit": "^2.0",
+                "phpstan/phpstan-strict-rules": "^2.0",
                 "phpunit/phpunit": "^11.5",
+                "saschaegerer/phpstan-typo3": "^3.0",
                 "typo3/testing-framework": "^9.0"
             },
             "suggest": {
+                "apache-solr-for-typo3/solr": "Optional. Drives the shadcn-styled Solr search templates.",
                 "friendsoftypo3/visual-editor": "Optional. Inline visual editing when templates use f:render.text for text fields.",
-                "typo3/cms-workspaces": "Recommended to stage and preview content elements in TYPO3 workspaces."
+                "georgringer/news": "Optional. Drives the shadcn-styled News templates and the DesiderioNews backend layout.",
+                "t3g/blog": "Optional. Drives the shadcn-styled t3g/blog overrides shipped under webconsulting/desiderio-blog."
             },
             "default-branch": true,
             "type": "typo3-cms-extension",
             "extra": {
+                "composer-exit-on-patch-failure": true,
+                "patches": {
+                    "friendsoftypo3/content-blocks": {
+                        "Add foreign_field column for Collection child tables (upstream pending: TODO link to issue)": "patches/content-blocks-add-foreign-field-column.patch"
+                    }
+                },
                 "typo3/cms": {
                     "extension-key": "desiderio"
                 }
@@ -10877,6 +10893,9 @@
                 }
             },
             "scripts": {
+                "audit": [
+                    "@composer audit --no-dev --abandoned=fail"
+                ],
                 "phpstan": [
                     "phpstan analyse --configuration=phpstan.neon.dist"
                 ],
@@ -10893,7 +10912,7 @@
                 }
             ],
             "description": "Desiderio — shadcn/ui-inspired Fluid 5 component library, 255 content elements, and theme layer for TYPO3 14",
-            "time": "2026-05-02T13:24:46+00:00"
+            "time": "2026-05-03T11:41:45+00:00"
         },
         {
             "name": "webconsulting/records-list-examples",
